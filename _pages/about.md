@@ -25,7 +25,7 @@ My research interest: include but are not limited to Low-Level Vision, Computer-
 
 If you are interested in my research or have any questions, suggestions, or collaboration ideas, please feel free to contact me at Email: [zhifengwang@nudt.edu.cn](mailto:zhifengwang@nudt.edu.cn) or [zhifengwang686@gmail.com](mailto:zhifengwang686@gmail.com), WeChat: 15679811701.
 
-**I am actively seeking internship or collaboration opportunities in the application of AIGC and LLM for Computer-aided Diagnosis, particularly in 3D vision.**
+<span style="color:red; font-weight:bold;">I am actively seeking internship or collaboration opportunities in the application of AIGC and LLM for Computer-aided Diagnosis, particularly in 3D vision.</span>
 
 
 # 🔥 News
