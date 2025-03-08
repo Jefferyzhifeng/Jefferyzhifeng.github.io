@@ -56,7 +56,7 @@ If you are interested in my research or have any questions, suggestions, or coll
 
 [Cardiovascular medical image and analysis based on 3D vision: A comprehensive survey](https://www.sciencedirect.com/science/article/pii/S2950162824000560)
 
-**Zhifeng Wang**, Renjiao Yi, Xin Wen, Chenyang Zhu, Kai Xu
+**Zhifeng Wang**, Renjiao Yi&#9993;, Xin Wen, Chenyang Zhu, Kai Xu
 
 [**Project**](https://jefferyzhifeng.github.io) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - Meta-Radiology 2024.
@@ -80,7 +80,7 @@ If you are interested in my research or have any questions, suggestions, or coll
 
 [A Dense Prediction ViT Network for Single Image Bokeh Rendering](https://link.springer.com/chapter/10.1007/978-3-031-18916-6_18)
 
-**Zhifeng Wang**, Aiwen Jiang
+**Zhifeng Wang**, Aiwen Jiang&#9993;
 
 [**Project**](https://jefferyzhifeng.github.io) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - The 5th Chinese Conference on Pattern Recognition and Computer Vision(PRCV), 2022.
@@ -92,7 +92,7 @@ If you are interested in my research or have any questions, suggestions, or coll
 
 [Self-supervised multi-scale pyramid fusion networks for realistic bokeh effect rendering](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
 
-**Zhifeng Wang**, Aiwen Jiang, Chunjie Zhang, Hanxi Li, Bo Liu
+**Zhifeng Wang**, Aiwen Jiang&#9993;, Chunjie Zhang, Hanxi Li, Bo Liu
 
 [**Project**](https://jefferyzhifeng.github.io) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - Journal of Visual Communication and Image Representation(JVCIR), 2022.
