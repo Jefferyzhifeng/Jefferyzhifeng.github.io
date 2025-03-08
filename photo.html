@@ -1,287 +1,297 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeffery's Photography</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Helvetica Neue', sans-serif;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeffery's Photography</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
 
-        body {
-            background-color: #f5f5f5;
-        }
+    body {
+      background-color: #f5f5f5;
+    }
 
-        /* 导航栏样式 */
-        .navbar {
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .navbar h1 {
-            font-size: 24px;
-            color: #6c2e85; /* 紫色 */
-            margin: 0;
-        }
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-        .nav-links li a {
-            text-decoration: none;
-            color: #333;
-            font-weight: 600;
-            transition: color 0.3s ease;
-        }
-        .nav-links li a:hover {
-            color: #6c2e85;
-        }
+    /* 导航栏样式 */
+    .navbar {
+      background-color: #f2e6ff; /* 浅紫背景色 */
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar h1 {
+      font-size: 24px;
+      color: #6c2e85;
+      margin: 0;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    .nav-links li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    .nav-links li a:hover {
+      color: #6c2e85;
+    }
 
-        /* 头部简介区域 */
-        .header-intro {
-            text-align: center;
-            padding: 30px 20px;
-            background-color: #fafafa;
-        }
-        .header-intro h2 {
-            font-size: 18px;
-            color: #555;
-            margin-bottom: 15px;
-        }
-        .header-intro p {
-            color: #666;
-            line-height: 1.6;
-        }
-        .header-intro p.links a {
-            color: #6c2e85;
-            text-decoration: none;
-            margin: 0 5px;
-        }
-        .header-intro p.links a:hover {
-            text-decoration: underline;
-        }
+    /* 头部简介区域 */
+    .header-intro {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #fafafa;
+    }
+    .header-intro h2 {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+    .header-intro p {
+      color: #666;
+      line-height: 1.6;
+    }
+    .header-intro p.links a {
+      color: #6c2e85;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+    .header-intro p.links a:hover {
+      text-decoration: underline;
+    }
 
-        /* 页面主体容器 */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+    /* 页面主体容器 */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
 
-        /* 图片网格布局 */
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-        }
-        .gallery-item {
-            position: relative;
-            overflow: hidden;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
-        .gallery-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-        }
-        .gallery-img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            display: block;
-            transition: transform 0.3s ease;
-        }
-        /* 悬浮时略微放大图片 */
-        .gallery-item:hover .gallery-img {
-            transform: scale(1.03);
-        }
+    /* Contact区域居中 */
+    #contact {
+      text-align: center;
+    }
 
-        /* 图片说明 */
-        .caption {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            padding: 20px;
-            background: linear-gradient(transparent, rgba(0,0,0,0.8));
-            color: white;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-        .gallery-item:hover .caption {
-            opacity: 1;
-        }
+    /* 图片网格布局 */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .gallery-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+    .gallery-img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    /* 悬浮时略微放大图片 */
+    .gallery-item:hover .gallery-img {
+      transform: scale(1.03);
+    }
 
-        /* 灯箱样式 */
-        .lightbox {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.9);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
-            opacity: 0;
-            /* 通过动画实现淡入 */
-            animation: none;
-        }
-        .lightbox.active {
-            display: flex;
-            animation: fadeIn 0.3s forwards;
-        }
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-            }
-        }
-        .lightbox-img {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 8px;
-            transition: transform 0.3s ease;
-        }
-        /* 悬浮时可略微放大灯箱中的图片 */
-        .lightbox-img:hover {
-            transform: scale(1.02);
-        }
+    /* 图片说明 */
+    .caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 20px;
+      background: linear-gradient(transparent, rgba(0,0,0,0.8));
+      color: white;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .gallery-item:hover .caption {
+      opacity: 1;
+    }
 
-        /* 尾标样式 */
-        footer {
-            background-color: #fff;
-            text-align: center;
-            padding: 15px 0;
-            margin-top: 40px;
-            box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
-        }
-        footer p {
-            color: #333;
-        }
+    /* 灯箱样式 */
+    .lightbox {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.9);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+    }
+    .lightbox.active {
+      display: flex;
+      animation: fadeIn 0.3s forwards;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+    .lightbox-img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    /* 点击后放大效果 */
+    .lightbox.active .lightbox-img {
+      animation: zoomIn 0.3s forwards;
+    }
+    @keyframes zoomIn {
+      from { transform: scale(0.8); }
+      to { transform: scale(1); }
+    }
+    /* 悬浮时略微放大灯箱中的图片 */
+    .lightbox-img:hover {
+      transform: scale(1.02);
+    }
 
-        /* 响应式设计 */
-        @media (max-width: 992px) {
-            .gallery {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        @media (max-width: 768px) {
-            .gallery {
-                grid-template-columns: 1fr;
-            }
-            .gallery-img {
-                height: 400px;
-            }
-        }
-    </style>
+    /* 尾标样式 */
+    footer {
+      background-color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+      box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+    }
+    footer p {
+      color: #333;
+    }
+
+    /* 响应式设计 */
+    @media (max-width: 992px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+      .gallery-img {
+        height: 400px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <!-- 导航栏 -->
-    <nav class="navbar">
-        <h1>Jeffery's Photography</h1>
-        <ul class="nav-links">
-            <li><a href="https://jefferyzhifeng.github.io/">Homepage</a></li>
-            <li><a href="https://jefferyzhifeng.github.io/photo">Photos</a></li>
-            <li><a href="https://jefferyzhifeng.github.io/">Connect</a></li>
-        </ul>
-    </nav>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <h1>Jackie's Photography</h1>
+    <ul class="nav-links">
+      <li><a href="https://jefferyzhifeng.github.io/">Homepage</a></li>
+      <li><a href="https://jefferyzhifeng.github.io/photo">Photos</a></li>
+      <li><a href="https://jefferyzhifeng.github.io/">Connect</a></li>
+    </ul>
+  </nav>
 
-    <!-- 头部简介区域 -->
-    <header class="header-intro" id="home">
-        <h2>Every captured moment tells a story, a fragment of the journey.</h2>
-        <p class="links">
-            Homepage:
-            <a href="https://jefferyzhifeng.github.io/" target="_blank">https://jefferyzhifeng.github.io</a> |
-            Web Design:
-            <a href="#">Deepseek</a>
-        </p>
-    </header>
+  <!-- 头部简介区域 -->
+  <header class="header-intro" id="home">
+    <h2>Every captured moment tells a story, a fragment of the journey.</h2>
+    <p class="links">
+      Homepage:
+      <a href="https://jefferyzhifeng.github.io/" target="_blank">https://jefferyzhifeng.github.io</a> |
+      Web Design:
+      <a href="#">Deepseek</a>
+    </p>
+  </header>
 
-    <!-- 主体容器 -->
-    <div class="container" id="gallery">
-        <div class="gallery">
-            <!-- 示例图片项（你可以替换成自己的图片路径） -->
-            <div class="gallery-item" onclick="openLightbox('2022jvcir.png')">
-                <img src="images/2022jvcir.png" alt="山脉" class="gallery-img">
-                <div class="caption">
-                    <h3>雪山日出</h3>
-                    <p>拍摄于西藏 • 2022年</p>
-                </div>
-            </div>
-
-            <div class="gallery-item" onclick="openLightbox('2022jvcir.png')">
-                <img src="images/2022jvcir.png" alt="城市" class="gallery-img">
-                <div class="caption">
-                    <h3>都市夜景</h3>
-                    <p>上海陆家嘴 • 长曝光拍摄</p>
-                </div>
-            </div>
-
-            <div class="gallery-item" onclick="openLightbox('2022jvcir.png')">
-                <img src="images/2022jvcir.png" alt="人像" class="gallery-img">
-                <div class="caption">
-                    <h3>人物肖像</h3>
-                    <p>工作室拍摄 • 自然光</p>
-                </div>
-            </div>
-
-            <!-- 你可以在这里继续添加更多图片项 -->
+  <!-- 主体容器 -->
+  <div class="container" id="gallery">
+    <div class="gallery">
+      <!-- 示例图片项（你可以替换成自己的图片路径） -->
+      <div class="gallery-item" onclick="openLightbox('image/2022jvcir.png')">
+        <img src="image/2022jvcir.png" alt="雪山" class="gallery-img">
+        <div class="caption">
+          <h3>雪山日出</h3>
+          <p>拍摄于西藏 • 2022年</p>
         </div>
+      </div>
+
+      <div class="gallery-item" onclick="openLightbox('image/2022jvcir.png')">
+        <img src="image/2022jvcir.png" alt="都市" class="gallery-img">
+        <div class="caption">
+          <h3>都市夜景</h3>
+          <p>上海陆家嘴 • 长曝光拍摄</p>
+        </div>
+      </div>
+
+      <div class="gallery-item" onclick="openLightbox('image/2022jvcir.png')">
+        <img src="image/2022jvcir.png" alt="人像" class="gallery-img">
+        <div class="caption">
+          <h3>人物肖像</h3>
+          <p>工作室拍摄 • 自然光</p>
+        </div>
+      </div>
+
+      <!-- 可以在这里继续添加更多图片项 -->
     </div>
+  </div>
 
-    <!-- 联系区域（可根据需要修改或补充） -->
-    <div class="container" id="contact">
-        <h2>Contact Us</h2>
-        <p>If you're interested in my photography, feel free to contact me through the following ways: </p>
-        <ul>
-            <li>Email：zhifengwang@nudt.edu.cn</li>
-            <li>Wechat：tgv25688</li>
-            <!-- 也可添加社交媒体链接 -->
-        </ul>
-    </div>
+  <!-- 联系区域 -->
+  <div class="container" id="contact">
+    <h2>Contact Us</h2>
+    <p>If you're interested in my photography, feel free to contact me through the following ways:</p>
+    <ul>
+      <li>Email：zhifengwang@nudt.edu.cn</li>
+      <li>Wechat：tgv25688</li>
+    </ul>
+  </div>
 
-    <!-- 尾标 -->
-    <footer>
-        <p>© 2025 Jeffery's Photography. All rights reserved.</p>
-    </footer>
+  <!-- 尾标 -->
+  <footer>
+    <p>© 2025 Jeffery's Photography. All rights reserved.</p>
+  </footer>
 
-    <!-- 灯箱 -->
-    <div class="lightbox" onclick="closeLightbox()">
-        <img src="images/" alt="" class="lightbox-img">
-    </div>
+  <!-- 灯箱 -->
+  <div class="lightbox" onclick="closeLightbox()">
+    <img src="images/" alt="" class="lightbox-img">
+  </div>
 
-    <script>
-        // 打开灯箱
-        function openLightbox(imgSrc) {
-            const lightbox = document.querySelector('.lightbox');
-            const lightboxImg = document.querySelector('.lightbox-img');
-            lightboxImg.src = imgSrc;
-            lightbox.classList.add('active');
-        }
+  <script>
+    // 打开灯箱
+    function openLightbox(imgSrc) {
+      const lightbox = document.querySelector('.lightbox');
+      const lightboxImg = document.querySelector('.lightbox-img');
+      lightboxImg.src = imgSrc;
+      lightbox.classList.add('active');
+    }
 
-        // 关闭灯箱
-        function closeLightbox() {
-            document.querySelector('.lightbox').classList.remove('active');
-        }
+    // 关闭灯箱
+    function closeLightbox() {
+      document.querySelector('.lightbox').classList.remove('active');
+    }
 
-        // 点击ESC键关闭灯箱
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') {
-                closeLightbox();
-            }
-        });
-    </script>
+    // 点击ESC键关闭灯箱
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeLightbox();
+      }
+    });
+  </script>
 </body>
 </html>
