@@ -35,7 +35,7 @@ If you are interested in my research or have any questions, suggestions, or coll
 - *2024.05*: &nbsp;🎉🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">ICIP 2024</a> (CCF-C).
 - *2022.12*: &nbsp;🎉🎉 Awarded the <a href="https://jefferyzhifeng.github.io">National Scholarship</a> (Top 0.2%).
 - *2022.10*: &nbsp;🎉🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">PRCV</a> (CCF-C).
-- *2022.6*: &nbsp;🎉🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">JVCIR</a> (CCF-C).
+- *2022.06*: &nbsp;🎉🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">JVCIR</a> (CCF-C).
 
 # 📝 Publications 
 
