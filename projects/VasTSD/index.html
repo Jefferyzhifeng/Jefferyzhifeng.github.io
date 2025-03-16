@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>DRDM Project Page</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+<!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">
+            <img src="static/images/drdm_icon.png" alt="DRDM Icon" style="width: 50px; height: 40px; vertical-align: -3px;">
+            VasTSD: Learning 3D <span style="color: red;">Vas</span>cular <span style="color: red;">T</span>ree-state <span style="color: red;">S</span>pace <span style="color: red;">D</span>iffusion Model for Angiography Synthesis
+          </h1>
+          <div class="is-size-5 publication-authors">
+            <!-- Paper authors -->
+            <span class="author-block">
+                <a href="https://jefferyzhifeng.github.io/" target="_blank">Zhifeng Wang</a><sup>*</sup>,</span>
+                <span class="author-block">
+                <a href="https://renjiaoyi.github.io/" target="_blank">Renjiao Yi</a><sup>*</sup>,</span>
+                <span class="author-block">
+                <a href="" target="_blank">Xin Wen</a>,</span>
+                <span class="author-block">
+                <a href="https://www.zhuchenyang.net/" target="_blank">Chenyang Zhu†</a>,</span>
+                <span class="author-block">
+                <a href="https://kevinkaixu.net/" target="_blank">Kai Xu†</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">National University of Defense Technology<br>CVPR 2025</span>
+            <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+            <span class="eql-cntrb">
+              <small><br>
+                <sup>*</sup>Equal Contribution&nbsp;&nbsp;&nbsp;
+                <sup>†</sup>Corresponding Authors
+              </small>
+            </span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- ArXiv abstract Link -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="ai ai-arxiv"></i>
+                </span>
+                <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Published paper -->
+              <span class="link-block">
+                <a href="" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>Paper</span>
+                </a>
+              </span>
+              <!-- Github link -->
+              <span class="link-block">
+                <a href="https://github.com/zfw-cv/VasTSD" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Code (soon)</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Angiography imaging is a medical imaging technique that enhances the visibility of blood vessels within the body by using contrast agents. 
+              Angiographic images can effectively assist in the diagnosis of vascular diseases. 
+              However, contrast agents may bring extra radiation exposure which is harmful to patients with health risks. 
+              To mitigate these concerns, in this paper, we aim to automatically generate angiography from non-angiographic inputs, by leveraging and enhancing the inherent physical properties of vascular structures. 
+              Previous methods relying on 2D slice-based angiography synthesis struggle with maintaining continuity in 3D vascular structures and exhibit limited effectiveness across different imaging modalities. 
+              We propose VasTSD, a 3D vascular tree-state space diffusion model to synthesize angiography from 3D non-angiographic volumes, 
+              with a novel state space serialization approach that dynamically constructs vascular tree topologies, integrating these with a diffusion-based generative model to ensure the generation of anatomically continuous vasculature in 3D volumes. 
+              A pre-trained vision embedder is employed to construct vascular state space representations, enabling consistent modeling of vascular structures across multiple modalities. 
+              Extensive experiments on various angiographic datasets demonstrate the superiority of VasTSD over prior works, 
+              achieving enhanced continuity of blood vessels in synthesized angiographic synthesis for multiple modalities and anatomical regions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Overview -->
+<section class="hero is-small">
+    <div class="hero-body">
+      <div class="container" style="max-width: 1100px;">
+        <h2 class="title has-text-centered">Method Overview</h2>
+        <img  src="static/images/pipeline.png" />
+        <p>
+          <b>The overall framework of VasTSD.</b> VasTSD contains a pre-trained vision embedder and a 3D vascular tree-state space diffusion module. 
+          The vision embedder encodes 3D medical data and generates embeddings for the diffusion process. 
+          The 3D vascular state space diffusion module consists of a forward diffusion and a 3D denoising process based on tree-state space.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!--End Overview -->
+
+
+<!-- Method Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+    <h2 class="title has-text-centered">Results</h2>
+      <div id="method-carousel" class="carousel results-carousel">
+        <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/3d_multi-view.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+            Fig. 1: <strong>Comparison of synthetic angiographic 3D volumes from four perspectives.</strong> <i>Left:</i> Schematic of the 3D angiography synthesis process. <i>Right:</i> To enhance the visualization of vascular regions, the original data is processed. The first and second rows are based on SynDiff and DiffMa cross-modal transformation methods, while the third row presents the synthetic outcomes of our approach.
+        </h2>
+        </div>
+        <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/2d_slicer.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Fig. 2: <strong>Synthesized CTAs from the pulmonary artery (non-angiographic) CTs, by cGAN, SynDiff, DiffMa, and our method.</strong> From top to bottom, visualized from three different anatomical coordinate systems of the body.
+        </h2>
+        </div>
+
+        <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/3d_pulmonary.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Fig. 3: <strong>Synthesized CTA from the pulmonary artery (non-angiographic) CTs, by cGAN, SynDiff, DiffMa, and our method.</strong> From top to bottom, visualized from three different anatomical coordinate systems of the body.
+        </h2>
+        </div>
+        <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/3d_score.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Fig. 4: <strong>3D vascular morphology and connectivity evaluation.</strong> Higher Dice/Jaccard scores (0~1) indicate greater similarity to real blood vessels, while a higher connectivity score (0~10) reflects better spatial connectivity, smoothness, and structural quality.
+        </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Method image carousel -->
+
+<!-- Train&infer Algorithm -->
+<div class="hero is-light">
+<div class="hero-body">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        .algorithm-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .algorithm {
+            border: 2px solid #000;
+            padding: 10px;
+            margin: 10px;
+            flex: 1 1 calc(50% - 40px);
+            box-sizing: border-box;
+            min-width: 400px;
+            width: 40%;
+        }
+
+        .algorithm .title {
+            font-weight: bold;
+            font-size: medium;
+            margin-bottom: 8px;
+        }
+
+        .algorithm .bpcontent {
+            padding: 0;
+            margin-left: 20px;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: "Courier New", Courier, monospace;
+        }
+
+        .algorithm .hrule {
+            border-top: 1px solid #000;
+            margin: 5px 0;
+        }
+
+        .algorithm .pcode {
+            padding: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: "Courier New", Courier, monospace;
+        }
+
+        .algorithm .comment {
+            font-family: Arial, sans-serif;
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero is-light">
+        <div class="hero-body">
+            <div class="container">
+                <div class="algorithm-container">
+                    <div class="algorithm">
+                        <div class="title has-text-centered is-size-3 has-text-weight-bold">Vascular Tree Scanning Algorithm</div>
+                        <div class="hrule"></div>
+                
+                        <div class="bpcontent">
+                            <div class="pcode"><strong class="has-text-primary">Require:</strong></div>
+                            <div class="pcode">\( X = \{x_i\}_{i=1}^L \), \( Y \)</div>
+                            
+                            <div class="hrule"></div>
+                            
+                            <div class="pcode"><strong class="has-text-primary">Ensure:</strong></div>
+                            <div class="pcode">\( output \), gradients</div>
+                
+                            <div class="hrule"></div>
+                
+                            <div class="pcode"><strong class="has-text-primary">Initialize:</strong></div>
+                            <div class="pcode">\( G \gets \text{initializeGraph}(V, E) \)</div>
+                            <div class="pcode">\( G_T \gets \text{kruskalMST}(G) \)</div>
+                            <div class="pcode">\( h[i] = 0, \forall i \in G_T \)</div>
+                
+                            <div class="hrule"></div>
+                
+                            <div class="pcode"><strong class="has-text-primary">for</strong> \( i = 1 \) <strong class="has-text-primary">to</strong> \( L \):</div>
+                            <div class="pcode" style="margin-left: 20px;">
+                                <strong>foreach</strong> \( j \in \text{getNeighbors}(i, 4) \):
+                                <div class="pcode" style="margin-left: 20px;">
+                                    \( \text{addEdge}(G, i, j, \text{cosineDist}(X[i], X[j])) \)
+                                </div>
+                            </div>
+                
+                            <div class="hrule"></div>
+                
+                            <div class="pcode"><strong class="has-text-primary">Update:</strong></div>
+                            <div class="pcode">\( h[i] = \sum_{j \in \text{Neigh}(i)} S(E[i,j]) \cdot B[j] \cdot X[j], \forall i \in G_T \)</div>
+                
+                            <div class="hrule"></div>
+                
+                            <div class="pcode"><strong class="has-text-primary">Compute:</strong></div>
+                            <div class="pcode">\( output = C \cdot (A \cdot h + D \cdot X) \)</div>
+                            <div class="pcode">\( \eta_i \gets \frac{\partial \mathcal{L}}{\partial h_i} \)</div>
+                
+                            <div class="hrule"></div>
+                
+                            <div class="pcode"><strong class="has-text-primary">for</strong> \( i \in G_T \) (Bottom-up & Top-down):</div>
+                            <div class="pcode" style="margin-left: 20px;">
+                                <strong class="has-text-primary">Update:</strong> \( \eta_i \gets \bar{B}_i \eta_i + \sum_{j \in \text{Children}(i)} \eta_j \bar{A}_j \)
+                                <div class="pcode"><strong class="has-text-primary">Propagate:</strong> \( \eta_j \gets \bar{B}_j \eta_i, \quad \forall j \in \text{Children}(i) \)</div>
+                            </div>
+                
+                            <div class="hrule"></div>
+                
+                            <div class="pcode"><strong class="has-text-primary">Calculate:</strong></div>
+                            <div class="pcode">\( \mathcal{L}_{\text{scan}} = \sum_{i} \frac{1}{2} \| \eta_i \|^2 \)</div>
+                
+                            <div class="hrule"></div>
+                
+                            <div class="pcode"><strong class="has-text-primary">Return:</strong> \( output \), gradients</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- End Train&infer Algorithm -->
+<!-- Carousel Container -->
+<!-- Swiper Container -->
+<section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+      <h2 class="title has-text-centered">Results</h2>
+        <div id="method-carousel" class="carousel results-carousel">
+          <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/table1.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Tab. 1: <strong>Comparison of modal conversion methods for angiography synthesis.</strong> PSNR &#8593; and SSIM &#8593; results across different datasets. The best and second-best results are highlighted in <strong>bold</strong> and <u>underlined</u>.
+
+          </h2>
+          </div>
+          <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/table2.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Tab. 2: <strong>Compare the effects of different vision embedders.</strong> PSNR &#8593; and SSIM &#8593; results across the dataset.
+
+          </h2>
+          </div>
+          <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/table3.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Tab. 3: <strong>Ablation effects of different state space serialization methods.</strong> The best results are highlighted in <strong>bold</strong>. PSNR &#8593; and SSIM &#8593; results across the ITKTubeTK (T1-Flash).
+          </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Initialize Swiper -->
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      autoplay: {
+        delay: 3000,  // Auto slide every 3 seconds
+      },
+    });
+  </script>
+  
+
+
+<!--BibTex citation -->
+<section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p style="color: gray">
+            <small>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+            </small>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+</body>
+</html>
