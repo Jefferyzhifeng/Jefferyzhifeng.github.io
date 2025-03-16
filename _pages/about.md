@@ -46,7 +46,7 @@ If you are interested in my research or have any questions, suggestions, or coll
 
 **Zhifeng Wang**, Renjiao Yi, Xin Wen, Chenyang Zhu, Kai Xu
 
-[**Project**](https://jefferyzhifeng.github.io) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Project**](https://jefferyzhifeng.github.io/projects/VasTSD/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2025.
 </div>
 </div>
