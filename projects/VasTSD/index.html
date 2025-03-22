@@ -301,7 +301,7 @@
                 
                             <div class="hrule"></div>
                 
-                            <div class="pcode"><strong class="has-text-primary">Aggregate:</strong></div>
+                            <div class="pcode"><strong class="has-text-primary">Update:</strong></div>
                             <div class="pcode">\( h[i] = \sum_{j \in \text{Neigh}(i)} S(E[i,j]) \cdot B[j] \cdot X[j], \forall i \in G_T \)</div>
                 
                             <div class="hrule"></div>
@@ -314,7 +314,7 @@
                 
                             <div class="pcode"><strong class="has-text-primary">for</strong> \( i \in G_T \) (Bottom-up & Top-down):</div>
                             <div class="pcode" style="margin-left: 20px;">
-                                <strong class="has-text-primary">Update:</strong> \( \eta_i \gets \bar{B}_i \eta_i + \sum_{j \in \text{Children}(i)} \eta_j \bar{A}_j \)
+                                <strong class="has-text-primary">Aggregate:</strong> \( \eta_i \gets \bar{B}_i \eta_i + \sum_{j \in \text{Children}(i)} \eta_j \bar{A}_j \)
                                 <div class="pcode"><strong class="has-text-primary">Propagate:</strong> \( \eta_j \gets \bar{B}_j \eta_i, \quad \forall j \in \text{Children}(i) \)</div>
                             </div>
                 
