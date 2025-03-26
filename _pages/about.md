@@ -114,6 +114,7 @@ If you are interested in my research or have any questions, suggestions, or coll
 
 # 💻 Internships
 - *2025.03 - Now*, AI Research Intern (Medical LLMs) @[Alibaba DAMO Academy](https://damo.alibaba.com/?language=zh), Hangzhou, China.
+
 - *2022.10 - 2023.07*, Algorithm Engineer Intern @ [SpeedBot Robotics Co., Ltd.](https://www.speedbot.com/en/home), Changsha, China.
 ------
 
