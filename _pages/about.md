@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 # About me
-Hi, I am Zhifeng Wang (汪智峰). I am a second-year master student at the College of Computer Science and Technology of National University of Defense Technology, under the supervision of Prof. [Kai Xu](https://kevinkaixu.net/) and Assoc.Prof. [Renjiao Yi](https://renjiaoyi.github.io/). 
+Hi, I am Zhifeng Wang (汪智峰). I am a second-year master student at the College of Computer Science and Technology of National University of Defense Technology, under the supervision of Prof. [Kai Xu](https://kevinkaixu.net/) and Assoc.Prof. [Renjiao Yi](https://renjiaoyi.github.io/). I am currently doing a research visiting internship at Alibaba DAMO Academy.
 
 From 2019 to 2023, I earned my Bachelor’s degree from Jiangxi Normal University, and worked closely with [Dr. Aiwen Jiang](https://jsjxy.jxnu.edu.cn/2014/0423/c3381a106160/page.htm). I founded and was in charge of the [Mt-aistudio](https://motong-ai-studio.top/), which conducts research in the areas of computer vision.
 
@@ -114,10 +114,7 @@ If you are interested in my research or have any questions, suggestions, or coll
 
 # 💻 Internships
 - *2025.03 - Now*, AI Research Intern (Medical LLMs) @[Alibaba DAMO Academy](https://damo.alibaba.com/?language=zh), Hangzhou, China.
-  <img src="images/2025interdamologo.jpeg" style="vertical-align: middle;" alt="Logo" width="60">
-
 - *2022.10 - 2023.07*, Algorithm Engineer Intern @ [SpeedBot Robotics Co., Ltd.](https://www.speedbot.com/en/home), Changsha, China.
-  <img src="images/2022speedlogo.png" style="vertical-align: middle;" alt="Logo" width="60">
 ------
 
 <p align="center">
