@@ -29,8 +29,8 @@ If you are interested in my research or have any questions, suggestions, or coll
 
 
 # 🔥 News
-- *2025.04*: &nbsp;🎉🎉 Won 1st place in the "Mobile AI 2025 Real-Time Rendering Realistic Bokeh Challenge">CVPR2025W</a>.Congrats to Kang Chen🎉🎉!
-- *2025.04*: &nbsp;🎉🎉 Won 6th place in the “RGB Photo Enhancement on Mobile GPUs, Mobile AI 2025 Challenge”>CVPR2025W</a>. Congrats to Runhua Deng🎉🎉!
+- *2025.04*: &nbsp;🎉🎉 Won 1st place in the "Mobile AI 2025 Real-Time Rendering Realistic Bokeh Challenge"<a href="https://codalab.lisn.upsaclay.fr/competitions/21562#learn_the_details">CVPR2025W</a>.Congrats to Kang Chen!
+- *2025.04*: &nbsp;🎉🎉 Won 6th place in the “RGB Photo Enhancement on Mobile GPUs, Mobile AI 2025 Challenge”<a href="https://codalab.lisn.upsaclay.fr/competitions/21564">CVPR2025W</a>. Congrats to Runhua Deng!
 - *2025.02*: &nbsp;🎉🎉 One paper is accepted by <a href="https://cvpr.thecvf.com/Conferences/2025/">CVPR 2025</a> (CCF-A). 
 - *2024.09*: &nbsp;🎉🎉 One paper is accepted by <a href="https://www.sciencedirect.com/science/article/pii/S2950162824000560">Meta-Radiology</a>.
 - *2024.07*: &nbsp;🎉🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">Frontiers of Computer Science</a>. (CCF-T1).
