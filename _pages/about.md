@@ -29,6 +29,7 @@ If you are interested in my research or have any questions, suggestions, or coll
 
 
 # 🔥 News
+- *2025.05*: &nbsp;🎉🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">TVC</a> (CCF-C).
 - *2025.04*: &nbsp;🎉🎉 Won 1st place in the <a href="https://codalab.lisn.upsaclay.fr/competitions/21562#learn_the_details">CVPR2025W</a> "Mobile AI 2025 Real-Time Rendering Realistic Bokeh Challenge". Congrats to Kang Chen!
 - *2025.04*: &nbsp;🎉🎉 Won 6th place in the <a href="https://codalab.lisn.upsaclay.fr/competitions/21564">CVPR2025W</a> "Mobile AI Challenge: RGB Photo Enhancement on Mobile GPUs". Congrats to Runhua Deng!
 - *2025.02*: &nbsp;🎉🎉 One paper is accepted by <a href="https://cvpr.thecvf.com/Conferences/2025/">CVPR 2025</a> (CCF-A). 
@@ -53,6 +54,18 @@ If you are interested in my research or have any questions, suggestions, or coll
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TVC‘2025</div><img src='images/2024tvc.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Angio-Diff: Learning a Self-Supervised Adversarial Diffusion Model for Angiographic Geometry Generation](https://jefferyzhifeng.github.io)
+
+**Zhifeng Wang**, Renjiao Yi, Xin Wen, Chenyang Zhu, Kai Xu, Kunlun He
+
+[**Project**](https://jefferyzhifeng.github.io) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+-  The Visual Computer, 2025.
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Meta-Radiology'2024</div><img src='images/2024meta.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -62,18 +75,6 @@ If you are interested in my research or have any questions, suggestions, or coll
 
 [**Project**](https://jefferyzhifeng.github.io) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - Meta-Radiology 2024.
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint‘2024</div><img src='images/2024tvc.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Angio-Diff: Learning a Self-Supervised Adversarial Diffusion Model for Angiographic Geometry Generation](https://jefferyzhifeng.github.io)
-
-**Zhifeng Wang**, Renjiao Yi, Xin Wen, Chenyang Zhu, Kai Xu, Kunlun He
-
-[**Project**](https://jefferyzhifeng.github.io) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
--  Under Review, 2024.
 </div>
 </div>
 
@@ -121,5 +122,5 @@ If you are interested in my research or have any questions, suggestions, or coll
 ------
 
 <p align="center">
-  <i>I know I am not the perfect one, yet aspire to chase the world and achieve greatness @ Zhifeng Wang --- Latest update: 2025-04-15</i>
+  <i>I know I am not the perfect one, yet aspire to chase the world and achieve greatness @ Zhifeng Wang --- Latest update: 2025-05-29</i>
 </p>
