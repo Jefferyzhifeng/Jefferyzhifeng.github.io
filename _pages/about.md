@@ -47,7 +47,7 @@ If you are interested in my research or have any questions, suggestions, or coll
 
 [VasTSD: Learning 3D Vascular Tree-state Space Diffusion Model for AngiographySynthesis](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
 
-**Zhifeng Wang**, Renjiao Yi, Xin Wen, Chenyang Zhu, Kai Xu
+**Zhifeng Wang**, Renjiao Yi, Xin Wen, Chenyang Zhu&#9993, Kai Xu&#9993
 
 [**Project**](https://jefferyzhifeng.github.io/projects/VasTSD/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2025.
@@ -59,7 +59,7 @@ If you are interested in my research or have any questions, suggestions, or coll
 
 [Angio-Diff: Learning a Self-Supervised Adversarial Diffusion Model for Angiographic Geometry Generation](https://jefferyzhifeng.github.io)
 
-**Zhifeng Wang**, Renjiao Yi, Xin Wen, Chenyang Zhu, Kai Xu, Kunlun He
+**Zhifeng Wang**, Renjiao Yi&#9993, Xin Wen, Chenyang Zhu, Kai Xu, Kunlun He&#9993
 
 [**Project**](https://jefferyzhifeng.github.io) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 -  The Visual Computer, 2025.
@@ -111,8 +111,8 @@ If you are interested in my research or have any questions, suggestions, or coll
 
 <span class='anchor' id='-Services'></span>
 # 📖 Services
-- Reviewers: PRCV’23/24, CAD/CG, JVCIR
-- Memberships: IEEE Student Member, CSIG Student Member, CAAI Student Member.
+- Reviewers: PRCV’23/24, CAD/CG, JVCIR, PG
+- Memberships: IEEE Student Member, CSIG Student Member, CAAI Student Member, CVF Member.
 
 
 # 💻 Internships
