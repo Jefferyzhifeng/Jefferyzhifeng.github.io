@@ -111,7 +111,7 @@ If you are interested in my research or have any questions, suggestions, or coll
 
 <span class='anchor' id='-Services'></span>
 # 📖 Services
-- Reviewers: PRCV’23/24, CAD/CG, JVCIR, PG
+- Reviewers: PRCV’23/24, CAD/CG, JVCIR, PG.
 - Memberships: IEEE Student Member, CSIG Student Member, CAAI Student Member, CVF Member.
 
 
