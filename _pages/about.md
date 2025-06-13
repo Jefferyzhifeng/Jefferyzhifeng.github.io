@@ -21,7 +21,7 @@ Hi, I am Zhifeng Wang (汪智峰). I am a second-year master student at the Coll
 
 From 2019 to 2023, I earned my Bachelor’s degree from Jiangxi Normal University, and worked closely with [Dr. Aiwen Jiang](https://jsjxy.jxnu.edu.cn/2014/0423/c3381a106160/page.htm). I founded and was in charge of the [Mt-aistudio](https://motong-ai-studio.top/), which conducts research in the areas of computer vision.
 
-My research interest: include but are not limited to Low-Level Vision, Computer-aided Diagnosis, 3D vision, and AIGC. 
+My research interest: include but are not limited to Low-Level Vision, Computer-aided Diagnosis, AIGC, and 3D Vision. 
 
 If you are interested in my research or have any questions, suggestions, or collaboration ideas, please contact me at Email: [zhifengwang@nudt.edu.cn](mailto:zhifengwang@nudt.edu.cn) and [zhifengwang686@gmail.com](mailto:zhifengwang686@gmail.com).
 
@@ -29,16 +29,16 @@ If you are interested in my research or have any questions, suggestions, or coll
 
 
 # 🔥 News
-- *2025.05*: &nbsp;🎉🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">TVC Journal</a>.
-- *2025.04*: &nbsp;🎉🎉 Won 1st place in the <a href="https://codalab.lisn.upsaclay.fr/competitions/21562#learn_the_details">CVPR2025W</a> "Mobile AI 2025 Real-Time Rendering Realistic Bokeh Challenge". Congrats to Kang Chen!
-- *2025.04*: &nbsp;🎉🎉 Won 6th place in the <a href="https://codalab.lisn.upsaclay.fr/competitions/21564">CVPR2025W</a> "Mobile AI Challenge: RGB Photo Enhancement on Mobile GPUs". Congrats to Runhua Deng!
-- *2025.02*: &nbsp;🎉🎉 One paper is accepted by <a href="https://cvpr.thecvf.com/Conferences/2025/">CVPR 2025</a> (CCF-A). 
-- *2024.09*: &nbsp;🎉🎉 One paper is accepted by <a href="https://www.sciencedirect.com/science/article/pii/S2950162824000560">Meta-Radiology</a>.
-- *2024.07*: &nbsp;🎉🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">FCS Journal</a>. (CCF-T1).
-- *2024.05*: &nbsp;🎉🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">ICIP 2024</a>.
-- *2022.12*: &nbsp;🎉🎉 Awarded the <a href="https://jefferyzhifeng.github.io">National Scholarship</a> (Top 0.2%).
-- *2022.10*: &nbsp;🎉🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">PRCV</a>.
-- *2022.06*: &nbsp;🎉🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">JVCIR Journal</a>.
+- *2025.05*: &nbsp;🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">TVC Journal</a>.
+- *2025.04*: &nbsp;🎉 Won 1st place in the <a href="https://codalab.lisn.upsaclay.fr/competitions/21562#learn_the_details">CVPR2025W</a> "Mobile AI 2025 Real-Time Rendering Realistic Bokeh Challenge". Congrats to Kang Chen!
+- *2025.04*: &nbsp;🎉 Won 6th place in the <a href="https://codalab.lisn.upsaclay.fr/competitions/21564">CVPR2025W</a> "Mobile AI Challenge: RGB Photo Enhancement on Mobile GPUs". Congrats to Runhua Deng!
+- *2025.02*: &nbsp;🎉 One paper is accepted by <a href="https://cvpr.thecvf.com/Conferences/2025/">CVPR 2025</a> (CCF-A). 
+- *2024.09*: &nbsp;🎉 One paper is accepted by <a href="https://www.sciencedirect.com/science/article/pii/S2950162824000560">Meta-Radiology</a>.
+- *2024.07*: &nbsp;🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">FCS Journal</a>. (CCF-T1).
+- *2024.05*: &nbsp;🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">ICIP 2024</a>.
+- *2022.12*: &nbsp;🎉 Awarded the <a href="https://jefferyzhifeng.github.io">National Scholarship</a> (Top 0.2%).
+- *2022.10*: &nbsp;🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">PRCV</a>.
+- *2022.06*: &nbsp;🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">JVCIR Journal</a>.
 
 # 📝 Publications 
 
