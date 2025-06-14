@@ -41,9 +41,8 @@ If you are interested in my research or have any questions, suggestions, or coll
 - *2022.06*: &nbsp;🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">JVCIR Journal</a>.
 
 # 📝 Publications 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR‘2025</div><img src='images/2025cvprw_bokeh.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPRW‘2025</div><img src='images/2025cvprw_bokeh.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-
 [Mobile AI Workshop and Challenges 2025]
 (https://codalab.lisn.upsaclay.fr/competitions/21562)
 Organized by **CVPR2025**
