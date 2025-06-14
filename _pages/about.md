@@ -41,13 +41,25 @@ If you are interested in my research or have any questions, suggestions, or coll
 - *2022.06*: &nbsp;🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">JVCIR Journal</a>.
 
 # 📝 Publications 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR‘2025</div><img src='images/2025cvprw_bokeh.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Mobile AI Workshop and Challenges 2025]
+(https://codalab.lisn.upsaclay.fr/competitions/21562)
+Organized by **CVPR2025**
+[**Project**](https://jefferyzhifeng.github.io/projects/VasTSD/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+MAI 2025 Bokeh Effect Rendering Challenge.
+**Winner**
+</div>
+</div>
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR‘2025</div><img src='images/2025cvpr1.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [VasTSD: Learning 3D Vascular Tree-state Space Diffusion Model for AngiographySynthesis](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
 
-**Zhifeng Wang**, Renjiao Yi, Xin Wen, Chenyang Zhu&#9993, Kai Xu&#9993
+**Zhifeng Wang**, Renjiao Yi, Xin Wen, Chenyang Zhu&#9993;, Kai Xu&#9993;
 
 [**Project**](https://jefferyzhifeng.github.io/projects/VasTSD/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2025.
@@ -59,7 +71,7 @@ If you are interested in my research or have any questions, suggestions, or coll
 
 [Angio-Diff: Learning a Self-Supervised Adversarial Diffusion Model for Angiographic Geometry Generation](https://jefferyzhifeng.github.io)
 
-**Zhifeng Wang**, Renjiao Yi&#9993, Xin Wen, Chenyang Zhu, Kai Xu, Kunlun He&#9993
+**Zhifeng Wang**, Renjiao Yi&#9993;, Xin Wen, Chenyang Zhu, Kai Xu, Kunlun He&#9993;
 
 [**Project**](https://jefferyzhifeng.github.io) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 -  The Visual Computer, 2025.
