@@ -41,17 +41,6 @@ If you are interested in my research or have any questions, suggestions, or coll
 - *2022.06*: &nbsp;🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">JVCIR Journal</a>.
 
 # 📝 Publications 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPRW‘2025</div><img src='images/2025cvprw_bokeh.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[Mobile AI Workshop and Challenges 2025]
-(https://codalab.lisn.upsaclay.fr/competitions/21562)
-Organized by **CVPR2025**
-[**Project**](https://jefferyzhifeng.github.io/projects/VasTSD/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-MAI 2025 Bokeh Effect Rendering Challenge.
-**Winner**
-</div>
-</div>
-
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR‘2025</div><img src='images/2025cvpr1.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -115,6 +104,22 @@ MAI 2025 Bokeh Effect Rendering Challenge.
 
 
 # 🎖 Honors and Awards
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPRW‘2025</div><img src='images/2025cvprw_bokeh.png' alt="sym" style="width: 150px; height: 150px; object-fit: cover;"></div></div>
+  
+<div class='paper-box-text' markdown="1">
+  
+[Mobile AI Workshop and Challenges 2025](https://codalab.lisn.upsaclay.fr/competitions/21562)
+
+Organized by **CVPR2025**
+
+[**Project**](https://codalab.lisn.upsaclay.fr/competitions/21562) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- MAI 2025 Bokeh Effect Rendering Challenge.
+
+**Winner**
+</div>
+</div>
+
+
 - *2022.11* National Scholarship (Top 0.2%), 2022.
 - *2022.09* First-class Academic Scholarship, 2022.
 - *2021.09* First-class Academic Scholarship, 2021.
