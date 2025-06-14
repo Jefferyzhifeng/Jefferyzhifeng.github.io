@@ -104,7 +104,7 @@ If you are interested in my research or have any questions, suggestions, or coll
 
 
 # 🎖 Honors and Awards
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPRW‘2025</div><img src='images/2025cvprw_bokeh.png' alt="sym" style="width: 280px; height: 140px; object-fit: cover;></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPRW‘2025</div><img src='images/2025cvprw_bokeh.png' alt="sym" style="width: auto; height: 150px; object-fit: cover;"></div></div>
   
 <div class='paper-box-text' markdown="1">
   
