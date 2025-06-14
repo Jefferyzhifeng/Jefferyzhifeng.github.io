@@ -42,7 +42,7 @@ If you are interested in my research or have any questions, suggestions, or coll
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR‘2025</div><img src='images/2025cvpr1.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR‘2025</div><img src='images/2025cvpr1.png'  alt="sym" style="width: 280px; height: 140px; object-fit: cover;">></div></div>
 <div class='paper-box-text' markdown="1">
 
 [VasTSD: Learning 3D Vascular Tree-state Space Diffusion Model for AngiographySynthesis](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
@@ -54,7 +54,7 @@ If you are interested in my research or have any questions, suggestions, or coll
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TVC‘2025</div><img src='images/2024tvc.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TVC‘2025</div><img src='images/2024tvc.png'  alt="sym" style="width: 280px; height: 140px; object-fit: cover;">></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Angio-Diff: Learning a Self-Supervised Adversarial Diffusion Model for Angiographic Geometry Generation](https://jefferyzhifeng.github.io)
@@ -66,7 +66,7 @@ If you are interested in my research or have any questions, suggestions, or coll
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Meta-Radiology'2024</div><img src='images/2024meta.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Meta-Radiology'2024</div><img src='images/2024meta.png'  alt="sym" style="width: 280px; height: 140px; object-fit: cover;">></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Cardiovascular medical image and analysis based on 3D vision: A comprehensive survey](https://www.sciencedirect.com/science/article/pii/S2950162824000560)
@@ -78,7 +78,7 @@ If you are interested in my research or have any questions, suggestions, or coll
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">PRCV‘2022</div><img src='images/2022prcv.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">PRCV‘2022</div><img src='images/2022prcv.png'  alt="sym" style="width: 280px; height: 140px; object-fit: cover;">></div></div>
 <div class='paper-box-text' markdown="1">
 
 [A Dense Prediction ViT Network for Single Image Bokeh Rendering](https://link.springer.com/chapter/10.1007/978-3-031-18916-6_18)
@@ -90,7 +90,7 @@ If you are interested in my research or have any questions, suggestions, or coll
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">JVCIR‘2022</div><img src='images/2022jvcir.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">JVCIR‘2022</div><img src='images/2022jvcir.png'  alt="sym" style="width: 280px; height: 140px; object-fit: cover;">></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Self-supervised multi-scale pyramid fusion networks for realistic bokeh effect rendering](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
@@ -104,7 +104,7 @@ If you are interested in my research or have any questions, suggestions, or coll
 
 
 # 🎖 Honors and Awards
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPRW‘2025</div><img src='images/2025cvprw_bokeh.png' alt="sym" style="width: 150px; height: 150px; object-fit: cover;"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPRW‘2025</div><img src='images/2025cvprw_bokeh.png' alt="sym" style="width: 280px; height: 140px; object-fit: cover;"></div></div>
   
 <div class='paper-box-text' markdown="1">
   
