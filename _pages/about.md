@@ -19,13 +19,13 @@ redirect_from:
 # About me
 Hi, I am Zhifeng Wang (汪智峰). I am a second-year master student at the College of Computer Science and Technology of National University of Defense Technology, under the supervision of Prof. [Kai Xu](https://kevinkaixu.net/) and Assoc.Prof. [Renjiao Yi](https://renjiaoyi.github.io/). I am currently doing a research visiting internship at Alibaba DAMO Academy.
 
-From 2019 to 2023, I earned my Bachelor’s degree from Jiangxi Normal University, and worked closely with [Dr. Aiwen Jiang](https://jsjxy.jxnu.edu.cn/2014/0423/c3381a106160/page.htm). I founded and was in charge of the [Mt-aistudio](https://motong-ai-studio.top/), which conducts research in the areas of computer vision.
+From 2019 to 2023, I earned my Bachelor’s degree from Jiangxi Normal University, and worked closely with [Dr. Aiwen Jiang](https://jsjxy.jxnu.edu.cn/2014/0423/c3381a106160/page.htm). I founded and was in charge of the [Mt-aistudio](https://motong-ai-studio.github.io/), which conducts research in the areas of computer vision.
 
-My research interest: include but are not limited to Low-Level Vision, Computer-aided Diagnosis, AIGC, and 3D Vision. 
+My research interest: include but are not limited to Low-Level Vision, AI for Healthcare, AIGC, and LLMs. 
 
 If you are interested in my research or have any questions, suggestions, or collaboration ideas, please contact me at Email: [zhifengwang@nudt.edu.cn](mailto:zhifengwang@nudt.edu.cn) and [zhifengwang686@gmail.com](mailto:zhifengwang686@gmail.com).
 
-<span style="color:red; font-weight:bold;">I am actively seeking internship or collaboration opportunities in the application of AIGC and LLM for Computer-aided Diagnosis, particularly in 3D vision.</span>
+<span style="color:red; font-weight:bold;">I am actively seeking internship or collaboration opportunities in the application of AIGC for Healthcare, particularly in LLMs.</span>
 
 
 # 🔥 News
