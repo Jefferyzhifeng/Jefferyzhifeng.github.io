@@ -29,6 +29,7 @@ If you are interested in my research or have any questions, suggestions, or coll
 
 
 # 🔥 News
+- *2025.11*: &nbsp;🎉 Awarded the <a href="https://jefferyzhifeng.github.io">National Scholarship</a> (Ranking 3/183).
 - *2025.05*: &nbsp;🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">TVC Journal</a>.
 - *2025.04*: &nbsp;🎉 Won 1st place in the <a href="https://codalab.lisn.upsaclay.fr/competitions/21562#learn_the_details">CVPR2025W</a> "Mobile AI 2025 Real-Time Rendering Realistic Bokeh Challenge". Congrats to Kang Chen!
 - *2025.04*: &nbsp;🎉 Won 6th place in the <a href="https://codalab.lisn.upsaclay.fr/competitions/21564">CVPR2025W</a> "Mobile AI Challenge: RGB Photo Enhancement on Mobile GPUs". Congrats to Runhua Deng!
@@ -138,5 +139,5 @@ Organized by **CVPR2025**
 ------
 
 <p align="center">
-  <i>I know I am not the perfect one, yet aspire to chase the world and achieve greatness @ Zhifeng Wang --- Latest update: 2025-05-29</i>
+  <i>I know I am not the perfect one, yet aspire to chase the world and achieve greatness @ Zhifeng Wang --- Latest update: 2025-11-04</i>
 </p>
