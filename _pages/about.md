@@ -30,24 +30,29 @@ If you are interested in my research or have any questions, suggestions, or coll
 
 # 🔥 News
 
-<details>
-  <summary><strong>Show News</strong> <span style="opacity:0.7;">(click to expand)</span></summary>
-  <div style="margin-top: 0.8rem;">
+- *2025.11*: 🎉 Awarded the <a href="https://jefferyzhifeng.github.io">National Scholarship</a> (Ranking 3/183).
+- *2025.05*: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">TVC Journal</a>.
+- *2025.04*: 🎉 Won 1st place in the <a href="https://codalab.lisn.upsaclay.fr/competitions/21562#learn_the_details">CVPR2025W</a> “Mobile AI 2025 Real-Time Rendering Realistic Bokeh Challenge”.
+- *2025.04*: 🎉 Won 6th place in the <a href="https://codalab.lisn.upsaclay.fr/competitions/21564">CVPR2025W</a> “Mobile AI Challenge: RGB Photo Enhancement on Mobile GPUs”.
+- *2025.02*: 🎉 One paper is accepted by <a href="https://cvpr.thecvf.com/Conferences/2025/">CVPR 2025</a> (CCF-A).
 
-- *2025.11*: &nbsp;🎉 Awarded the <a href="https://jefferyzhifeng.github.io">National Scholarship</a> (Ranking 3/183).
-- *2025.05*: &nbsp;🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">TVC Journal</a>.
-- *2025.04*: &nbsp;🎉 Won 1st place in the <a href="https://codalab.lisn.upsaclay.fr/competitions/21562#learn_the_details">CVPR2025W</a> "Mobile AI 2025 Real-Time Rendering Realistic Bokeh Challenge". Congrats to Kang Chen!
-- *2025.04*: &nbsp;🎉 Won 6th place in the <a href="https://codalab.lisn.upsaclay.fr/competitions/21564">CVPR2025W</a> "Mobile AI Challenge: RGB Photo Enhancement on Mobile GPUs". Congrats to Runhua Deng!
-- *2025.02*: &nbsp;🎉 One paper is accepted by <a href="https://cvpr.thecvf.com/Conferences/2025/">CVPR 2025</a> (CCF-A). 
-- *2024.09*: &nbsp;🎉 One paper is accepted by <a href="https://www.sciencedirect.com/science/article/pii/S2950162824000560">Meta-Radiology</a>.
-- *2024.07*: &nbsp;🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">FCS Journal</a>. (CCF-T1).
-- *2024.05*: &nbsp;🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">ICIP 2024</a>.
-- *2022.12*: &nbsp;🎉 Awarded the <a href="https://jefferyzhifeng.github.io">National Scholarship</a> (Top 0.2%).
-- *2022.10*: &nbsp;🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">PRCV</a>.
-- *2022.06*: &nbsp;🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">JVCIR Journal</a>.
+<details>
+  <summary style="cursor:pointer; margin-top:0.5rem;">
+    <strong>Show more news</strong>
+  </summary>
+
+  <div style="margin-top:0.6rem;">
+
+- *2024.09*: 🎉 One paper is accepted by <a href="https://www.sciencedirect.com/science/article/pii/S2950162824000560">Meta-Radiology</a>.
+- *2024.07*: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">FCS Journal</a>. (CCF-T1).
+- *2024.05*: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">ICIP 2024</a>.
+- *2022.12*: 🎉 Awarded the <a href="https://jefferyzhifeng.github.io">National Scholarship</a> (Top 0.2%).
+- *2022.10*: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">PRCV</a>.
+- *2022.06*: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">JVCIR Journal</a>.
 
   </div>
 </details>
+
 
 # 📝 Publications 
 
