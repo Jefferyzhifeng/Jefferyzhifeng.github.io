@@ -41,17 +41,16 @@ If you are interested in my research or have any questions, suggestions, or coll
     <strong>Show more news</strong>
   </summary>
 
-  <div style="margin-top:0.6rem;">
-
-- *2024.09*: 🎉 One paper is accepted by <a href="https://www.sciencedirect.com/science/article/pii/S2950162824000560">Meta-Radiology</a>.
-- *2024.07*: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">FCS Journal</a>. (CCF-T1).
-- *2024.05*: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">ICIP 2024</a>.
-- *2022.12*: 🎉 Awarded the <a href="https://jefferyzhifeng.github.io">National Scholarship</a> (Top 0.2%).
-- *2022.10*: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">PRCV</a>.
-- *2022.06*: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">JVCIR Journal</a>.
-
-  </div>
+  <ul style="margin-top:0.6rem;">
+    <li>*2024.09*: 🎉 One paper is accepted by <a href="https://www.sciencedirect.com/science/article/pii/S2950162824000560">Meta-Radiology</a>.</li>
+    <li>*2024.07*: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">FCS Journal</a>. (CCF-T1).</li>
+    <li>*2024.05*: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">ICIP 2024</a>.</li>
+    <li>*2022.12*: 🎉 Awarded the <a href="https://jefferyzhifeng.github.io">National Scholarship</a> (Top 0.2%).</li>
+    <li>*2022.10*: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">PRCV</a>.</li>
+    <li>*2022.06*: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">JVCIR Journal</a>.</li>
+  </ul>
 </details>
+
 
 
 # 📝 Publications 
