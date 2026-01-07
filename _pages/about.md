@@ -29,6 +29,11 @@ If you are interested in my research or have any questions, suggestions, or coll
 
 
 # 🔥 News
+
+<details>
+  <summary><strong>Show News</strong> <span style="opacity:0.7;">(click to expand)</span></summary>
+  <div style="margin-top: 0.8rem;">
+
 - *2025.11*: &nbsp;🎉 Awarded the <a href="https://jefferyzhifeng.github.io">National Scholarship</a> (Ranking 3/183).
 - *2025.05*: &nbsp;🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">TVC Journal</a>.
 - *2025.04*: &nbsp;🎉 Won 1st place in the <a href="https://codalab.lisn.upsaclay.fr/competitions/21562#learn_the_details">CVPR2025W</a> "Mobile AI 2025 Real-Time Rendering Realistic Bokeh Challenge". Congrats to Kang Chen!
@@ -40,6 +45,9 @@ If you are interested in my research or have any questions, suggestions, or coll
 - *2022.12*: &nbsp;🎉 Awarded the <a href="https://jefferyzhifeng.github.io">National Scholarship</a> (Top 0.2%).
 - *2022.10*: &nbsp;🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">PRCV</a>.
 - *2022.06*: &nbsp;🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">JVCIR Journal</a>.
+
+  </div>
+</details>
 
 # 📝 Publications 
 
