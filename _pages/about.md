@@ -280,7 +280,7 @@ redirect_from:
 ">
   My research focuses on
   <span style="font-weight:700; color:#1f3a8a;">AI for healthcare</span>,
-  with an emphasis on
+  emphasizing
   <span style="font-weight:700; color:#4f46e5;">structure-aware methods</span>
   for medical image
   <span style="font-weight:600; color:#4338ca;">
