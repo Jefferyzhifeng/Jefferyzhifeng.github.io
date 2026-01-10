@@ -297,8 +297,8 @@ redirect_from:
   of learned representations.
   I am particularly interested in approaches that can be translated into
   <span style="font-weight:600; color:#374151; text-decoration:underline;">
-    real-world clinical workflows
-  </span>.
+    real-world clinical workflows.
+  </span>
   In parallel, I explore
   <span style="font-weight:700; color:#5b21b6;">
     physics-informed intelligence
