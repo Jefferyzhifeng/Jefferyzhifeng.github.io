@@ -330,8 +330,7 @@ redirect_from:
   </div>
 
   <div class="about-philosophy">
-    I believe that <strong>technology can meaningfully reshape the world</strong> when it is built with rigor and validated in real settings.
-    With <strong>long-term commitment and sustained effort</strong>, I aim to develop methods that translate into tangible impact in healthcare.
+    “As a result of this honesty, we are forced to doubt.” — Richard Feynman
   </div>
 </div>
 
