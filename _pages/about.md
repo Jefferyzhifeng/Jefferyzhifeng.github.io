@@ -282,7 +282,7 @@ redirect_from:
   <span style="font-weight:700; color:#1f3a8a;">AI for healthcare</span>,
   emphasizing
   <span style="font-weight:700; color:#4f46e5;">structure-aware methods</span>
-  for medical image
+  for image
   <span style="font-weight:600; color:#4338ca;">
     generation, reconstruction, and enhancement
   </span>.
