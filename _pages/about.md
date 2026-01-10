@@ -407,7 +407,7 @@ redirect_from:
 
 <div class="paper-box">
   <div class="paper-box-image">
-    <div class="paper-badge">Preprint 2025</div>
+    <div class="paper-badge">Preprint 2026</div>
     <img src="images/2026physconsr.png" alt="PhysConSR teaser">
   </div>
   <div class="paper-box-text">
