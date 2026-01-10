@@ -15,302 +15,259 @@ redirect_from:
 {% endif %}
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
-<!-- ===============================
-     Global Styles
-     =============================== -->
 <style>
 /* ===============================
-   About Card (polished, two-column)
+   About Card (polished)
    =============================== */
-.about-card {
-  margin-top: 0.7rem;
-  border: 1px solid rgba(0,0,0,0.08);
-  border-radius: 18px;
-  background: linear-gradient(180deg, rgba(99,102,241,0.06), rgba(255,255,255,1) 48%);
-  box-shadow: 0 12px 34px rgba(17,24,39,0.08);
-  padding: 1.7rem 1.75rem;
-  position: relative;
-  overflow: hidden;
+.about-card{
+  margin-top:0.7rem;
+  border:1px solid rgba(0,0,0,0.08);
+  border-radius:18px;
+  background:linear-gradient(180deg, rgba(99,102,241,0.06), rgba(255,255,255,1) 48%);
+  box-shadow:0 12px 34px rgba(17,24,39,0.08);
+  padding:1.7rem 1.75rem;
+  position:relative;
+  overflow:hidden;
 }
-
-.about-card::before {
-  content: "";
-  position: absolute;
-  top: -90px;
-  right: -120px;
-  width: 260px;
-  height: 260px;
-  background: radial-gradient(circle, rgba(99,102,241,0.18), rgba(99,102,241,0.00) 70%);
-  filter: blur(1px);
-  pointer-events: none;
+.about-card::before{
+  content:"";
+  position:absolute;
+  top:-90px; right:-120px;
+  width:260px; height:260px;
+  background:radial-gradient(circle, rgba(99,102,241,0.18), rgba(99,102,241,0.00) 70%);
+  pointer-events:none;
 }
-
-.about-card-header {
-  display: flex;
-  align-items: center;
-  gap: 0.95rem;
-  margin-bottom: 1.15rem;
+.about-card-header{display:flex; align-items:center; gap:0.95rem; margin-bottom:1.15rem;}
+.about-card-title{font-size:2.05rem; font-weight:850; margin:0; color:#0f172a; letter-spacing:-0.02em;}
+.about-card-line{
+  height:4px; width:76px; border-radius:999px;
+  background:linear-gradient(90deg, rgba(99,102,241,0.75), rgba(37,99,235,0.35));
+  margin-top:0.25rem;
 }
-
-.about-card-title {
-  font-size: 2.05rem;
-  font-weight: 850;
-  margin: 0;
-  color: #0f172a;
-  letter-spacing: -0.02em;
+.about-grid{display:grid; grid-template-columns:2.25fr 1.05fr; gap:2.1rem;}
+@media (max-width:860px){.about-grid{grid-template-columns:1fr; gap:1.2rem;}}
+.about-left p{margin:0 0 0.85rem 0; line-height:1.85; color:#334155; font-size:1.02rem;}
+.about-left a{color:#2563eb; text-decoration:none;}
+.about-left a:hover{text-decoration:underline;}
+.research-scope{
+  padding:0.85rem 0.95rem;
+  border-radius:14px;
+  border:1px solid rgba(0,0,0,0.07);
+  background:rgba(255,255,255,0.75);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,0.45);
 }
-
-.about-card-line {
-  height: 4px;
-  width: 76px;
-  border-radius: 999px;
-  background: linear-gradient(90deg, rgba(99,102,241,0.75), rgba(37,99,235,0.35));
-  margin-top: 0.25rem;
+.about-right{
+  padding:1.05rem;
+  border-radius:16px;
+  border:1px solid rgba(0,0,0,0.07);
+  background:rgba(255,255,255,0.72);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,0.45);
 }
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 2.25fr 1.05fr;
-  gap: 2.1rem;
+.about-right h3{margin:0 0 0.7rem 0; font-size:1.08rem; font-weight:850; color:#0f172a;}
+.about-right ul{margin:0; padding-left:1.15rem; line-height:1.85; color:#334155; font-size:1.0rem;}
+.about-right li{margin:0.28rem 0;}
+.about-pill{
+  margin-top:0.9rem;
+  display:inline-flex; align-items:center; gap:0.45rem;
+  padding:0.28rem 0.6rem;
+  border-radius:999px;
+  font-weight:750; font-size:0.92rem;
+  color:#B42318;
+  background:rgba(180,35,24,0.08);
+  border:1px solid rgba(180,35,24,0.18);
 }
-
-@media (max-width: 860px) {
-  .about-grid {
-    grid-template-columns: 1fr;
-    gap: 1.2rem;
-  }
+.about-pill::before{content:"●"; font-size:0.7rem; opacity:0.7;}
+.about-philosophy{
+  margin-top:1.25rem;
+  padding:1.1rem 1.2rem;
+  border-radius:14px;
+  border:1px solid rgba(99,102,241,0.18);
+  background:rgba(99,102,241,0.07);
+  line-height:1.75;
+  color:#0f172a;
+  font-size:1.0rem;
 }
+.about-philosophy strong{color:#4f46e5;}
 
-.about-left p {
-  margin: 0 0 0.85rem 0;
-  line-height: 1.85;
-  color: #334155;
-  font-size: 1.02rem;
+/* ===============================
+   Section headers (HTML-based)
+   =============================== */
+.section-title{
+  margin:1.6rem 0 0.6rem 0;
+  font-size:1.55rem;
+  font-weight:850;
+  color:#0f172a;
 }
-
-.about-left a {
-  color: #2563eb;
-  text-decoration: none;
-}
-
-.about-left a:hover {
-  text-decoration: underline;
-}
-
-.about-left .research-scope {
-  padding: 0.85rem 0.95rem;
-  border-radius: 14px;
-  border: 1px solid rgba(0,0,0,0.07);
-  background: rgba(255,255,255,0.75);
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.45);
-}
-
-.about-left .research-scope strong {
-  color: #0f172a;
-}
-
-.about-right {
-  padding: 1.05rem 1.05rem;
-  border-radius: 16px;
-  border: 1px solid rgba(0,0,0,0.07);
-  background: rgba(255,255,255,0.72);
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.45);
-}
-
-.about-right h3 {
-  margin: 0 0 0.7rem 0;
-  font-size: 1.08rem;
-  font-weight: 850;
-  color: #0f172a;
-}
-
-.about-right ul {
-  margin: 0;
-  padding-left: 1.15rem;
-  line-height: 1.85;
-  color: #334155;
-  font-size: 1.0rem;
-}
-
-.about-right li {
-  margin: 0.28rem 0;
-}
-
-.about-pill {
-  margin-top: 0.9rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  padding: 0.28rem 0.6rem;
-  border-radius: 999px;
-  font-weight: 750;
-  font-size: 0.92rem;
-  color: #B42318;
-  background: rgba(180,35,24,0.08);
-  border: 1px solid rgba(180,35,24,0.18);
-}
-
-.about-pill::before {
-  content: "●";
-  font-size: 0.7rem;
-  opacity: 0.7;
-}
-
-.about-philosophy {
-  margin-top: 1.25rem;
-  padding: 1.1rem 1.2rem;
-  border-radius: 14px;
-  border: 1px solid rgba(99,102,241,0.18);
-  background: rgba(99,102,241,0.07);
-  line-height: 1.75;
-  color: #0f172a;
-  font-size: 1.0rem;
-}
-
-.about-philosophy strong {
-  color: #4f46e5;
+.section-subtitle{
+  margin:1.2rem 0 0.6rem 0;
+  font-size:1.25rem;
+  font-weight:850;
+  color:#0f172a;
 }
 
 /* ===============================
-   Paper-box layout fix (alignment)
+   Paper-box (fixed layout)
    =============================== */
-.paper-box {
-  display: flex;
-  align-items: flex-start;   /* 关键：顶部对齐 */
-  gap: 1.25rem;
-  margin-bottom: 1.4rem;
+.paper-box{
+  display:flex;
+  align-items:flex-start;
+  gap:1.25rem;
+  margin:0.9rem 0 1.4rem 0;
+}
+.paper-box-image{
+  flex:0 0 300px;
+  width:300px;
+  height:180px;
+  border-radius:12px;
+  overflow:hidden;
+  background:#f6f7fb;
+  position:relative;
+  border:1px solid rgba(0,0,0,0.08);
+  box-shadow:0 8px 22px rgba(17,24,39,0.06);
+}
+.paper-box-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+  cursor:zoom-in;
 }
 
-/* 固定图片列宽度/高度 */
-.paper-box-image {
-  flex: 0 0 300px;
-  width: 300px;
-  height: 180px;
-  overflow: hidden;
-  border-radius: 10px;
-  background: #f6f7fb;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+/* badge in top-left */
+.paper-badge{
+  position:absolute;
+  top:10px; left:10px;
+  padding:0.25rem 0.55rem;
+  font-size:0.86rem;
+  font-weight:850;
+  color:#ffffff;
+  background:#1d4ed8;
+  border-radius:10px;
+  box-shadow:0 6px 18px rgba(29,78,216,0.25);
 }
 
-/* 兼容你当前的嵌套结构：.paper-box-image 里可能还有一层 div */
-.paper-box-image > div {
-  width: 100%;
-  height: 100%;
+/* right text */
+.paper-box-text{flex:1 1 auto; min-width:0;}
+.paper-title{
+  display:inline-block;
+  font-size:1.25rem;
+  font-weight:850;
+  color:#1d4ed8;
+  text-decoration:underline;
+  text-underline-offset:3px;
+  line-height:1.35;
 }
-
-/* 图片本体 */
-.paper-box-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  cursor: zoom-in;
+.paper-authors{
+  margin-top:0.45rem;
+  font-size:1.05rem;
+  color:#334155;
+  font-weight:650;
 }
-
-/* 文字列：占满剩余空间，避免挤压导致错位 */
-.paper-box-text {
-  flex: 1 1 auto;
-  min-width: 0;
+.paper-links{
+  margin-top:0.6rem;
 }
-
-/* 去掉主题默认的上边距造成的“文字下移” */
-.paper-box-text > :first-child {
-  margin-top: 0 !important;
+.paper-links a{
+  font-size:1.05rem;
+  font-weight:850;
+  color:#1d4ed8;
+  text-decoration:underline;
+  text-underline-offset:3px;
 }
+.paper-meta{
+  margin:0.55rem 0 0 1.1rem;
+  color:#334155;
+  line-height:1.65;
+}
+.paper-meta li{margin:0.15rem 0;}
 
-/* 小屏幕改为上下布局 */
-@media (max-width: 860px) {
-  .paper-box {
-    flex-direction: column;
-  }
-  .paper-box-image {
-    width: 100%;
-    max-width: 520px;
-    height: auto;
-    aspect-ratio: 5 / 3;     /* 保持 300x180 比例 */
+@media (max-width:860px){
+  .paper-box{flex-direction:column;}
+  .paper-box-image{
+    width:100%;
+    max-width:520px;
+    height:auto;
+    aspect-ratio:5/3;
   }
 }
 
 /* ===============================
-   Lightbox (double-click to zoom)
+   News card (keep your style)
    =============================== */
-.lightbox-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(15, 23, 42, 0.78);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-  padding: 2.0rem 1.2rem;
+.news-card{
+  margin-top:0.6rem;
+  border:1px solid rgba(0,0,0,0.10);
+  border-radius:14px;
+  background:linear-gradient(180deg, rgba(99,102,241,0.06), rgba(99,102,241,0.02));
+  box-shadow:0 6px 18px rgba(0,0,0,0.06);
+  padding:0.85rem 0.95rem;
 }
 
-.lightbox-overlay.is-open {
-  display: flex;
+/* ===============================
+   Lightbox
+   =============================== */
+.lightbox-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(15,23,42,0.78);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+  padding:2.0rem 1.2rem;
 }
-
-.lightbox-panel {
-  position: relative;
-  max-width: min(1100px, 92vw);
-  max-height: 86vh;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.35);
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.12);
+.lightbox-overlay.is-open{display:flex;}
+.lightbox-panel{
+  position:relative;
+  max-width:min(1100px, 92vw);
+  max-height:86vh;
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 20px 60px rgba(0,0,0,0.35);
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.12);
 }
-
-.lightbox-img {
-  display: block;
-  max-width: min(1100px, 92vw);
-  max-height: 86vh;
-  width: auto;
-  height: auto;
+.lightbox-img{
+  display:block;
+  max-width:min(1100px, 92vw);
+  max-height:86vh;
+  width:auto;
+  height:auto;
 }
-
-.lightbox-close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 38px;
-  height: 38px;
-  border-radius: 999px;
-  border: 1px solid rgba(255,255,255,0.28);
-  background: rgba(15, 23, 42, 0.55);
-  color: #fff;
-  font-size: 22px;
-  line-height: 36px;
-  cursor: pointer;
+.lightbox-close{
+  position:absolute;
+  top:10px;
+  right:10px;
+  width:38px;
+  height:38px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,0.28);
+  background:rgba(15,23,42,0.55);
+  color:#fff;
+  font-size:22px;
+  line-height:36px;
+  cursor:pointer;
 }
-
-.lightbox-caption {
-  padding: 0.6rem 0.9rem;
-  font-size: 0.95rem;
-  color: rgba(255,255,255,0.92);
-  background: rgba(15, 23, 42, 0.45);
-  border-top: 1px solid rgba(255,255,255,0.10);
+.lightbox-caption{
+  padding:0.6rem 0.9rem;
+  font-size:0.95rem;
+  color:rgba(255,255,255,0.92);
+  background:rgba(15,23,42,0.45);
+  border-top:1px solid rgba(255,255,255,0.10);
 }
 </style>
 
 <!-- ===============================
-     About Me (Card)
+     About Me
      =============================== -->
-<span class='anchor' id='about-me'></span>
-
+<span class="anchor" id="about-me"></span>
 <div class="about-card">
-
   <div class="about-card-header">
     <h2 class="about-card-title">About Me</h2>
     <div class="about-card-line"></div>
   </div>
 
   <div class="about-grid">
-
-    <!-- Left: Narrative -->
     <div class="about-left">
       <p>
         Hi, I am <strong>Zhifeng Wang (汪智峰)</strong>, a third-year master's student at the College of Computer Science and Technology,
@@ -337,7 +294,6 @@ redirect_from:
       <span class="about-pill">Actively seeking internship / collaboration opportunities in AI for Healthcare.</span>
     </div>
 
-    <!-- Right: Interests -->
     <div class="about-right">
       <h3>Current Focus</h3>
       <ul>
@@ -348,30 +304,19 @@ redirect_from:
         <li>Efficient and reliable deployment</li>
       </ul>
     </div>
-
   </div>
 
   <div class="about-philosophy">
     I believe that <strong>technology can meaningfully reshape the world</strong> when it is built with rigor and validated in real settings.
     With <strong>long-term commitment and sustained effort</strong>, I aim to develop methods that translate into tangible impact in healthcare.
   </div>
-
 </div>
 
 <!-- ===============================
      News
      =============================== -->
-# 🔥 News
-
-<div style="
-  margin-top:0.6rem;
-  border:1px solid rgba(0,0,0,0.10);
-  border-radius:14px;
-  background:linear-gradient(180deg, rgba(99,102,241,0.06), rgba(99,102,241,0.02));
-  box-shadow:0 6px 18px rgba(0,0,0,0.06);
-  padding:0.85rem 0.95rem;
-">
-
+<h2 class="section-title">🔥 News</h2>
+<div class="news-card">
   <ul style="margin:0; padding-left:1.1rem; line-height:1.65;">
     <li><em>2025.11</em>: 🎉 Awarded the <a href="https://jefferyzhifeng.github.io">National Scholarship</a> (Ranking 3/183).</li>
     <li><em>2025.05</em>: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">TVC Journal</a>.</li>
@@ -393,14 +338,12 @@ redirect_from:
       border:1px solid rgba(99,102,241,0.35);
       background:rgba(99,102,241,0.10);
       color:#1F2A5A;
-      font-weight:700;
+      font-weight:800;
       transition:all 0.18s ease;
       box-shadow:0 2px 10px rgba(99,102,241,0.12);
     "
     onmouseover="this.style.transform='translateY(-1px)'; this.style.background='rgba(99,102,241,0.16)';"
     onmouseout="this.style.transform='translateY(0px)'; this.style.background='rgba(99,102,241,0.10)';"
-    onmousedown="this.style.transform='translateY(0px) scale(0.98)';"
-    onmouseup="this.style.transform='translateY(-1px) scale(1)';"
     >
       <span style="
         display:inline-flex; align-items:center; justify-content:center;
@@ -411,9 +354,7 @@ redirect_from:
       <span>More</span>
     </summary>
 
-    <style>
-      summary::-webkit-details-marker { display: none; }
-    </style>
+    <style>summary::-webkit-details-marker { display:none; }</style>
 
     <div style="
       margin-top:0.65rem;
@@ -435,204 +376,165 @@ redirect_from:
       </ul>
     </div>
   </details>
-
 </div>
 
 <!-- ===============================
-     Publications
+     Publications (PURE HTML: stable)
      =============================== -->
-# 📝 Publications 
+<h2 class="section-title">📝 Publications</h2>
 
-<div class='paper-box'>
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">Preprint 2025</div>
-      <img src='images/2026physconsr.png' alt="Phys-ConSR teaser">
-    </div>
+<div class="paper-box">
+  <div class="paper-box-image">
+    <div class="paper-badge">Preprint 2025</div>
+    <img src="images/2026physconsr.png" alt="PhysConSR teaser">
   </div>
-  <div class='paper-box-text' markdown="1">
-
-[PhysConSR: Learning Fast Differentiable Physically-Informed Continuous Medical Super-Resolution via 2D Gaussian](https://jefferyzhifeng.github.io/)
-
-**Zhifeng Wang**, Renjiao Yi, et al.
-
-[**Project**](https://jefferyzhifeng.github.io/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Under Review, 2026.
+  <div class="paper-box-text">
+    <a class="paper-title" href="https://jefferyzhifeng.github.io/">PhysConSR: Learning Fast Differentiable Physically-Informed Continuous Medical Super-Resolution via 2D Gaussian</a>
+    <div class="paper-authors"><strong>Zhifeng Wang</strong>, Renjiao Yi, et al.</div>
+    <div class="paper-links"><a href="https://jefferyzhifeng.github.io/">Project</a></div>
+    <ul class="paper-meta">
+      <li>Under Review, 2026.</li>
+    </ul>
   </div>
 </div>
 
-<div class='paper-box'>
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">Preprint 2025</div>
-      <img src='images/2025nc.png' alt="Bio-inspired Visual Synaptic Transistors teaser">
-    </div>
+<div class="paper-box">
+  <div class="paper-box-image">
+    <div class="paper-badge">Preprint 2025</div>
+    <img src="images/2025nc.png" alt="Nature Communications (third author) teaser">
   </div>
-  <div class='paper-box-text' markdown="1">
-
-[Bio-inspired Visual Synaptic Transistors with Reconfigurable Polarization Perception](https://jefferyzhifeng.github.io/)
-
-Xiong, J., Huang, M., **Wang, Z. (third author)**, et al.
-
-[**Project**](https://jefferyzhifeng.github.io/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Nature Communications, Under Review, 2025.
+  <div class="paper-box-text">
+    <a class="paper-title" href="https://jefferyzhifeng.github.io/">Bio-inspired Visual Synaptic Transistors with Reconfigurable Polarization Perception</a>
+    <div class="paper-authors">Xiong, J., Huang, M., <strong>Wang, Z. (third author)</strong>, et al.</div>
+    <div class="paper-links"><a href="https://jefferyzhifeng.github.io/">Project</a></div>
+    <ul class="paper-meta">
+      <li>Nature Communications, Under Review, 2025.</li>
+    </ul>
   </div>
 </div>
 
-<div class='paper-box'>
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">Preprint 2025</div>
-      <img src='images/2025_BoVAR.png' alt="BoVAR teaser">
-    </div>
+<div class="paper-box">
+  <div class="paper-box-image">
+    <div class="paper-badge">Preprint 2025</div>
+    <img src="images/2025_BoVAR.png" alt="BoVAR teaser">
   </div>
-  <div class='paper-box-text' markdown="1">
-
-[BoVAR: Learning Adaptive Routing and Hierarchical Attention for Variable-Aperture Bokeh Rendering](https://jefferyzhifeng.github.io/)
-
-Kang Chen, Shijun Yan, **Zhifeng Wang**, Aiwen Jiang.
-
-[**Project**](https://jefferyzhifeng.github.io/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Under Review, 2025.
+  <div class="paper-box-text">
+    <a class="paper-title" href="https://jefferyzhifeng.github.io/">BoVAR: Learning Adaptive Routing and Hierarchical Attention for Variable-Aperture Bokeh Rendering</a>
+    <div class="paper-authors">Kang Chen, Shijun Yan, <strong>Zhifeng Wang</strong>, Aiwen Jiang.</div>
+    <div class="paper-links"><a href="https://jefferyzhifeng.github.io/">Project</a></div>
+    <ul class="paper-meta">
+      <li>Under Review, 2025.</li>
+    </ul>
   </div>
 </div>
 
-<div class='paper-box'>
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">CVPR 2025</div>
-      <img src='images/2025cvpr1.png' alt="VasTSD teaser">
-    </div>
+<div class="paper-box">
+  <div class="paper-box-image">
+    <div class="paper-badge">CVPR 2025</div>
+    <img src="images/2025cvpr1.png" alt="VasTSD teaser">
   </div>
-  <div class='paper-box-text' markdown="1">
-
-[VasTSD: Learning 3D Vascular Tree-state Space Diffusion Model for AngiographySynthesis](https://openaccess.thecvf.com/content/CVPR2025/html/Wang_VasTSD_Learning_3D_Vascular_Tree-state_Space_Diffusion_Model_for_Angiography_CVPR_2025_paper.html)
-
-**Zhifeng Wang**, Renjiao Yi, Xin Wen, Chenyang Zhu&#9993;, Kai Xu&#9993;
-
-[**Project**](https://jefferyzhifeng.github.io/projects/VasTSD/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2025.
+  <div class="paper-box-text">
+    <a class="paper-title" href="https://openaccess.thecvf.com/content/CVPR2025/html/Wang_VasTSD_Learning_3D_Vascular_Tree-state_Space_Diffusion_Model_for_Angiography_CVPR_2025_paper.html">VasTSD: Learning 3D Vascular Tree-state Space Diffusion Model for Angiography Synthesis</a>
+    <div class="paper-authors"><strong>Zhifeng Wang</strong>, Renjiao Yi, Xin Wen, Chenyang Zhu✉, Kai Xu✉</div>
+    <div class="paper-links"><a href="https://jefferyzhifeng.github.io/projects/VasTSD/">Project</a></div>
+    <ul class="paper-meta">
+      <li>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025.</li>
+    </ul>
   </div>
 </div>
 
-<div class='paper-box'>
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">TVC 2025</div>
-      <img src='images/2024tvc.png' alt="Angio-Diff teaser">
-    </div>
+<div class="paper-box">
+  <div class="paper-box-image">
+    <div class="paper-badge">TVC 2025</div>
+    <img src="images/2024tvc.png" alt="Angio-Diff teaser">
   </div>
-  <div class='paper-box-text' markdown="1">
-
-[Angio-Diff: Learning a Self-Supervised Adversarial Diffusion Model for Angiographic Geometry Generation](https://jefferyzhifeng.github.io)
-
-**Zhifeng Wang**, Renjiao Yi&#9993;, Xin Wen, Chenyang Zhu, Kai Xu, Kunlun He&#9993;
-
-[**Project**](https://jefferyzhifeng.github.io) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- The Visual Computer, 2025.
+  <div class="paper-box-text">
+    <a class="paper-title" href="https://jefferyzhifeng.github.io">Angio-Diff: Learning a Self-Supervised Adversarial Diffusion Model for Angiographic Geometry Generation</a>
+    <div class="paper-authors"><strong>Zhifeng Wang</strong>, Renjiao Yi✉, Xin Wen, Chenyang Zhu, Kai Xu, Kunlun He✉</div>
+    <div class="paper-links"><a href="https://jefferyzhifeng.github.io">Project</a></div>
+    <ul class="paper-meta">
+      <li>The Visual Computer, 2025.</li>
+    </ul>
   </div>
 </div>
 
-<div class='paper-box'>
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">Meta-Radiology 2024</div>
-      <img src='images/2024meta.png' alt="Meta-Radiology survey teaser">
-    </div>
+<div class="paper-box">
+  <div class="paper-box-image">
+    <div class="paper-badge">Meta-Radiology 2024</div>
+    <img src="images/2024meta.png" alt="Survey teaser">
   </div>
-  <div class='paper-box-text' markdown="1">
-
-[Cardiovascular medical image and analysis based on 3D vision: A comprehensive survey](https://www.sciencedirect.com/science/article/pii/S2950162824000560)
-
-**Zhifeng Wang**, Renjiao Yi&#9993;, Xin Wen, Chenyang Zhu, Kai Xu
-
-[**Project**](https://jefferyzhifeng.github.io) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Meta-Radiology 2024.
+  <div class="paper-box-text">
+    <a class="paper-title" href="https://www.sciencedirect.com/science/article/pii/S2950162824000560">Cardiovascular medical image and analysis based on 3D vision: A comprehensive survey</a>
+    <div class="paper-authors"><strong>Zhifeng Wang</strong>, Renjiao Yi✉, Xin Wen, Chenyang Zhu, Kai Xu</div>
+    <div class="paper-links"><a href="https://jefferyzhifeng.github.io">Project</a></div>
+    <ul class="paper-meta">
+      <li>Meta-Radiology, 2024.</li>
+    </ul>
   </div>
 </div>
 
-<div class='paper-box'>
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">PRCV 2022</div>
-      <img src='images/2022prcv.png' alt="PRCV 2022 teaser">
-    </div>
+<div class="paper-box">
+  <div class="paper-box-image">
+    <div class="paper-badge">PRCV 2022</div>
+    <img src="images/2022prcv.png" alt="PRCV teaser">
   </div>
-  <div class='paper-box-text' markdown="1">
-
-[A Dense Prediction ViT Network for Single Image Bokeh Rendering](https://link.springer.com/chapter/10.1007/978-3-031-18916-6_18)
-
-**Zhifeng Wang**, Aiwen Jiang&#9993;
-
-[**Project**](https://jefferyzhifeng.github.io) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- PRCV 2022.
+  <div class="paper-box-text">
+    <a class="paper-title" href="https://link.springer.com/chapter/10.1007/978-3-031-18916-6_18">A Dense Prediction ViT Network for Single Image Bokeh Rendering</a>
+    <div class="paper-authors"><strong>Zhifeng Wang</strong>, Aiwen Jiang✉</div>
+    <div class="paper-links"><a href="https://jefferyzhifeng.github.io">Project</a></div>
+    <ul class="paper-meta">
+      <li>PRCV, 2022.</li>
+    </ul>
   </div>
 </div>
 
-<div class='paper-box'>
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">JVCIR 2022</div>
-      <img src='images/2022jvcir.png' alt="JVCIR 2022 teaser">
-    </div>
+<div class="paper-box">
+  <div class="paper-box-image">
+    <div class="paper-badge">JVCIR 2022</div>
+    <img src="images/2022jvcir.png" alt="JVCIR teaser">
   </div>
-  <div class='paper-box-text' markdown="1">
-
-[Self-supervised multi-scale pyramid fusion networks for realistic bokeh effect rendering](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
-
-**Zhifeng Wang**, Aiwen Jiang&#9993;, Chunjie Zhang, Hanxi Li, Bo Liu
-
-[**Project**](https://jefferyzhifeng.github.io) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- JVCIR 2022.
+  <div class="paper-box-text">
+    <a class="paper-title" href="https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf">Self-supervised multi-scale pyramid fusion networks for realistic bokeh effect rendering</a>
+    <div class="paper-authors"><strong>Zhifeng Wang</strong>, Aiwen Jiang✉, Chunjie Zhang, Hanxi Li, Bo Liu</div>
+    <div class="paper-links"><a href="https://jefferyzhifeng.github.io">Project</a></div>
+    <ul class="paper-meta">
+      <li>Journal of Visual Communication and Image Representation (JVCIR), 2022.</li>
+    </ul>
   </div>
 </div>
 
 <!-- ===============================
-     Honors
+     Honors / Services / Internships (PURE HTML)
      =============================== -->
-# 🎖 Honors and Awards
+<h2 class="section-title">🎖 Honors and Awards</h2>
+<ul style="line-height:1.75; color:#334155;">
+  <li><em>2025.11</em> National Scholarship (3/183), 2025.</li>
+  <li><em>2022.11</em> National Scholarship (Top 0.2%), 2022.</li>
+  <li><em>2022.09</em> First-class Academic Scholarship, 2022.</li>
+  <li><em>2021.09</em> First-class Academic Scholarship, 2021.</li>
+  <li><em>2020.09</em> First-class Academic Scholarship, 2020.</li>
+</ul>
 
-<div class='paper-box'>
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">CVPRW 2025</div>
-      <img src='images/2025cvprw_bokeh.png' alt="Mobile AI Workshop 2025 Winner">
-    </div>
-  </div>
-  <div class='paper-box-text' markdown="1">
+<h2 class="section-title">📖 Services</h2>
+<ul style="line-height:1.75; color:#334155;">
+  <li><strong>Reviewers:</strong> PRCV’23/24, CAD/CG, JVCIR, PG.</li>
+  <li><strong>Memberships:</strong> IEEE Student Member, CSIG Student Member, CAAI Student Member, CVF Member.</li>
+</ul>
 
-[Mobile AI Workshop and Challenges 2025](https://codalab.lisn.upsaclay.fr/competitions/21562)
+<h2 class="section-title">💻 Internships</h2>
+<ul style="line-height:1.75; color:#334155;">
+  <li><em>2025.03 – 2025.08</em>, AI Research Intern (Medical LLMs) @ <a href="https://damo.alibaba.com/?language=zh">Alibaba DAMO Academy</a>, Hangzhou, China.</li>
+  <li><em>2022.10 – 2023.07</em>, Algorithm Engineer Intern @ <a href="https://www.speedbot.com/en/home">SpeedBot Robotics Co., Ltd.</a>, Changsha, China.</li>
+</ul>
 
-Organized by **CVPR2025**
-
-- MAI 2025 Bokeh Effect Rendering Challenge.  
-**Winner**
-  </div>
-</div>
-
-- *2025.11* National Scholarship (3/183), 2025.
-- *2022.11* National Scholarship (Top 0.2%), 2022.
-- *2022.09* First-class Academic Scholarship, 2022.
-- *2021.09* First-class Academic Scholarship, 2021.
-- *2020.09* First-class Academic Scholarship, 2020.
-
-<span class='anchor' id='-Services'></span>
-# 📖 Services
-- Reviewers: PRCV’23/24, CAD/CG, JVCIR, PG.
-- Memberships: IEEE Student Member, CSIG Student Member, CAAI Student Member, CVF Member.
-
-# 💻 Internships
-- *2025.03 - 2025.08*, AI Research Intern (Medical LLMs) @[Alibaba DAMO Academy](https://damo.alibaba.com/?language=zh), Hangzhou, China.
-- *2022.10 - 2023.07*, Algorithm Engineer Intern @ [SpeedBot Robotics Co., Ltd.](https://www.speedbot.com/en/home), Changsha, China.
-
-------
+<hr>
 
 <p align="center">
-  <i>I know I am not the perfect one, yet aspire to chase the world and achieve greatness @ Zhifeng Wang --- Latest update: 2025-11-04</i>
+  <i>I know I am not the perfect one, yet aspire to chase the world and achieve greatness @ Zhifeng Wang — Latest update: 2025-11-04</i>
 </p>
 
 <!-- ===============================
-     Lightbox HTML (paste once)
+     Lightbox HTML
      =============================== -->
 <div class="lightbox-overlay" id="lightboxOverlay" aria-hidden="true">
   <div class="lightbox-panel" role="dialog" aria-modal="true" aria-label="Image preview">
@@ -642,9 +544,6 @@ Organized by **CVPR2025**
   </div>
 </div>
 
-<!-- ===============================
-     Lightbox JS (double-click to zoom)
-     =============================== -->
 <script>
 (function () {
   const overlay = document.getElementById("lightboxOverlay");
@@ -668,7 +567,7 @@ Organized by **CVPR2025**
     document.body.style.overflow = "";
   }
 
-  // 双击论文图片打开
+  // dblclick to open
   document.querySelectorAll(".paper-box-image img").forEach((img) => {
     img.addEventListener("dblclick", (e) => {
       e.preventDefault();
@@ -676,15 +575,12 @@ Organized by **CVPR2025**
     });
   });
 
-  // 点击遮罩关闭（点到面板外）
   overlay.addEventListener("click", (e) => {
     if (e.target === overlay) closeLightbox();
   });
 
-  // 点击关闭按钮
   closeBtn.addEventListener("click", closeLightbox);
 
-  // ESC 关闭
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && overlay.classList.contains("is-open")) closeLightbox();
   });
