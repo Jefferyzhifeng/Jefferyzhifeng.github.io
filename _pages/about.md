@@ -157,7 +157,7 @@ redirect_from:
 .paper-box-text{flex:1 1 auto; min-width:0;}
 .paper-title{
   display:inline-block;
-  font-size:1.10rem;
+  font-size:1.10rem;        /* 统一更协调 */
   font-weight:750;
   color:#1d4ed8;
   text-decoration:underline;
@@ -167,10 +167,11 @@ redirect_from:
 .paper-authors{
   margin-top:0.45rem;
   font-size:1.00rem;
-  font-weight:500;
+  font-weight:500;          /* 不整体加粗 */
   color:#334155;
 }
-.paper-authors strong{font-weight:800;}
+.paper-authors strong{font-weight:800;} /* 只加粗 Zhifeng Wang */
+
 .paper-links{margin-top:0.55rem;}
 .paper-links a{
   font-size:1.00rem;
@@ -249,47 +250,6 @@ redirect_from:
   background:rgba(15,23,42,0.45);
   border-top:1px solid rgba(255,255,255,0.10);
 }
-
-/* ===============================
-   About refinements (lighter & cleaner)
-   =============================== */
-.about-intro{
-  font-size:0.98rem;
-  color:#475569;
-  line-height:1.85;
-}
-
-/* only 3 highlight groups */
-.hl-blue{font-weight:700; color:#1f3a8a;}
-.hl-teal{font-weight:650; color:#0f766e;}
-.hl-purple{font-weight:700; color:#5b21b6;}
-.hl-strong{font-weight:700; color:#1e293b;}
-.hl-muted{font-weight:650; color:#374151;}
-
-/* collaboration callout: academic tone */
-.about-pill{
-  color:#3730a3;
-  background:rgba(99,102,241,0.08);
-  border:1px solid rgba(99,102,241,0.18);
-  font-weight:750;
-}
-
-/* focus list: more like a menu */
-.about-right ul{padding-left:1.10rem; line-height:1.65;}
-.about-right li{margin:0.20rem 0; color:#334155;}
-
-/* quote: footnote style */
-.about-philosophy{
-  background:rgba(248,250,252,0.92);
-  border:1px solid rgba(99,102,241,0.14);
-  border-left:4px solid rgba(99,102,241,0.35);
-  color:#64748b;
-  font-size:0.95rem;
-}
-.about-philosophy .quote-author{
-  color:#475569;
-  font-weight:650;
-}
 </style>
 
 <!-- ===============================
@@ -304,7 +264,7 @@ redirect_from:
 
   <div class="about-grid">
     <div class="about-left">
-      <p class="about-intro">
+      <p>
         Hi, I am <strong>Zhifeng Wang (汪智峰)</strong>, a third-year master's student at the College of Computer Science and Technology,
         National University of Defense Technology, advised by Prof. <a href="https://kevinkaixu.net/">Kai Xu</a> and Assoc. Prof.
         <a href="https://renjiaoyi.github.io/">Renjiao Yi</a>.
@@ -312,35 +272,57 @@ redirect_from:
       </p>
 
       <div class="research-scope">
-        <p style="margin:0; line-height:1.85; font-size:1.03rem; color:#374151;">
-          My research focuses on <span class="hl-blue">AI for healthcare</span>, with an emphasis on
-          <span class="hl-blue">structure-aware methods</span> for medical image
-          <span class="hl-strong">generation, reconstruction, and enhancement</span>.
-          By integrating <span class="hl-teal">anatomical priors</span> and
-          <span class="hl-teal">explicit structural constraints</span>, I aim to improve the
-          <span class="hl-strong">reliability</span> and <span class="hl-strong">clinical relevance</span> of learned representations.
-          I am particularly interested in approaches that translate into
-          <span class="hl-muted">real-world clinical workflows</span>.
-          In parallel, I explore <span class="hl-purple">physics-informed intelligence</span> to better align learning-based models with
-          <span class="hl-muted">physical and imaging principles</span>.
-        </p>
+<p style="
+  margin: 0;
+  line-height: 1.85;
+  font-size: 1.03rem;
+  color: #374151;
+">
+  My research focuses on
+  <span style="font-weight:700; color:#1f3a8a;">AI for healthcare</span>,
+  with an emphasis on
+  <span style="font-weight:700; color:#4f46e5;">structure-aware methods</span>
+  for medical image
+  <span style="font-weight:600; color:#4338ca;">
+    generation, reconstruction, and enhancement
+  </span>.
+  By integrating
+  <span style="font-weight:600; color:#0f766e;">anatomical priors</span>
+  and
+  <span style="font-weight:600; color:#0f766e;">explicit structural constraints</span>,
+  I aim to improve the
+  <span style="font-weight:600; color:#7c2d12;">reliability</span>
+  and
+  <span style="font-weight:600; color:#7c2d12;">clinical relevance</span>
+  of learned representations.
+  I am particularly interested in approaches that can be translated into
+  <span style="font-weight:600; color:#374151; text-decoration:underline;">
+    real-world clinical workflows
+  </span>.
+  In parallel, I explore
+  <span style="font-weight:700; color:#5b21b6;">
+    physics-informed intelligence
+  </span>
+  to better align learning-based models with underlying
+  <span style="font-weight:600; color:#1e293b;">
+    physical and imaging principles
+  </span>.
+</p>
       </div>
-
       <p style="margin-top:0.9rem;">
         <strong>Email:</strong>
         <a href="mailto:zhifengwang@nudt.edu.cn">zhifengwang@nudt.edu.cn</a> /
         <a href="mailto:zhifengwang686@gmail.com">zhifengwang686@gmail.com</a>
       </p>
-
-      <span class="about-pill">Open to research collaborations in AI for Healthcare, physics-informed intelligence, and computer vision.</span>
+      <span class="about-pill">Open to research-oriented collaborations in AI for Healthcare, and other areas of computer vision.</span>
     </div>
 
     <div class="about-right">
       <h3>Current Focus</h3>
       <ul>
         <li>Structure-aware Medical Imaging</li>
-        <li>Anatomical Priors & Structural Constraints</li>
-        <li>Medical Image Generation & Reconstruction</li>
+        <li>Medical Image Reconstruction & Enhancement</li>
+        <li>Generative Modeling for Healthcare</li>
         <li>Clinical Visualization & Analysis</li>
         <li>Physics-informed Intelligence</li>
       </ul>
@@ -348,8 +330,7 @@ redirect_from:
   </div>
 
   <div class="about-philosophy">
-    “As a result of this honesty, we are forced to doubt.”
-    <span class="quote-author">— Richard Feynman</span>
+    “As a result of this honesty, we are forced to doubt.” — Richard Feynman
   </div>
 </div>
 
@@ -561,7 +542,7 @@ redirect_from:
 </div>
 
 <!-- ===============================
-     Honors and Awards
+     Honors and Awards (with the missing card restored)
      =============================== -->
 <h2 class="section-title">🎖 Honors and Awards</h2>
 
