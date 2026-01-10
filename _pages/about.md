@@ -320,11 +320,11 @@ redirect_from:
     <div class="about-right">
       <h3>Current Focus</h3>
       <ul>
-        <li><span style="font-weight:600; color:#4f46e5;">Structure-aware</span> medical image generation, reconstruction, and enhancement</li>
-        <li>Integrating <span style="font-weight:600; color:#0f766e;">anatomical priors</span> (topology, connectivity, geometry)</li>
-        <li>Explicit <span style="font-weight:600; color:#0f766e;">structural constraints</span> for robust and reliable modeling</li>
-        <li><span style="font-weight:600; color:#7c2d12;">Clinically motivated</span> downstream visualization and analysis</li>
-        <li>Exploring <span style="font-weight:600; color:#5b21b6;">physics-informed intelligence</span> for improved generalization</li>
+        <li>Structure-aware Medical Imaging</li>
+        <li>Anatomical Priors & Structural Constraints</li>
+        <li>Medical Image Generation & Reconstruction</li>
+        <li>Clinically Motivated Visualization & Analysis</li>
+        <li>Physics-informed Intelligence</li>
       </ul>
     </div>
   </div>
