@@ -3,7 +3,7 @@ permalink: /
 title: ""
 excerpt: ""
 author_profile: true
-redirect_from:
+redirect_from: 
   - /about/
   - /about.html
 ---
@@ -17,30 +17,98 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 # About me
+Hi, I am Zhifeng Wang (汪智峰). I am a third-year master's student at the College of Computer Science and Technology of National University of Defense Technology, under the supervision of Prof. [Kai Xu](https://kevinkaixu.net/) and Assoc.Prof. [Renjiao Yi](https://renjiaoyi.github.io/). I am currently doing a research visiting internship at Alibaba DAMO Academy.
 
-<div class="aboutme-wrap">
+From 2019 to 2023, I earned my Bachelor’s degree from Jiangxi Normal University, and worked closely with [Dr. Aiwen Jiang](https://jsjxy.jxnu.edu.cn/2014/0423/c3381a106160/page.htm). 
+I founded and was in charge of the [Mt-aistudio](https://motong-ai-studio.github.io/), which conducts research in the areas of computer vision.
 
-  <ul class="aboutme-list aboutme-list--compact">
-    <li>Hi, I am Zhifeng Wang (汪智峰).</li>
-    <li>Third-year M.S. student at NUDT (CS).</li>
-    <li>Supervised by Prof. Kai Xu and Assoc. Prof. Renjiao Yi.</li>
-    <li>Research visiting intern at Alibaba DAMO Academy.</li>
-    <li>Interests: Low-Level Vision, AI for Healthcare, AIGC, LLMs.</li>
-    <li>Email: <a href="mailto:zhifengwang@nudt.edu.cn">zhifengwang@nudt.edu.cn</a> / <a href="mailto:zhifengwang686@gmail.com">zhifengwang686@gmail.com</a>.</li>
+My research interest: include but are not limited to Low-Level Vision, AI for Healthcare, AIGC, and LLMs. 
+
+If you are interested in my research or have any questions, suggestions, or collaboration ideas, please contact me at Email: [zhifengwang@nudt.edu.cn](mailto:zhifengwang@nudt.edu.cn) and [zhifengwang686@gmail.com](mailto:zhifengwang686@gmail.com).
+
+<span style="color:#B42318; font-weight:700; background:rgba(180,35,24,0.08); padding:0.2rem 0.45rem; border-radius:8px; display:inline-block;">
+  I am actively seeking internship or collaboration opportunities in the application of AIGC for Healthcare, particularly in LLMs.
+</span>
+
+
+# 🔥 News
+
+<!-- 主容器（卡片风格） -->
+<div style="
+  margin-top:0.6rem;
+  border:1px solid rgba(0,0,0,0.10);
+  border-radius:14px;
+  background:linear-gradient(180deg, rgba(99,102,241,0.06), rgba(99,102,241,0.02));
+  box-shadow:0 6px 18px rgba(0,0,0,0.06);
+  padding:0.85rem 0.95rem;
+">
+
+  <!-- 默认展示 5 条 -->
+  <ul style="margin:0; padding-left:1.1rem; line-height:1.65;">
+    <li><em>2025.11</em>: 🎉 Awarded the <a href="https://jefferyzhifeng.github.io">National Scholarship</a> (Ranking 3/183).</li>
+    <li><em>2025.05</em>: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">TVC Journal</a>.</li>
+    <li><em>2025.04</em>: 🎉 Won 1st place in the <a href="https://codalab.lisn.upsaclay.fr/competitions/21562#learn_the_details">CVPR2025W</a> “Mobile AI 2025 Real-Time Rendering Realistic Bokeh Challenge”.</li>
+    <li><em>2025.04</em>: 🎉 Won 6th place in the <a href="https://codalab.lisn.upsaclay.fr/competitions/21564">CVPR2025W</a> “Mobile AI Challenge: RGB Photo Enhancement on Mobile GPUs”.</li>
+    <li><em>2025.02</em>: 🎉 One paper is accepted by <a href="https://cvpr.thecvf.com/Conferences/2025/">CVPR 2025</a> (CCF-A).</li>
+    <!-- 如需默认显示 6 条，把下面这条移到上面 list 里即可 -->
+    <!-- <li><em>2024.09</em>: 🎉 One paper is accepted by <a href="https://www.sciencedirect.com/science/article/pii/S2950162824000560">Meta-Radiology</a>.</li> -->
   </ul>
 
-  <details class="aboutme-more">
-    <summary class="aboutme-more__btn" data-open="More" data-close="Less"></summary>
+  <!-- More：按钮样式 + 可滚动内容 -->
+  <details style="margin-top:0.75rem;">
+    <summary style="
+      list-style:none;
+      cursor:pointer;
+      user-select:none;
+      display:inline-flex;
+      align-items:center;
+      gap:0.5rem;
+      padding:0.45rem 0.8rem;
+      border-radius:999px;
+      border:1px solid rgba(99,102,241,0.35);
+      background:rgba(99,102,241,0.10);
+      color:#1F2A5A;
+      font-weight:700;
+      transition:all 0.18s ease;
+      box-shadow:0 2px 10px rgba(99,102,241,0.12);
+    "
+    onmouseover="this.style.transform='translateY(-1px)'; this.style.background='rgba(99,102,241,0.16)';"
+    onmouseout="this.style.transform='translateY(0px)'; this.style.background='rgba(99,102,241,0.10)';"
+    onmousedown="this.style.transform='translateY(0px) scale(0.98)';"
+    onmouseup="this.style.transform='translateY(-1px) scale(1)';"
+    >
+      <span style="
+        display:inline-flex; align-items:center; justify-content:center;
+        width:22px; height:22px; border-radius:999px;
+        background:rgba(99,102,241,0.18);
+        font-size:14px; line-height:1;
+      ">+</span>
+      <span>More</span>
+      <span style="font-weight:600; opacity:0.75;">(scroll)</span>
+    </summary>
 
-    <div class="aboutme-more__box">
-      <ul class="aboutme-list aboutme-list--full">
-        <li>From 2019 to 2023, I earned my Bachelor’s degree from Jiangxi Normal University.</li>
-        <li>Worked closely with <a href="https://jsjxy.jxnu.edu.cn/2014/0423/c3381a106160/page.htm">Dr. Aiwen Jiang</a>.</li>
-        <li>Founded and led <a href="https://motong-ai-studio.github.io/">Mt-aistudio</a>, focusing on computer vision research.</li>
-        <li>Open to internship and collaboration opportunities in AIGC for Healthcare, particularly in LLMs.</li>
-        <li>If you are interested in my research or have suggestions/collaboration ideas, feel free to reach out.</li>
-        <li>Also interested in efficient low-level vision and real-time rendering for practical deployment.</li>
-        <li>Actively building projects in medical generation, multimodal learning, and structure-aware modeling.</li>
+    <!-- 隐藏默认三角（不同浏览器兼容：尽力而为） -->
+    <style>
+      summary::-webkit-details-marker { display: none; }
+    </style>
+
+    <div style="
+      margin-top:0.65rem;
+      border:1px solid rgba(0,0,0,0.10);
+      border-radius:12px;
+      padding:0.75rem 0.85rem;
+      background:rgba(255,255,255,0.70);
+      max-height:220px;
+      overflow-y:auto;
+      box-shadow:inset 0 0 0 1px rgba(255,255,255,0.45);
+    ">
+      <ul style="margin:0; padding-left:1.1rem; line-height:1.65;">
+        <li><em>2024.09</em>: 🎉 One paper is accepted by <a href="https://www.sciencedirect.com/science/article/pii/S2950162824000560">Meta-Radiology</a>.</li>
+        <li><em>2024.07</em>: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">FCS Journal</a>. (CCF-T1).</li>
+        <li><em>2024.05</em>: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">ICIP 2024</a>.</li>
+        <li><em>2022.12</em>: 🎉 Awarded the <a href="https://jefferyzhifeng.github.io">National Scholarship</a> (Top 0.2%).</li>
+        <li><em>2022.10</em>: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">PRCV</a>.</li>
+        <li><em>2022.06</em>: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">JVCIR Journal</a>.</li>
       </ul>
     </div>
   </details>
@@ -48,32 +116,8 @@ redirect_from:
 </div>
 
 
-# 🔥 News
 
-- *2025.11*: 🎉 Awarded the <a href="https://jefferyzhifeng.github.io">National Scholarship</a> (Ranking 3/183).
-- *2025.05*: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">TVC Journal</a>.
-- *2025.04*: 🎉 Won 1st place in the <a href="https://codalab.lisn.upsaclay.fr/competitions/21562#learn_the_details">CVPR2025W</a> “Mobile AI 2025 Real-Time Rendering Realistic Bokeh Challenge”.
-- *2025.04*: 🎉 Won 6th place in the <a href="https://codalab.lisn.upsaclay.fr/competitions/21564">CVPR2025W</a> “Mobile AI Challenge: RGB Photo Enhancement on Mobile GPUs”.
-- *2025.02*: 🎉 One paper is accepted by <a href="https://cvpr.thecvf.com/Conferences/2025/">CVPR 2025</a> (CCF-A).
-
-<details>
-  <summary style="cursor:pointer; margin-top:0.5rem;">
-    <strong>Show more news</strong>
-  </summary>
-
-  <ul style="margin-top:0.6rem;">
-    <li>2024.09: 🎉 One paper is accepted by <a href="https://www.sciencedirect.com/science/article/pii/S2950162824000560">Meta-Radiology</a>.</li>
-    <li>2024.07: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">FCS Journal</a>. (CCF-T1).</li>
-    <li>2024.05: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">ICIP 2024</a>.</li>
-    <li>2022.12: 🎉 Awarded the <a href="https://jefferyzhifeng.github.io">National Scholarship</a> (Top 0.2%).</li>
-    <li>2022.10: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">PRCV</a>.</li>
-    <li>2022.06: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">JVCIR Journal</a>.</li>
-  </ul>
-</details>
-
-
-
-# 📝 Publications
+# 📝 Publications 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR‘2025</div><img src='images/2025cvpr1.png'  alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -95,18 +139,52 @@ redirect_from:
 **Zhifeng Wang**, Renjiao Yi&#9993;, Xin Wen, Chenyang Zhu, Kai Xu, Kunlun He&#9993;
 
 [**Project**](https://jefferyzhifeng.github.io) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- The Visual Computer, 2025.
+-  The Visual Computer, 2025.
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Meta-Radiology'2024</div><img src='images/2024meta.png'  alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Cardiovascular medical image and analysis based on 3D vision: A comprehensive survey](https://www.sciencedirect.com/science/article/pii/S2950162824000560)
+
+**Zhifeng Wang**, Renjiao Yi&#9993;, Xin Wen, Chenyang Zhu, Kai Xu
+
+[**Project**](https://jefferyzhifeng.github.io) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- Meta-Radiology 2024.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">PRCV‘2022</div><img src='images/2022prcv.png'  alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[A Dense Prediction ViT Network for Single Image Bokeh Rendering](https://link.springer.com/chapter/10.1007/978-3-031-18916-6_18)
+
+**Zhifeng Wang**, Aiwen Jiang&#9993;
+
+[**Project**](https://jefferyzhifeng.github.io) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- The 5th Chinese Conference on Pattern Recognition and Computer Vision(PRCV), 2022.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">JVCIR‘2022</div><img src='images/2022jvcir.png'  alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Self-supervised multi-scale pyramid fusion networks for realistic bokeh effect rendering](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+
+**Zhifeng Wang**, Aiwen Jiang&#9993;, Chunjie Zhang, Hanxi Li, Bo Liu
+
+[**Project**](https://jefferyzhifeng.github.io) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- Journal of Visual Communication and Image Representation(JVCIR), 2022.
+</div>
+</div>
 
 
 # 🎖 Honors and Awards
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPRW‘2025</div><img src='images/2025cvprw_bokeh.png' alt="sym" style="width: auto; height: 150px; object-fit: cover;"></div></div>
-
+  
 <div class='paper-box-text' markdown="1">
-
+  
 [Mobile AI Workshop and Challenges 2025](https://codalab.lisn.upsaclay.fr/competitions/21562)
 
 Organized by **CVPR2025**
@@ -124,19 +202,14 @@ Organized by **CVPR2025**
 - *2021.09* First-class Academic Scholarship, 2021.
 - *2020.09* First-class Academic Scholarship, 2020.
 
-
-
 <span class='anchor' id='-Services'></span>
 # 📖 Services
-
 - Reviewers: PRCV’23/24, CAD/CG, JVCIR, PG.
 - Memberships: IEEE Student Member, CSIG Student Member, CAAI Student Member, CVF Member.
 
 
-
 # 💻 Internships
-
-- *2025.03 - Now*, AI Research Intern (Medical LLMs) @[Alibaba DAMO Academy](https://damo.alibaba.com/?language=zh), Hangzhou, China.
+- *2025.03 - 2025.08*, AI Research Intern (Medical LLMs) @[Alibaba DAMO Academy](https://damo.alibaba.com/?language=zh), Hangzhou, China.
 - *2022.10 - 2023.07*, Algorithm Engineer Intern @ [SpeedBot Robotics Co., Ltd.](https://www.speedbot.com/en/home), Changsha, China.
 
 ------
