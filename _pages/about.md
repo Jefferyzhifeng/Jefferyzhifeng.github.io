@@ -15,24 +15,211 @@ redirect_from:
 {% endif %}
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
+<!-- ===============================
+     Global Styles
+     =============================== -->
+<style>
+/* ---- About Card (two-column) ---- */
+.about-card {
+  margin-top: 0.6rem;
+  border: 1px solid rgba(0,0,0,0.10);
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.06);
+  padding: 1.6rem 1.7rem;
+}
+
+.about-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 1.1rem;
+}
+
+.about-card-title {
+  font-size: 2.0rem;
+  font-weight: 800;
+  margin: 0;
+  color: #111827;
+}
+
+.about-card-line {
+  height: 4px;
+  width: 70px;
+  border-radius: 999px;
+  background: rgba(99,102,241,0.55);
+  margin-top: 0.2rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 2.2fr 1.1fr;
+  gap: 2.2rem;
+}
+
+@media (max-width: 860px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+}
+
+.about-left p {
+  margin: 0 0 0.85rem 0;
+  line-height: 1.85;
+  color: #374151;
+  font-size: 1.02rem;
+}
+
+.about-left a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.about-left a:hover {
+  text-decoration: underline;
+}
+
+.about-right {
+  padding-left: 1.2rem;
+  border-left: 2px solid rgba(0,0,0,0.06);
+}
+
+@media (max-width: 860px) {
+  .about-right {
+    border-left: none;
+    padding-left: 0;
+  }
+}
+
+.about-right h3 {
+  margin: 0 0 0.65rem 0;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #111827;
+}
+
+.about-right ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  line-height: 1.9;
+  color: #374151;
+  font-size: 1.0rem;
+}
+
+.about-pill {
+  margin-top: 0.9rem;
+  display: inline-block;
+  padding: 0.28rem 0.55rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: #B42318;
+  background: rgba(180,35,24,0.08);
+  border: 1px solid rgba(180,35,24,0.18);
+}
+
+.about-philosophy {
+  margin-top: 1.2rem;
+  padding: 1.1rem 1.2rem;
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,0.08);
+  background: rgba(99,102,241,0.06);
+  line-height: 1.75;
+  color: #1f2937;
+  font-size: 1.0rem;
+}
+
+.about-philosophy strong {
+  color: #4f46e5;
+}
+
+/* ---- Unified paper image size: 300 × 180 ---- */
+.paper-box-image {
+  width: 300px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #f6f7fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paper-box-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+</style>
+
+<!-- ===============================
+     About Me (Card)
+     =============================== -->
 <span class='anchor' id='about-me'></span>
-# About me
-Hi, I am Zhifeng Wang (汪智峰). I am a third-year master's student at the College of Computer Science and Technology of National University of Defense Technology, under the supervision of Prof. [Kai Xu](https://kevinkaixu.net/) and Assoc.Prof. [Renjiao Yi](https://renjiaoyi.github.io/).
 
-I founded and was in charge of the [Mt-aistudio](https://motong-ai-studio.github.io/), which conducts research in the areas of computer vision.
+<div class="about-card">
 
-My research interest: include but are not limited to Low-Level Vision, AI for Healthcare, AIGC, and LLMs. 
+  <div class="about-card-header">
+    <h2 class="about-card-title">About Me</h2>
+    <div class="about-card-line"></div>
+  </div>
 
-If you are interested in my research or have any questions, suggestions, or collaboration ideas, please contact me at Email: [zhifengwang@nudt.edu.cn](mailto:zhifengwang@nudt.edu.cn) and [zhifengwang686@gmail.com](mailto:zhifengwang686@gmail.com).
+  <div class="about-grid">
 
-<span style="color:#B42318; font-weight:700; background:rgba(180,35,24,0.08); padding:0.2rem 0.45rem; border-radius:8px; display:inline-block;">
-  I am actively seeking internship or collaboration opportunities in the application of AIGC for Healthcare, particularly in LLMs.
-</span>
+    <!-- Left: Narrative -->
+    <div class="about-left">
+      <p>
+        Hi, I am <strong>Zhifeng Wang (汪智峰)</strong>, a third-year master's student at the College of Computer Science and Technology,
+        National University of Defense Technology, advised by Prof. <a href="https://kevinkaixu.net/">Kai Xu</a> and Assoc. Prof.
+        <a href="https://renjiaoyi.github.io/">Renjiao Yi</a>.
+        I founded and currently lead the <a href="https://motong-ai-studio.github.io/">Mt-aistudio</a>, a research group focusing on computer vision and medical AI.
+      </p>
 
+      <p>
+        My research is centered on <strong>AI for Healthcare</strong>, with a strong emphasis on <strong>generative models</strong> for medical imaging.
+        I am particularly interested in diffusion-based generative learning, continuous representations, and structure-aware modeling for medical image reconstruction,
+        synthesis, and analysis.
+      </p>
 
+      <p style="margin-top:0.9rem;">
+        If you are interested in my research or potential collaborations, please feel free to contact me at<br>
+        Email: <a href="mailto:zhifengwang@nudt.edu.cn">zhifengwang@nudt.edu.cn</a> /
+        <a href="mailto:zhifengwang686@gmail.com">zhifengwang686@gmail.com</a>.
+      </p>
+
+      <span class="about-pill">Actively seeking internship / collaboration opportunities in AI for Healthcare (Generative Models).</span>
+    </div>
+
+    <!-- Right: Interests -->
+    <div class="about-right">
+      <h3>I am mainly interested in:</h3>
+      <ul>
+        <li>AI for Healthcare</li>
+        <li>Generative Models (Diffusion & Continuous Representations)</li>
+        <li>Structure-aware & Physics-informed Learning</li>
+        <li>Medical Image Reconstruction and Synthesis</li>
+        <li>Clinically-driven Real-world Applications</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Bottom: Philosophy -->
+  <div class="about-philosophy">
+    I believe that <strong>meaningful technological progress</strong> has the power to reshape how humans understand and interact with the world.
+    Through <strong>long-term commitment and sustained effort</strong>, I strive to develop methods that are technically rigorous and impactful in real-world healthcare.
+  </div>
+
+</div>
+
+<!-- ===============================
+     News
+     =============================== -->
 # 🔥 News
 
-<!-- 主容器（卡片风格） -->
 <div style="
   margin-top:0.6rem;
   border:1px solid rgba(0,0,0,0.10);
@@ -42,18 +229,14 @@ If you are interested in my research or have any questions, suggestions, or coll
   padding:0.85rem 0.95rem;
 ">
 
-  <!-- 默认展示 5 条 -->
   <ul style="margin:0; padding-left:1.1rem; line-height:1.65;">
     <li><em>2025.11</em>: 🎉 Awarded the <a href="https://jefferyzhifeng.github.io">National Scholarship</a> (Ranking 3/183).</li>
     <li><em>2025.05</em>: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">TVC Journal</a>.</li>
     <li><em>2025.04</em>: 🎉 Won 1st place in the <a href="https://codalab.lisn.upsaclay.fr/competitions/21562#learn_the_details">CVPR2025W</a> “Mobile AI 2025 Real-Time Rendering Realistic Bokeh Challenge”.</li>
     <li><em>2025.04</em>: 🎉 Won 6th place in the <a href="https://codalab.lisn.upsaclay.fr/competitions/21564">CVPR2025W</a> “Mobile AI Challenge: RGB Photo Enhancement on Mobile GPUs”.</li>
     <li><em>2025.02</em>: 🎉 One paper is accepted by <a href="https://cvpr.thecvf.com/Conferences/2025/">CVPR 2025</a> (CCF-A).</li>
-    <!-- 如需默认显示 6 条，把下面这条移到上面 list 里即可 -->
-    <!-- <li><em>2024.09</em>: 🎉 One paper is accepted by <a href="https://www.sciencedirect.com/science/article/pii/S2950162824000560">Meta-Radiology</a>.</li> -->
   </ul>
 
-  <!-- More：按钮样式 + 可滚动内容 -->
   <details style="margin-top:0.75rem;">
     <summary style="
       list-style:none;
@@ -83,10 +266,8 @@ If you are interested in my research or have any questions, suggestions, or coll
         font-size:14px; line-height:1;
       ">+</span>
       <span>More</span>
-      <span style="font-weight:600; opacity:0.75;"></span>
     </summary>
 
-    <!-- 隐藏默认三角（不同浏览器兼容：尽力而为） -->
     <style>
       summary::-webkit-details-marker { display: none; }
     </style>
@@ -114,11 +295,12 @@ If you are interested in my research or have any questions, suggestions, or coll
 
 </div>
 
-
-
+<!-- ===============================
+     Publications (unchanged structure, just unified image style)
+     =============================== -->
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint 2025</div><img src='images/2026physconsr.png'  alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint 2025</div><img src='images/2026physconsr.png' alt="sym"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Phys-ConSR: Learning Fast Differentiable Physically-Informed Continuous Medical Super-Resolution via 2D Gaussian](https://jefferyzhifeng.github.io/)
@@ -130,8 +312,7 @@ If you are interested in my research or have any questions, suggestions, or coll
 </div>
 </div>
 
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint 2025</div><img src='images/2025nc.png'  alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint 2025</div><img src='images/2025nc.png' alt="sym"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Bio-inspired Visual Synaptic Transistors with Reconfigurable Polarization Perception](https://jefferyzhifeng.github.io/)
@@ -139,11 +320,11 @@ If you are interested in my research or have any questions, suggestions, or coll
 Xiong, J., Huang, M., **Wang, Z. (third author)**, et al.
 
 [**Project**](https://jefferyzhifeng.github.io/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Nature communication, Under Review, 2025.
+- Nature Communications, Under Review, 2025.
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint 2025</div><img src='images/2025_BoVAR.png'  alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint 2025</div><img src='images/2025_BoVAR.png' alt="sym"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [BoVAR: Learning Adaptive Routing and Hierarchical Attention for Variable-Aperture Bokeh Rendering](https://jefferyzhifeng.github.io/)
@@ -155,8 +336,7 @@ Kang Chen, Shijun Yan, **Zhifeng Wang**, Aiwen Jiang.
 </div>
 </div>
 
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/2025cvpr1.png'  alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/2025cvpr1.png' alt="sym"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [VasTSD: Learning 3D Vascular Tree-state Space Diffusion Model for AngiographySynthesis](https://openaccess.thecvf.com/content/CVPR2025/html/Wang_VasTSD_Learning_3D_Vascular_Tree-state_Space_Diffusion_Model_for_Angiography_CVPR_2025_paper.html)
@@ -168,7 +348,7 @@ Kang Chen, Shijun Yan, **Zhifeng Wang**, Aiwen Jiang.
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TVC 2025</div><img src='images/2024tvc.png'  alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TVC 2025</div><img src='images/2024tvc.png' alt="sym"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Angio-Diff: Learning a Self-Supervised Adversarial Diffusion Model for Angiographic Geometry Generation](https://jefferyzhifeng.github.io)
@@ -176,11 +356,11 @@ Kang Chen, Shijun Yan, **Zhifeng Wang**, Aiwen Jiang.
 **Zhifeng Wang**, Renjiao Yi&#9993;, Xin Wen, Chenyang Zhu, Kai Xu, Kunlun He&#9993;
 
 [**Project**](https://jefferyzhifeng.github.io) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
--  The Visual Computer, 2025.
+- The Visual Computer, 2025.
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Meta-Radiology 2024</div><img src='images/2024meta.png'  alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Meta-Radiology 2024</div><img src='images/2024meta.png' alt="sym"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Cardiovascular medical image and analysis based on 3D vision: A comprehensive survey](https://www.sciencedirect.com/science/article/pii/S2950162824000560)
@@ -192,7 +372,7 @@ Kang Chen, Shijun Yan, **Zhifeng Wang**, Aiwen Jiang.
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">PRCV 2022</div><img src='images/2022prcv.png'  alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">PRCV 2022</div><img src='images/2022prcv.png' alt="sym"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [A Dense Prediction ViT Network for Single Image Bokeh Rendering](https://link.springer.com/chapter/10.1007/978-3-031-18916-6_18)
@@ -200,11 +380,11 @@ Kang Chen, Shijun Yan, **Zhifeng Wang**, Aiwen Jiang.
 **Zhifeng Wang**, Aiwen Jiang&#9993;
 
 [**Project**](https://jefferyzhifeng.github.io) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- The 5th Chinese Conference on Pattern Recognition and Computer Vision(PRCV), 2022.
+- PRCV 2022.
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">JVCIR 2022</div><img src='images/2022jvcir.png'  alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">JVCIR 2022</div><img src='images/2022jvcir.png' alt="sym"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Self-supervised multi-scale pyramid fusion networks for realistic bokeh effect rendering](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
@@ -212,28 +392,27 @@ Kang Chen, Shijun Yan, **Zhifeng Wang**, Aiwen Jiang.
 **Zhifeng Wang**, Aiwen Jiang&#9993;, Chunjie Zhang, Hanxi Li, Bo Liu
 
 [**Project**](https://jefferyzhifeng.github.io) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Journal of Visual Communication and Image Representation(JVCIR), 2022.
+- JVCIR 2022.
 </div>
 </div>
 
-
+<!-- ===============================
+     Honors
+     =============================== -->
 # 🎖 Honors and Awards
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPRW 2025</div><img src='images/2025cvprw_bokeh.png' alt="sym" style="width: auto; height: 150px; object-fit: cover;"></div></div>
-  
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPRW 2025</div><img src='images/2025cvprw_bokeh.png' alt="sym"></div></div>
 <div class='paper-box-text' markdown="1">
-  
+
 [Mobile AI Workshop and Challenges 2025](https://codalab.lisn.upsaclay.fr/competitions/21562)
 
 Organized by **CVPR2025**
 
-[**Project**](https://codalab.lisn.upsaclay.fr/competitions/21562) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- MAI 2025 Bokeh Effect Rendering Challenge.
-
+- MAI 2025 Bokeh Effect Rendering Challenge.  
 **Winner**
 </div>
 </div>
-
-
+- *2025.11* National Scholarship (3/183), 2025.
 - *2022.11* National Scholarship (Top 0.2%), 2022.
 - *2022.09* First-class Academic Scholarship, 2022.
 - *2021.09* First-class Academic Scholarship, 2021.
@@ -243,7 +422,6 @@ Organized by **CVPR2025**
 # 📖 Services
 - Reviewers: PRCV’23/24, CAD/CG, JVCIR, PG.
 - Memberships: IEEE Student Member, CSIG Student Member, CAAI Student Member, CVF Member.
-
 
 # 💻 Internships
 - *2025.03 - 2025.08*, AI Research Intern (Medical LLMs) @[Alibaba DAMO Academy](https://damo.alibaba.com/?language=zh), Hangzhou, China.
