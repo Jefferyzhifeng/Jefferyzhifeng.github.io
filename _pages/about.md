@@ -303,7 +303,7 @@ redirect_from:
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint 2025</div><img src='images/2026physconsr.png' alt="sym"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Phys-ConSR: Learning Fast Differentiable Physically-Informed Continuous Medical Super-Resolution via 2D Gaussian](https://jefferyzhifeng.github.io/)
+[PhysConSR: Learning Fast Differentiable Physically-Informed Continuous Medical Super-Resolution via 2D Gaussian](https://jefferyzhifeng.github.io/)
 
 **Zhifeng Wang**, Renjiao Yi, et al.
 
