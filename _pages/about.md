@@ -272,18 +272,46 @@ redirect_from:
       </p>
 
       <div class="research-scope">
-        <p style="margin:0;">
-          My research is centered on <strong>AI for Healthcare</strong>. I develop <strong>structure-aware</strong> methods for
-          <strong>medical image generation, reconstruction, and enhancement</strong>, where anatomical priors and explicit structural constraints
-          (e.g., connectivity, geometry, and topology of clinically relevant structures) are incorporated to improve fidelity and robustness.
-          My goal is to build techniques that translate into <strong>practical downstream clinical use</strong>, such as diagnosis-relevant visualization and analysis.
-        </p>
+<p style="
+  margin: 0;
+  line-height: 1.85;
+  font-size: 1.03rem;
+  color: #374151;
+">
+  My research focuses on
+  <span style="font-weight:700; color:#1f3a8a;">AI for healthcare</span>,
+  with an emphasis on
+  <span style="font-weight:700; color:#4f46e5;">structure-aware methods</span>
+  for medical image
+  <span style="font-weight:600; color:#4338ca;">
+    generation, reconstruction, and enhancement
+  </span>.
+  By integrating
+  <span style="font-weight:600; color:#0f766e;">anatomical priors</span>
+  and
+  <span style="font-weight:600; color:#0f766e;">explicit structural constraints</span>,
+  I aim to improve the
+  <span style="font-weight:600; color:#7c2d12;">reliability</span>
+  and
+  <span style="font-weight:600; color:#7c2d12;">clinical relevance</span>
+  of learned representations.
+  I am particularly interested in approaches that can be translated into
+  <span style="font-weight:600; color:#374151; text-decoration:underline;">
+    real-world clinical workflows
+  </span>.
+  In parallel, I explore
+  <span style="font-weight:700; color:#5b21b6;">
+    physics-informed intelligence
+  </span>
+  to better align learning-based models with underlying
+  <span style="font-weight:600; color:#1e293b;">
+    physical and imaging principles
+  </span>.
+</p>
       </div>
 
       <p style="margin-top:0.95rem;">
-        If you are interested in my research or potential collaborations, please feel free to contact me at<br>
-        Email: <a href="mailto:zhifengwang@nudt.edu.cn">zhifengwang@nudt.edu.cn</a> /
-        <a href="mailto:zhifengwang686@gmail.com">zhifengwang686@gmail.com</a>.
+        If you are interested in my research or potential collaborations, please feel free to contact me at<br> Email: <a href="mailto:zhifengwang@nudt.edu.cn">zhifengwang@nudt.edu.cn</a> <a href="mailto:zhifengwang686@gmail.com">zhifengwang686@gmail.com</a>.
       </p>
 
       <span class="about-pill">Actively seeking internship / collaboration opportunities in AI for Healthcare.</span>
@@ -292,11 +320,11 @@ redirect_from:
     <div class="about-right">
       <h3>Current Focus</h3>
       <ul>
-        <li>Structure-aware generation & reconstruction</li>
-        <li>Medical image enhancement for real-world data</li>
-        <li>Anatomical priors (topology, connectivity, geometry)</li>
-        <li>Clinically-driven downstream practice</li>
-        <li>Efficient and reliable deployment</li>
+        <li><span style="font-weight:600; color:#4f46e5;">Structure-aware</span> medical image generation, reconstruction, and enhancement</li>
+        <li>Integrating <span style="font-weight:600; color:#0f766e;">anatomical priors</span> (topology, connectivity, geometry)</li>
+        <li>Explicit <span style="font-weight:600; color:#0f766e;">structural constraints</span> for robust and reliable modeling</li>
+        <li><span style="font-weight:600; color:#7c2d12;">Clinically motivated</span> downstream visualization and analysis</li>
+        <li>Exploring <span style="font-weight:600; color:#5b21b6;">physics-informed intelligence</span> for improved generalization</li>
       </ul>
     </div>
   </div>
