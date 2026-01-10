@@ -90,7 +90,7 @@ redirect_from:
 .about-philosophy strong{color:#4f46e5;}
 
 /* ===============================
-   Section headers (HTML-based)
+   Section titles
    =============================== */
 .section-title{
   margin:1.6rem 0 0.6rem 0;
@@ -98,15 +98,21 @@ redirect_from:
   font-weight:850;
   color:#0f172a;
 }
-.section-subtitle{
-  margin:1.2rem 0 0.6rem 0;
-  font-size:1.25rem;
-  font-weight:850;
-  color:#0f172a;
+
+/* ===============================
+   News card
+   =============================== */
+.news-card{
+  margin-top:0.6rem;
+  border:1px solid rgba(0,0,0,0.10);
+  border-radius:14px;
+  background:linear-gradient(180deg, rgba(99,102,241,0.06), rgba(99,102,241,0.02));
+  box-shadow:0 6px 18px rgba(0,0,0,0.06);
+  padding:0.85rem 0.95rem;
 }
 
 /* ===============================
-   Paper-box (fixed layout)
+   Paper-box layout (fixed)
    =============================== */
 .paper-box{
   display:flex;
@@ -134,25 +140,25 @@ redirect_from:
   cursor:zoom-in;
 }
 
-/* badge in top-left */
+/* Badge: smaller + closer top-left */
 .paper-badge{
   position:absolute;
-  top:10px; left:10px;
-  padding:0.25rem 0.55rem;
-  font-size:0.86rem;
+  top:8px; left:8px;
+  padding:0.18rem 0.45rem;
+  font-size:0.78rem;
   font-weight:850;
   color:#ffffff;
   background:#1d4ed8;
-  border-radius:10px;
-  box-shadow:0 6px 18px rgba(29,78,216,0.25);
+  border-radius:9px;
+  box-shadow:0 6px 18px rgba(29,78,216,0.22);
 }
 
-/* right text */
+/* Typography: unify sizes */
 .paper-box-text{flex:1 1 auto; min-width:0;}
 .paper-title{
   display:inline-block;
-  font-size:1.25rem;
-  font-weight:850;
+  font-size:1.10rem;        /* 统一更协调 */
+  font-weight:750;
   color:#1d4ed8;
   text-decoration:underline;
   text-underline-offset:3px;
@@ -160,24 +166,25 @@ redirect_from:
 }
 .paper-authors{
   margin-top:0.45rem;
-  font-size:1.05rem;
+  font-size:1.00rem;
+  font-weight:500;          /* 不整体加粗 */
   color:#334155;
-  font-weight:650;
 }
-.paper-links{
-  margin-top:0.6rem;
-}
+.paper-authors strong{font-weight:800;} /* 只加粗 Zhifeng Wang */
+
+.paper-links{margin-top:0.55rem;}
 .paper-links a{
-  font-size:1.05rem;
-  font-weight:850;
+  font-size:1.00rem;
+  font-weight:750;
   color:#1d4ed8;
   text-decoration:underline;
   text-underline-offset:3px;
 }
 .paper-meta{
-  margin:0.55rem 0 0 1.1rem;
+  margin:0.45rem 0 0 1.1rem;
   color:#334155;
   line-height:1.65;
+  font-size:0.98rem;
 }
 .paper-meta li{margin:0.15rem 0;}
 
@@ -189,18 +196,6 @@ redirect_from:
     height:auto;
     aspect-ratio:5/3;
   }
-}
-
-/* ===============================
-   News card (keep your style)
-   =============================== */
-.news-card{
-  margin-top:0.6rem;
-  border:1px solid rgba(0,0,0,0.10);
-  border-radius:14px;
-  background:linear-gradient(180deg, rgba(99,102,241,0.06), rgba(99,102,241,0.02));
-  box-shadow:0 6px 18px rgba(0,0,0,0.06);
-  padding:0.85rem 0.95rem;
 }
 
 /* ===============================
@@ -379,7 +374,7 @@ redirect_from:
 </div>
 
 <!-- ===============================
-     Publications (PURE HTML: stable)
+     Publications
      =============================== -->
 <h2 class="section-title">📝 Publications</h2>
 
@@ -389,7 +384,9 @@ redirect_from:
     <img src="images/2026physconsr.png" alt="PhysConSR teaser">
   </div>
   <div class="paper-box-text">
-    <a class="paper-title" href="https://jefferyzhifeng.github.io/">PhysConSR: Learning Fast Differentiable Physically-Informed Continuous Medical Super-Resolution via 2D Gaussian</a>
+    <a class="paper-title" href="https://jefferyzhifeng.github.io/">
+      PhysConSR: Learning Fast Differentiable Physically-Informed Continuous Medical Super-Resolution via 2D Gaussian
+    </a>
     <div class="paper-authors"><strong>Zhifeng Wang</strong>, Renjiao Yi, et al.</div>
     <div class="paper-links"><a href="https://jefferyzhifeng.github.io/">Project</a></div>
     <ul class="paper-meta">
@@ -401,11 +398,13 @@ redirect_from:
 <div class="paper-box">
   <div class="paper-box-image">
     <div class="paper-badge">Preprint 2025</div>
-    <img src="images/2025nc.png" alt="Nature Communications (third author) teaser">
+    <img src="images/2025nc.png" alt="Nature Communications teaser">
   </div>
   <div class="paper-box-text">
-    <a class="paper-title" href="https://jefferyzhifeng.github.io/">Bio-inspired Visual Synaptic Transistors with Reconfigurable Polarization Perception</a>
-    <div class="paper-authors">Xiong, J., Huang, M., <strong>Wang, Z. (third author)</strong>, et al.</div>
+    <a class="paper-title" href="https://jefferyzhifeng.github.io/">
+      Bio-inspired Visual Synaptic Transistors with Reconfigurable Polarization Perception
+    </a>
+    <div class="paper-authors">Xiong, J., Huang, M., <strong>Zhifeng Wang</strong> (third author), et al.</div>
     <div class="paper-links"><a href="https://jefferyzhifeng.github.io/">Project</a></div>
     <ul class="paper-meta">
       <li>Nature Communications, Under Review, 2025.</li>
@@ -419,7 +418,9 @@ redirect_from:
     <img src="images/2025_BoVAR.png" alt="BoVAR teaser">
   </div>
   <div class="paper-box-text">
-    <a class="paper-title" href="https://jefferyzhifeng.github.io/">BoVAR: Learning Adaptive Routing and Hierarchical Attention for Variable-Aperture Bokeh Rendering</a>
+    <a class="paper-title" href="https://jefferyzhifeng.github.io/">
+      BoVAR: Learning Adaptive Routing and Hierarchical Attention for Variable-Aperture Bokeh Rendering
+    </a>
     <div class="paper-authors">Kang Chen, Shijun Yan, <strong>Zhifeng Wang</strong>, Aiwen Jiang.</div>
     <div class="paper-links"><a href="https://jefferyzhifeng.github.io/">Project</a></div>
     <ul class="paper-meta">
@@ -434,7 +435,9 @@ redirect_from:
     <img src="images/2025cvpr1.png" alt="VasTSD teaser">
   </div>
   <div class="paper-box-text">
-    <a class="paper-title" href="https://openaccess.thecvf.com/content/CVPR2025/html/Wang_VasTSD_Learning_3D_Vascular_Tree-state_Space_Diffusion_Model_for_Angiography_CVPR_2025_paper.html">VasTSD: Learning 3D Vascular Tree-state Space Diffusion Model for Angiography Synthesis</a>
+    <a class="paper-title" href="https://openaccess.thecvf.com/content/CVPR2025/html/Wang_VasTSD_Learning_3D_Vascular_Tree-state_Space_Diffusion_Model_for_Angiography_CVPR_2025_paper.html">
+      VasTSD: Learning 3D Vascular Tree-state Space Diffusion Model for Angiography Synthesis
+    </a>
     <div class="paper-authors"><strong>Zhifeng Wang</strong>, Renjiao Yi, Xin Wen, Chenyang Zhu✉, Kai Xu✉</div>
     <div class="paper-links"><a href="https://jefferyzhifeng.github.io/projects/VasTSD/">Project</a></div>
     <ul class="paper-meta">
@@ -449,7 +452,9 @@ redirect_from:
     <img src="images/2024tvc.png" alt="Angio-Diff teaser">
   </div>
   <div class="paper-box-text">
-    <a class="paper-title" href="https://jefferyzhifeng.github.io">Angio-Diff: Learning a Self-Supervised Adversarial Diffusion Model for Angiographic Geometry Generation</a>
+    <a class="paper-title" href="https://jefferyzhifeng.github.io">
+      Angio-Diff: Learning a Self-Supervised Adversarial Diffusion Model for Angiographic Geometry Generation
+    </a>
     <div class="paper-authors"><strong>Zhifeng Wang</strong>, Renjiao Yi✉, Xin Wen, Chenyang Zhu, Kai Xu, Kunlun He✉</div>
     <div class="paper-links"><a href="https://jefferyzhifeng.github.io">Project</a></div>
     <ul class="paper-meta">
@@ -464,7 +469,9 @@ redirect_from:
     <img src="images/2024meta.png" alt="Survey teaser">
   </div>
   <div class="paper-box-text">
-    <a class="paper-title" href="https://www.sciencedirect.com/science/article/pii/S2950162824000560">Cardiovascular medical image and analysis based on 3D vision: A comprehensive survey</a>
+    <a class="paper-title" href="https://www.sciencedirect.com/science/article/pii/S2950162824000560">
+      Cardiovascular medical image and analysis based on 3D vision: A comprehensive survey
+    </a>
     <div class="paper-authors"><strong>Zhifeng Wang</strong>, Renjiao Yi✉, Xin Wen, Chenyang Zhu, Kai Xu</div>
     <div class="paper-links"><a href="https://jefferyzhifeng.github.io">Project</a></div>
     <ul class="paper-meta">
@@ -479,7 +486,9 @@ redirect_from:
     <img src="images/2022prcv.png" alt="PRCV teaser">
   </div>
   <div class="paper-box-text">
-    <a class="paper-title" href="https://link.springer.com/chapter/10.1007/978-3-031-18916-6_18">A Dense Prediction ViT Network for Single Image Bokeh Rendering</a>
+    <a class="paper-title" href="https://link.springer.com/chapter/10.1007/978-3-031-18916-6_18">
+      A Dense Prediction ViT Network for Single Image Bokeh Rendering
+    </a>
     <div class="paper-authors"><strong>Zhifeng Wang</strong>, Aiwen Jiang✉</div>
     <div class="paper-links"><a href="https://jefferyzhifeng.github.io">Project</a></div>
     <ul class="paper-meta">
@@ -494,7 +503,9 @@ redirect_from:
     <img src="images/2022jvcir.png" alt="JVCIR teaser">
   </div>
   <div class="paper-box-text">
-    <a class="paper-title" href="https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf">Self-supervised multi-scale pyramid fusion networks for realistic bokeh effect rendering</a>
+    <a class="paper-title" href="https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf">
+      Self-supervised multi-scale pyramid fusion networks for realistic bokeh effect rendering
+    </a>
     <div class="paper-authors"><strong>Zhifeng Wang</strong>, Aiwen Jiang✉, Chunjie Zhang, Hanxi Li, Bo Liu</div>
     <div class="paper-links"><a href="https://jefferyzhifeng.github.io">Project</a></div>
     <ul class="paper-meta">
@@ -504,17 +515,39 @@ redirect_from:
 </div>
 
 <!-- ===============================
-     Honors / Services / Internships (PURE HTML)
+     Honors and Awards (with the missing card restored)
      =============================== -->
 <h2 class="section-title">🎖 Honors and Awards</h2>
-<ul style="line-height:1.75; color:#334155;">
-  <li><em>2025.11</em> National Scholarship (3/183), 2025.</li>
-  <li><em>2022.11</em> National Scholarship (Top 0.2%), 2022.</li>
+
+<div class="paper-box">
+  <div class="paper-box-image">
+    <div class="paper-badge">CVPRW 2025</div>
+    <img src="images/2025cvprw_bokeh.png" alt="MAI 2025 Bokeh Winner Certificate">
+  </div>
+  <div class="paper-box-text">
+    <a class="paper-title" href="https://codalab.lisn.upsaclay.fr/competitions/21562">
+      Mobile AI Workshop and Challenges 2025
+    </a>
+    <div class="paper-authors">Organized by <strong>CVPR2025</strong></div>
+    <div class="paper-links"><a href="https://codalab.lisn.upsaclay.fr/competitions/21562">Project</a></div>
+    <ul class="paper-meta">
+      <li>MAI 2025 Bokeh Effect Rendering Challenge.</li>
+      <li><strong>Winner</strong>.</li>
+    </ul>
+  </div>
+</div>
+
+<ul style="line-height:1.75; color:#334155; margin-top:0.4rem;">
+  <li><em>2025.11</em> China National Scholarship (3/183), 2025.</li>
+  <li><em>2022.11</em> China National Scholarship (Top 0.2%), 2022.</li>
   <li><em>2022.09</em> First-class Academic Scholarship, 2022.</li>
   <li><em>2021.09</em> First-class Academic Scholarship, 2021.</li>
   <li><em>2020.09</em> First-class Academic Scholarship, 2020.</li>
 </ul>
 
+<!-- ===============================
+     Services / Internships
+     =============================== -->
 <h2 class="section-title">📖 Services</h2>
 <ul style="line-height:1.75; color:#334155;">
   <li><strong>Reviewers:</strong> PRCV’23/24, CAD/CG, JVCIR, PG.</li>
@@ -567,7 +600,6 @@ redirect_from:
     document.body.style.overflow = "";
   }
 
-  // dblclick to open
   document.querySelectorAll(".paper-box-image img").forEach((img) => {
     img.addEventListener("dblclick", (e) => {
       e.preventDefault();
