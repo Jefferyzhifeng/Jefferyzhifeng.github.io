@@ -314,7 +314,7 @@ redirect_from:
         <a href="mailto:zhifengwang@nudt.edu.cn">zhifengwang@nudt.edu.cn</a> /
         <a href="mailto:zhifengwang686@gmail.com">zhifengwang686@gmail.com</a>
       </p>
-      <span class="about-pill">Currently open to research collaboration opportunities in AI for Healthcare, physics-informed intelligence, and other areas of computer vision.</span>
+      <span class="about-pill">Open to research-oriented collaborations in AI for Healthcare, physics-informed intelligence, and computer vision.</span>
     </div>
 
     <div class="about-right">
