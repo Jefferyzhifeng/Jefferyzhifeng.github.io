@@ -17,9 +17,8 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 # About me
-Hi, I am Zhifeng Wang (汪智峰). I am a third-year master's student at the College of Computer Science and Technology of National University of Defense Technology, under the supervision of Prof. [Kai Xu](https://kevinkaixu.net/) and Assoc.Prof. [Renjiao Yi](https://renjiaoyi.github.io/). I am currently doing a research visiting internship at Alibaba DAMO Academy.
+Hi, I am Zhifeng Wang (汪智峰). I am a third-year master's student at the College of Computer Science and Technology of National University of Defense Technology, under the supervision of Prof. [Kai Xu](https://kevinkaixu.net/) and Assoc.Prof. [Renjiao Yi](https://renjiaoyi.github.io/).
 
-From 2019 to 2023, I earned my Bachelor’s degree from Jiangxi Normal University, and worked closely with [Dr. Aiwen Jiang](https://jsjxy.jxnu.edu.cn/2014/0423/c3381a106160/page.htm). 
 I founded and was in charge of the [Mt-aistudio](https://motong-ai-studio.github.io/), which conducts research in the areas of computer vision.
 
 My research interest: include but are not limited to Low-Level Vision, AI for Healthcare, AIGC, and LLMs. 
