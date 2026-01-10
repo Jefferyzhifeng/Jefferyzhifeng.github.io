@@ -322,7 +322,7 @@ redirect_from:
       <ul>
         <li>Structure-aware Medical Imaging</li>
         <li>Medical Image Reconstruction & Enhancement</li>
-        <li>Generative Modeling for Healthcare</li>
+        <li>Generative Modeling</li>
         <li>Clinical Visualization & Analysis</li>
         <li>Physics-informed Intelligence</li>
       </ul>
