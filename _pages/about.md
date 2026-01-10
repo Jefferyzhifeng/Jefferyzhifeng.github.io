@@ -3,7 +3,7 @@ permalink: /
 title: ""
 excerpt: ""
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
@@ -17,15 +17,35 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 # About me
-Hi, I am Zhifeng Wang (汪智峰). I am a third-year master's student at the College of Computer Science and Technology of National University of Defense Technology, under the supervision of Prof. [Kai Xu](https://kevinkaixu.net/) and Assoc.Prof. [Renjiao Yi](https://renjiaoyi.github.io/). I am currently doing a research visiting internship at Alibaba DAMO Academy.
 
-From 2019 to 2023, I earned my Bachelor’s degree from Jiangxi Normal University, and worked closely with [Dr. Aiwen Jiang](https://jsjxy.jxnu.edu.cn/2014/0423/c3381a106160/page.htm). I founded and was in charge of the [Mt-aistudio](https://motong-ai-studio.github.io/), which conducts research in the areas of computer vision.
+<div class="aboutme-wrap">
 
-My research interest: include but are not limited to Low-Level Vision, AI for Healthcare, AIGC, and LLMs. 
+  <ul class="aboutme-list aboutme-list--compact">
+    <li>Hi, I am Zhifeng Wang (汪智峰).</li>
+    <li>Third-year M.S. student at NUDT (CS).</li>
+    <li>Supervised by Prof. Kai Xu and Assoc. Prof. Renjiao Yi.</li>
+    <li>Research visiting intern at Alibaba DAMO Academy.</li>
+    <li>Interests: Low-Level Vision, AI for Healthcare, AIGC, LLMs.</li>
+    <li>Email: <a href="mailto:zhifengwang@nudt.edu.cn">zhifengwang@nudt.edu.cn</a> / <a href="mailto:zhifengwang686@gmail.com">zhifengwang686@gmail.com</a>.</li>
+  </ul>
 
-If you are interested in my research or have any questions, suggestions, or collaboration ideas, please contact me at Email: [zhifengwang@nudt.edu.cn](mailto:zhifengwang@nudt.edu.cn) and [zhifengwang686@gmail.com](mailto:zhifengwang686@gmail.com).
+  <details class="aboutme-more">
+    <summary class="aboutme-more__btn" data-open="More" data-close="Less"></summary>
 
-<span style="color:red; font-weight:bold;">I am actively seeking internship or collaboration opportunities in the application of AIGC for Healthcare, particularly in LLMs.</span>
+    <div class="aboutme-more__box">
+      <ul class="aboutme-list aboutme-list--full">
+        <li>From 2019 to 2023, I earned my Bachelor’s degree from Jiangxi Normal University.</li>
+        <li>Worked closely with <a href="https://jsjxy.jxnu.edu.cn/2014/0423/c3381a106160/page.htm">Dr. Aiwen Jiang</a>.</li>
+        <li>Founded and led <a href="https://motong-ai-studio.github.io/">Mt-aistudio</a>, focusing on computer vision research.</li>
+        <li>Open to internship and collaboration opportunities in AIGC for Healthcare, particularly in LLMs.</li>
+        <li>If you are interested in my research or have suggestions/collaboration ideas, feel free to reach out.</li>
+        <li>Also interested in efficient low-level vision and real-time rendering for practical deployment.</li>
+        <li>Actively building projects in medical generation, multimodal learning, and structure-aware modeling.</li>
+      </ul>
+    </div>
+  </details>
+
+</div>
 
 
 # 🔥 News
@@ -53,7 +73,7 @@ If you are interested in my research or have any questions, suggestions, or coll
 
 
 
-# 📝 Publications 
+# 📝 Publications
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR‘2025</div><img src='images/2025cvpr1.png'  alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -75,52 +95,18 @@ If you are interested in my research or have any questions, suggestions, or coll
 **Zhifeng Wang**, Renjiao Yi&#9993;, Xin Wen, Chenyang Zhu, Kai Xu, Kunlun He&#9993;
 
 [**Project**](https://jefferyzhifeng.github.io) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
--  The Visual Computer, 2025.
+- The Visual Computer, 2025.
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Meta-Radiology'2024</div><img src='images/2024meta.png'  alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Cardiovascular medical image and analysis based on 3D vision: A comprehensive survey](https://www.sciencedirect.com/science/article/pii/S2950162824000560)
-
-**Zhifeng Wang**, Renjiao Yi&#9993;, Xin Wen, Chenyang Zhu, Kai Xu
-
-[**Project**](https://jefferyzhifeng.github.io) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Meta-Radiology 2024.
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">PRCV‘2022</div><img src='images/2022prcv.png'  alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[A Dense Prediction ViT Network for Single Image Bokeh Rendering](https://link.springer.com/chapter/10.1007/978-3-031-18916-6_18)
-
-**Zhifeng Wang**, Aiwen Jiang&#9993;
-
-[**Project**](https://jefferyzhifeng.github.io) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- The 5th Chinese Conference on Pattern Recognition and Computer Vision(PRCV), 2022.
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">JVCIR‘2022</div><img src='images/2022jvcir.png'  alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Self-supervised multi-scale pyramid fusion networks for realistic bokeh effect rendering](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
-
-**Zhifeng Wang**, Aiwen Jiang&#9993;, Chunjie Zhang, Hanxi Li, Bo Liu
-
-[**Project**](https://jefferyzhifeng.github.io) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Journal of Visual Communication and Image Representation(JVCIR), 2022.
-</div>
-</div>
 
 
 # 🎖 Honors and Awards
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPRW‘2025</div><img src='images/2025cvprw_bokeh.png' alt="sym" style="width: auto; height: 150px; object-fit: cover;"></div></div>
-  
+
 <div class='paper-box-text' markdown="1">
-  
+
 [Mobile AI Workshop and Challenges 2025](https://codalab.lisn.upsaclay.fr/competitions/21562)
 
 Organized by **CVPR2025**
@@ -138,13 +124,18 @@ Organized by **CVPR2025**
 - *2021.09* First-class Academic Scholarship, 2021.
 - *2020.09* First-class Academic Scholarship, 2020.
 
+
+
 <span class='anchor' id='-Services'></span>
 # 📖 Services
+
 - Reviewers: PRCV’23/24, CAD/CG, JVCIR, PG.
 - Memberships: IEEE Student Member, CSIG Student Member, CAAI Student Member, CVF Member.
 
 
+
 # 💻 Internships
+
 - *2025.03 - Now*, AI Research Intern (Medical LLMs) @[Alibaba DAMO Academy](https://damo.alibaba.com/?language=zh), Hangzhou, China.
 - *2022.10 - 2023.07*, Algorithm Engineer Intern @ [SpeedBot Robotics Co., Ltd.](https://www.speedbot.com/en/home), Changsha, China.
 
