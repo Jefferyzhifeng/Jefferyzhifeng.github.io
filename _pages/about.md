@@ -268,7 +268,7 @@ redirect_from:
         Hi, I am <strong>Zhifeng Wang (汪智峰)</strong>, a third-year master's student at the College of Computer Science and Technology,
         National University of Defense Technology, advised by Prof. <a href="https://kevinkaixu.net/">Kai Xu</a> and Assoc. Prof.
         <a href="https://renjiaoyi.github.io/">Renjiao Yi</a>.
-        I founded and currently lead the <a href="https://motong-ai-studio.github.io/">Mt-aistudio</a>, a research group focusing on computer vision.
+        I am a core initiator of <a href="https://motong-ai-studio.github.io/">Mt-aistudio</a>, a research group focusing on computer vision.
       </p>
 
       <div class="research-scope">
