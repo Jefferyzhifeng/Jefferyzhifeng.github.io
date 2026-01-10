@@ -309,11 +309,11 @@ redirect_from:
   </span>.
 </p>
       </div>
-
-      <p style="margin-top:0.95rem;">
-        If you are interested in my research or potential collaborations, please feel free to contact me at<br> Email: <a href="mailto:zhifengwang@nudt.edu.cn">zhifengwang@nudt.edu.cn</a> <a href="mailto:zhifengwang686@gmail.com">zhifengwang686@gmail.com</a>.
+      <p style="margin-top:0.9rem;">
+        <strong>Email:</strong>
+        <a href="mailto:zhifengwang@nudt.edu.cn">zhifengwang@nudt.edu.cn</a> /
+        <a href="mailto:zhifengwang686@gmail.com">zhifengwang686@gmail.com</a>
       </p>
-
       <span class="about-pill">Actively seeking internship / collaboration opportunities in AI for Healthcare.</span>
     </div>
 
