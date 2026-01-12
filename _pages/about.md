@@ -422,7 +422,7 @@ redirect_from:
   </div>
 </div>
 
-<!-- <div class="paper-box">
+<div class="paper-box">
   <div class="paper-box-image">
     <div class="paper-badge">Preprint 2025</div>
     <img src="images/2025nc.png" alt="Nature Communications teaser">
@@ -437,7 +437,7 @@ redirect_from:
       <li>Nature Communications, Under Review, 2025.</li>
     </ul>
   </div>
-</div> -->
+</div>
 
 <div class="paper-box">
   <div class="paper-box-image">
