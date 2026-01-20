@@ -343,8 +343,8 @@ redirect_from:
     <li><em>2026.01</em>: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">ICASSP 2026</a>,Congratulations to Lubing.</li>
     <li><em>2025.11</em>: 🎉 Awarded the <a href="https://jefferyzhifeng.github.io">China National Scholarship</a> (Ranking 3/183).</li>
     <li><em>2025.05</em>: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">TVC Journal</a>.</li>
-    <li><em>2025.04</em>: 🎉 Won 1st place in the <a href="https://codalab.lisn.upsaclay.fr/competitions/21562#learn_the_details">CVPR2025W</a> “Mobile AI 2025 Real-Time Rendering Realistic Bokeh Challenge”,Congratulations to Kang Chen.</li>
-    <li><em>2025.04</em>: 🎉 Won 6th place in the <a href="https://codalab.lisn.upsaclay.fr/competitions/21564">CVPR2025W</a> “Mobile AI Challenge: RGB Photo Enhancement on Mobile GPUs”,Congratulations to Runhua Deng.</li>
+    <li><em>2025.04</em>: 🎉 Won 1st place in the <a href="https://codalab.lisn.upsaclay.fr/competitions/21562#learn_the_details">CVPR2025W</a> “Mobile AI 2025 Real-Time Rendering Realistic Bokeh Challenge”,Congratulations to Kang.</li>
+    <li><em>2025.04</em>: 🎉 Won 6th place in the <a href="https://codalab.lisn.upsaclay.fr/competitions/21564">CVPR2025W</a> “Mobile AI Challenge: RGB Photo Enhancement on Mobile GPUs”,Congratulations to Runhua.</li>
     <li><em>2025.02</em>: 🎉 One paper is accepted by <a href="https://cvpr.thecvf.com/Conferences/2025/">CVPR 2025</a> (CCF-A).</li>
   </ul>
 
