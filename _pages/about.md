@@ -406,14 +406,14 @@ redirect_from:
      =============================== -->
 <h2 class="section-title">📝 Publications</h2>
 
-<div class="paper-box">
+<!-- <div class="paper-box">
   <div class="paper-box-image">
     <div class="paper-badge">Preprint 2026</div>
-    <img src="images/2026physconsr.png" alt="PhysConSR teaser">
+    <img src="images/2026_icml.png" alt="PhysConSR teaser">
   </div>
   <div class="paper-box-text">
     <a class="paper-title" href="https://jefferyzhifeng.github.io/">
-      PhysConSR: Learning Fast Differentiable Physically-Informed Continuous Medical Super-Resolution via 2D Gaussian
+      PhysConSR: Learning Fast Differentiable Physically-Informed Continuous Medical Super-Resolution via 2D Gaussians
     </a>
     <div class="paper-authors"><strong>Zhifeng Wang</strong>, Renjiao Yi, et al.</div>
     <div class="paper-links"><a href="https://jefferyzhifeng.github.io/">Project</a></div>
@@ -421,7 +421,7 @@ redirect_from:
       <li>Under Review, 2026.</li>
     </ul>
   </div>
-</div>
+</div> -->
 
 <!-- <div class="paper-box">
   <div class="paper-box-image">
