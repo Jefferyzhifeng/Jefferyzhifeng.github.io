@@ -415,7 +415,7 @@ redirect_from:
     <a class="paper-title" href="https://jefferyzhifeng.github.io/">
       PhysConSR: Learning Fast Differentiable Physically-Informed Continuous Medical Super-Resolution via 2D Gaussians
     </a>
-    <div class="paper-authors"><strong>Zhifeng Wang</strong>, Renjiao Yi, et al.</div>
+    <div class="paper-authors"><strong>Zhifeng Wang</strong>, Long Peng, Xingyue Zhao, Chenyang Zhu, Kai Xu, Renjiao Yi.</div>
     <div class="paper-links"><a href="https://jefferyzhifeng.github.io/">Project</a></div>
     <ul class="paper-meta">
       <li>Under Review, 2026.</li>
