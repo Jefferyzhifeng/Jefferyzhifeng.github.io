@@ -396,16 +396,6 @@ redirect_from:
         <li>Clinical Visualization & Analysis</li>
         <li>Physics-informed Intelligence</li>
       </ul>
-      
-      <div class="focus-animation-wrapper">
-        <div class="orbit-system">
-          <div class="orbit-center"></div>
-          <div class="orbit-path">
-            <div class="orbit-satellite"></div>
-          </div>
-        </div>
-      </div>
-      </div>
     </div>
   </div>
 
