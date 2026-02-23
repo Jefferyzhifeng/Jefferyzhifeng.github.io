@@ -19,6 +19,76 @@ redirect_from:
 /* ===============================
    About Card (polished)
    =============================== */
+/* ===============================
+   Current Focus Animation
+   =============================== */
+.focus-animation-wrapper {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.orbit-system {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+/* 中心发光点（代表AI/核心节点） */
+.orbit-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
+  background: #4f46e5;
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(79, 70, 229, 0.6);
+  animation: pulse-center 2s infinite ease-in-out alternate;
+}
+
+/* 轨道 */
+.orbit-path {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px dashed rgba(99, 102, 241, 0.4);
+  border-radius: 50%;
+  animation: spin-orbit 4s linear infinite;
+}
+
+/* 环绕的卫星点（代表物理规律/数据输入） */
+.orbit-satellite {
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  background: #1d4ed8;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(29, 78, 216, 0.6);
+}
+
+/* 动画关键帧 */
+@keyframes pulse-center {
+  0% { transform: translate(-50%, -50%) scale(0.9); opacity: 0.8; }
+  100% { transform: translate(-50%, -50%) scale(1.2); opacity: 1; }
+}
+
+@keyframes spin-orbit {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+  
 .about-card{
   margin-top:0.7rem;
   border:1px solid rgba(0,0,0,0.08);
@@ -326,6 +396,25 @@ redirect_from:
         <li>Clinical Visualization & Analysis</li>
         <li>Physics-informed Intelligence</li>
       </ul>
+      <div class="about-right">
+      <h3>Current Focus</h3>
+      <ul>
+        <li>Structure-aware Medical Imaging</li>
+        <li>Medical Image Reconstruction & Enhancement</li>
+        <li>Generative Modeling</li>
+        <li>Clinical Visualization & Analysis</li>
+        <li>Physics-informed Intelligence</li>
+      </ul>
+      
+      <div class="focus-animation-wrapper">
+        <div class="orbit-system">
+          <div class="orbit-center"></div>
+          <div class="orbit-path">
+            <div class="orbit-satellite"></div>
+          </div>
+        </div>
+      </div>
+      </div>
     </div>
   </div>
 
