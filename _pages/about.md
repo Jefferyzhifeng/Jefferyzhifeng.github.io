@@ -396,15 +396,6 @@ redirect_from:
         <li>Clinical Visualization & Analysis</li>
         <li>Physics-informed Intelligence</li>
       </ul>
-      <div class="about-right">
-      <h3>Current Focus</h3>
-      <ul>
-        <li>Structure-aware Medical Imaging</li>
-        <li>Medical Image Reconstruction & Enhancement</li>
-        <li>Generative Modeling</li>
-        <li>Clinical Visualization & Analysis</li>
-        <li>Physics-informed Intelligence</li>
-      </ul>
       
       <div class="focus-animation-wrapper">
         <div class="orbit-system">
