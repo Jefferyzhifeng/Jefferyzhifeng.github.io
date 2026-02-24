@@ -502,7 +502,7 @@ redirect_from:
     <a class="paper-title" href="https://jefferyzhifeng.github.io/">
       Time-indexed reuse of physical states for hardware-efficient in-sensor visual computing
     </a>
-    <div class="paper-authors">Xiong, J., Huang, M., <strong>Zhifeng Wang</strong> (third author), et al.</div>
+    <div class="paper-authors">Xiong, J., Huang, M., <strong>Zhifeng Wang</strong>, et al.</div>
     <div class="paper-links"><a href="https://jefferyzhifeng.github.io/">Project</a></div>
     <ul class="paper-meta">
       <li>Science Advances, Under Review, 2025.</li>
