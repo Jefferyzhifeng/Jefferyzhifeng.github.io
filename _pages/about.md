@@ -505,7 +505,7 @@ redirect_from:
     <div class="paper-authors">Xiong, J., Huang, M., <strong>Zhifeng Wang</strong> (third author), et al.</div>
     <div class="paper-links"><a href="https://jefferyzhifeng.github.io/">Project</a></div>
     <ul class="paper-meta">
-      <li>Science Advances, Under Review, 2026.</li>
+      <li>Science Advances, Under Review, 2025.</li>
     </ul>
   </div>
 </div>
