@@ -476,7 +476,7 @@ redirect_from:
      =============================== -->
 <h2 class="section-title">📝 Publications</h2>
 
-<!-- <div class="paper-box">
+<div class="paper-box">
   <div class="paper-box-image">
     <div class="paper-badge">Preprint 2026</div>
     <img src="images/2026_icml.png" alt="PhysConSR teaser">
@@ -491,24 +491,24 @@ redirect_from:
       <li>Under Review, 2026.</li>
     </ul>
   </div>
-</div> -->
+</div>
 
-<!-- <div class="paper-box">
+<div class="paper-box">
   <div class="paper-box-image">
     <div class="paper-badge">Preprint 2025</div>
     <img src="images/2025nc.png" alt="Science Advances teaser">
   </div>
   <div class="paper-box-text">
     <a class="paper-title" href="https://jefferyzhifeng.github.io/">
-      Time-indexed reuse of physical states for hardware-efficient in- sensor visual computing
+      Time-indexed reuse of physical states for hardware-efficient in-sensor visual computing
     </a>
     <div class="paper-authors">Xiong, J., Huang, M., <strong>Zhifeng Wang</strong> (third author), et al.</div>
     <div class="paper-links"><a href="https://jefferyzhifeng.github.io/">Project</a></div>
     <ul class="paper-meta">
-      <li>Science Advances, Under Review, 2025.</li>
+      <li>Science Advances, Under Review, 2026.</li>
     </ul>
   </div>
-</div> -->
+</div>
 
 <div class="paper-box">
   <div class="paper-box-image">
