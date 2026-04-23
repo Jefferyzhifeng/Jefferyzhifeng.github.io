@@ -86,7 +86,49 @@ redirect_from:
   100% { transform: rotate(360deg); }
 }
 
+/* Scroll animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+.fade-in-up {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.section-title {
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.about-card,
+.news-card,
+.tools-grid,
+.education-timeline,
+.paper-box {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.paper-box:nth-child(1) { animation-delay: 0.1s; }
+.paper-box:nth-child(2) { animation-delay: 0.15s; }
+.paper-box:nth-child(3) { animation-delay: 0.2s; }
+.paper-box:nth-child(4) { animation-delay: 0.25s; }
+.paper-box:nth-child(5) { animation-delay: 0.3s; }
+.paper-box:nth-child(6) { animation-delay: 0.35s; }
+.paper-box:nth-child(7) { animation-delay: 0.4s; }
+.paper-box:nth-child(8) { animation-delay: 0.45s; }
+
+.tool-card:nth-child(1) { animation-delay: 0.1s; }
+.tool-card:nth-child(2) { animation-delay: 0.2s; }
+
+.edu-item:nth-child(1) { animation-delay: 0.1s; }
+.edu-item:nth-child(2) { animation-delay: 0.2s; }
 
   
 .about-card{
@@ -399,15 +441,116 @@ redirect_from:
     </div>
   </div>
 
-  <div class="about-philosophy">
+  <div class=”about-philosophy”>
     “As a result of this honesty, we are forced to doubt.” — Richard Feynman
   </div>
 </div>
 
 <!-- ===============================
+     Tools & Projects
+     =============================== -->
+<h2 class=”section-title”>🛠 Tools & Projects</h2>
+<div class=”tools-grid”>
+  <a href=”https://papers4ai.github.io/Paperscope-hub/” target=”_blank” class=”tool-card”>
+    <div class=”tool-icon”>
+      <svg width=”32” height=”32” viewBox=”0 0 24 24” fill=”none” stroke=”currentColor” stroke-width=”2”>
+        <path d=”M4 19.5A2.5 2.5 0 0 1 6.5 17H20”></path>
+        <path d=”M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z”></path>
+        <path d=”M8 7h8M8 11h8M8 15h4”></path>
+      </svg>
+    </div>
+    <div class=”tool-content”>
+      <h3>Paperscope-hub</h3>
+      <p>A comprehensive platform for AI research papers. Browse, search, and explore cutting-edge research in computer vision and medical imaging.</p>
+      <span class=”tool-tag”>Research Platform</span>
+    </div>
+  </a>
+
+  <a href=”https://motong-ai-studio.github.io/” target=”_blank” class=”tool-card”>
+    <div class=”tool-icon”>
+      <svg width=”32” height=”32” viewBox=”0 0 24 24” fill=”none” stroke=”currentColor” stroke-width=”2”>
+        <circle cx=”12” cy=”12” r=”10”></circle>
+        <path d=”M8 14s1.5 2 4 2 4-2 4-2”></path>
+        <line x1=”9” y1=”9” x2=”9.01” y2=”9”></line>
+        <line x1=”15” y1=”9” x2=”15.01” y2=”9”></line>
+      </svg>
+    </div>
+    <div class=”tool-content”>
+      <h3>Mt-aistudio</h3>
+      <p>A research group focusing on computer vision, initiated as a core member. Collaborate with peers on cutting-edge CV projects.</p>
+      <span class=”tool-tag”>Research Group</span>
+    </div>
+  </a>
+</div>
+
+<style>
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.25rem;
+  margin-top: 0.6rem;
+}
+.tool-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem;
+  border-radius: 14px;
+  border: 1px solid rgba(99,102,241,0.15);
+  background: linear-gradient(135deg, rgba(99,102,241,0.08) 0%, rgba(255,255,255,0.95) 100%);
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 16px rgba(17,24,39,0.06);
+}
+.tool-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(99,102,241,0.18);
+  border-color: rgba(99,102,241,0.35);
+}
+.tool-icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(99,102,241,0.12);
+  color: #4f46e5;
+}
+.tool-content {
+  flex: 1;
+  min-width: 0;
+}
+.tool-content h3 {
+  margin: 0 0 0.4rem 0;
+  font-size: 1.12rem;
+  font-weight: 750;
+  color: #1d4ed8;
+}
+.tool-content p {
+  margin: 0 0 0.6rem 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: #475569;
+}
+.tool-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #4f46e5;
+  background: rgba(99,102,241,0.12);
+  border: 1px solid rgba(99,102,241,0.2);
+}
+</style>
+
+<!-- ===============================
      News
      =============================== -->
-<h2 class="section-title">🔥 News</h2>
+<h2 class=”section-title”>🔥 News</h2>
 <div class="news-card">
   <ul style="margin:0; padding-left:1.1rem; line-height:1.65;">
     <li><em>2026.01</em>: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">ICASSP 2026</a>,Congratulations to Lubing.</li>
@@ -658,10 +801,112 @@ redirect_from:
   <li><em>2022.10 – 2023.07</em>, Algorithm Engineer Intern @ <a href="https://www.speedbot.com/en/home">SpeedBot Robotics Co., Ltd.</a>, Changsha, China.</li>
 </ul>
 
+<!-- ===============================
+     Education
+     =============================== -->
+<h2 class="section-title">🎓 Education</h2>
+<div class="education-timeline">
+  <div class="edu-item">
+    <div class="edu-dot"></div>
+    <div class="edu-content">
+      <div class="edu-header">
+        <h3>Master of Computer Science</h3>
+        <span class="edu-period">2023 – Present</span>
+      </div>
+      <p class="edu-school">National University of Defense Technology, Changsha</p>
+      <p class="edu-detail">Advisor: <a href="https://kevinkaixu.net/">Prof. Kai Xu</a> & <a href="https://renjiaoyi.github.io/">Assoc. Prof. Renjiao Yi</a></p>
+    </div>
+  </div>
+
+  <div class="edu-item">
+    <div class="edu-dot"></div>
+    <div class="edu-content">
+      <div class="edu-header">
+        <h3>Bachelor of Computer Science</h3>
+        <span class="edu-period">2019 – 2023</span>
+      </div>
+      <p class="edu-school">National University of Defense Technology, Changsha</p>
+      <p class="edu-detail">GPA: 3.8/4.0 (Rank: 3/183) · First-class Academic Scholarship</p>
+    </div>
+  </div>
+</div>
+
+<style>
+.education-timeline {
+  margin-top: 0.6rem;
+  padding-left: 1.5rem;
+  border-left: 3px solid rgba(99,102,241,0.2);
+}
+.edu-item {
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+.edu-item:last-child {
+  padding-bottom: 0;
+}
+.edu-dot {
+  position: absolute;
+  left: -1.72rem;
+  top: 0.3rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #4f46e5;
+  box-shadow: 0 0 0 4px rgba(99,102,241,0.15);
+}
+.edu-content {
+  padding: 1rem 1.2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(99,102,241,0.12);
+  background: linear-gradient(135deg, rgba(99,102,241,0.06) 0%, rgba(255,255,255,0.95) 100%);
+}
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+.edu-header h3 {
+  margin: 0;
+  font-size: 1.08rem;
+  font-weight: 750;
+  color: #1e293b;
+}
+.edu-period {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #4f46e5;
+  background: rgba(99,102,241,0.12);
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+}
+.edu-school {
+  margin: 0 0 0.25rem 0;
+  font-size: 1rem;
+  color: #334155;
+  font-weight: 600;
+}
+.edu-detail {
+  margin: 0;
+  font-size: 0.92rem;
+  color: #64748b;
+  line-height: 1.5;
+}
+.edu-detail a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+.edu-detail a:hover {
+  text-decoration: underline;
+}
+</style>
+
 <hr>
 
 <p align="center">
-  <i>I know I am not the perfect one, yet aspire to chase the world and achieve greatness @ Zhifeng Wang — Latest update: 2025-11-04</i>
+  <i>I know I am not the perfect one, yet aspire to chase the world and achieve greatness @ Zhifeng Wang — Latest update: 2026-04-23</i>
 </p>
 
 <!-- ===============================
