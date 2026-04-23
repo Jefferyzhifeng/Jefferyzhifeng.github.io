@@ -133,71 +133,135 @@ redirect_from:
   
 .about-card{
   margin-top:0.7rem;
-  border:1px solid rgba(0,0,0,0.08);
-  border-radius:18px;
-  background:linear-gradient(180deg, rgba(99,102,241,0.06), rgba(255,255,255,1) 48%);
-  box-shadow:0 12px 34px rgba(17,24,39,0.08);
-  padding:1.7rem 1.75rem;
+  border:1px solid rgba(99,102,241,0.12);
+  border-radius:20px;
+  background:linear-gradient(170deg, rgba(99,102,241,0.07) 0%, rgba(255,255,255,1) 40%);
+  box-shadow:0 14px 40px rgba(17,24,39,0.09);
+  padding:2rem 2.1rem;
   position:relative;
   overflow:hidden;
 }
 .about-card::before{
   content:"";
   position:absolute;
-  top:-90px; right:-120px;
-  width:260px; height:260px;
-  background:radial-gradient(circle, rgba(99,102,241,0.18), rgba(99,102,241,0.00) 70%);
+  top:-80px; right:-100px;
+  width:300px; height:300px;
+  background:radial-gradient(circle, rgba(99,102,241,0.15), rgba(99,102,241,0.00) 70%);
   pointer-events:none;
 }
-.about-card-header{display:flex; align-items:center; gap:0.95rem; margin-bottom:1.15rem;}
-.about-card-title{font-size:2.05rem; font-weight:850; margin:0; color:#0f172a; letter-spacing:-0.02em;}
+.about-card::after{
+  content:"";
+  position:absolute;
+  bottom:-60px; left:-60px;
+  width:200px; height:200px;
+  background:radial-gradient(circle, rgba(37,99,235,0.10), rgba(37,99,235,0.00) 70%);
+  pointer-events:none;
+}
+.about-card-header{display:flex; align-items:center; gap:1rem; margin-bottom:1.3rem;}
+.about-card-title{
+  font-size:2.1rem; font-weight:850; margin:0; color:#0f172a; letter-spacing:-0.02em;
+  position:relative;
+}
 .about-card-line{
-  height:4px; width:76px; border-radius:999px;
-  background:linear-gradient(90deg, rgba(99,102,241,0.75), rgba(37,99,235,0.35));
+  height:4px; width:80px; border-radius:999px;
+  background:linear-gradient(90deg, #6366f1, #2563eb, #06b6d4);
   margin-top:0.25rem;
 }
-.about-grid{display:grid; grid-template-columns:2.25fr 1.05fr; gap:2.1rem;}
-@media (max-width:860px){.about-grid{grid-template-columns:1fr; gap:1.2rem;}}
+.about-grid{display:grid; grid-template-columns:1fr; gap:1.5rem;}
 .about-left p{margin:0 0 0.85rem 0; line-height:1.85; color:#334155; font-size:1.02rem;}
-.about-left a{color:#2563eb; text-decoration:none;}
-.about-left a:hover{text-decoration:underline;}
+.about-left a{color:#2563eb; text-decoration:none; transition:color 0.2s;}
+.about-left a:hover{color:#1d4ed8; text-decoration:underline;}
 .research-scope{
-  padding:0.85rem 0.95rem;
+  padding:1.05rem 1.15rem;
   border-radius:14px;
-  border:1px solid rgba(0,0,0,0.07);
-  background:rgba(255,255,255,0.75);
-  box-shadow:inset 0 0 0 1px rgba(255,255,255,0.45);
+  border:1px solid rgba(99,102,241,0.12);
+  background:linear-gradient(135deg, rgba(255,255,255,0.85), rgba(238,242,255,0.9));
+  box-shadow:0 2px 8px rgba(99,102,241,0.06);
 }
-.about-right{
-  padding:1.05rem;
+.focus-section{
+  margin-top:1.2rem;
+  padding:1.2rem;
   border-radius:16px;
-  border:1px solid rgba(0,0,0,0.07);
-  background:rgba(255,255,255,0.72);
-  box-shadow:inset 0 0 0 1px rgba(255,255,255,0.45);
+  border:1px solid rgba(99,102,241,0.12);
+  background:linear-gradient(145deg, rgba(238,242,255,0.6), rgba(255,255,255,0.9));
+  box-shadow:0 2px 12px rgba(99,102,241,0.05);
 }
-.about-right h3{margin:0 0 0.7rem 0; font-size:1.08rem; font-weight:850; color:#0f172a;}
-.about-right ul{margin:0; padding-left:1.15rem; line-height:1.85; color:#334155; font-size:1.0rem;}
-.about-right li{margin:0.28rem 0;}
+.focus-header{
+  display:flex; align-items:center; gap:0.55rem;
+  margin:0 0 0.9rem 0;
+  font-size:1.1rem; font-weight:850; color:#0f172a;
+}
+.focus-header svg{flex-shrink:0;}
+.focus-chips{
+  display:flex; flex-wrap:wrap; gap:0.55rem;
+}
+.focus-chip{
+  display:inline-flex; align-items:center; gap:0.4rem;
+  padding:0.42rem 0.85rem;
+  border-radius:999px;
+  font-weight:650; font-size:0.92rem;
+  letter-spacing:0.01em;
+  transition:all 0.22s ease;
+  cursor:default;
+  border:1px solid;
+}
+.focus-chip .chip-icon{font-size:1rem; line-height:1;}
+.focus-chip:hover{transform:translateY(-2px); box-shadow:0 4px 14px rgba(0,0,0,0.10);}
+.chip-indigo{color:#4338ca; background:rgba(99,102,241,0.10); border-color:rgba(99,102,241,0.22);}
+.chip-indigo:hover{background:rgba(99,102,241,0.18);}
+.chip-blue{color:#1d4ed8; background:rgba(37,99,235,0.10); border-color:rgba(37,99,235,0.22);}
+.chip-blue:hover{background:rgba(37,99,235,0.18);}
+.chip-violet{color:#5b21b6; background:rgba(139,92,246,0.10); border-color:rgba(139,92,246,0.22);}
+.chip-violet:hover{background:rgba(139,92,246,0.18);}
+.chip-teal{color:#0f766e; background:rgba(20,184,166,0.10); border-color:rgba(20,184,166,0.22);}
+.chip-teal:hover{background:rgba(20,184,166,0.18);}
+.chip-rose{color:#9f1239; background:rgba(244,63,94,0.10); border-color:rgba(244,63,94,0.22);}
+.chip-rose:hover{background:rgba(244,63,94,0.18);}
 .about-pill{
-  margin-top:0.9rem;
-  display:inline-flex; align-items:center; gap:0.45rem;
-  padding:0.28rem 0.6rem;
+  margin-top:1rem;
+  display:inline-flex; align-items:center; gap:0.5rem;
+  padding:0.38rem 0.75rem;
   border-radius:999px;
   font-weight:750; font-size:0.92rem;
   color:#B42318;
-  background:rgba(180,35,24,0.08);
-  border:1px solid rgba(180,35,24,0.18);
+  background:rgba(180,35,24,0.07);
+  border:1px solid rgba(180,35,24,0.16);
+  transition:all 0.2s ease;
 }
-.about-pill::before{content:"●"; font-size:0.7rem; opacity:0.7;}
+.about-pill:hover{background:rgba(180,35,24,0.12); transform:translateY(-1px);}
+.about-pill::before{
+  content:"";
+  display:inline-block;
+  width:7px; height:7px;
+  border-radius:50%;
+  background:#ef4444;
+  box-shadow:0 0 6px rgba(239,68,68,0.5);
+  animation:pulse-dot 2s infinite ease-in-out;
+}
+@keyframes pulse-dot{
+  0%, 100%{opacity:1; transform:scale(1);}
+  50%{opacity:0.6; transform:scale(0.85);}
+}
 .about-philosophy{
   margin-top:1.25rem;
-  padding:1.1rem 1.2rem;
+  padding:1.1rem 1.3rem;
   border-radius:14px;
-  border:1px solid rgba(99,102,241,0.18);
-  background:rgba(99,102,241,0.07);
+  border:1px solid rgba(99,102,241,0.15);
+  background:linear-gradient(135deg, rgba(99,102,241,0.06), rgba(139,92,246,0.06));
   line-height:1.75;
   color:#0f172a;
-  font-size:1.0rem;
+  font-size:0.98rem;
+  font-style:italic;
+  position:relative;
+}
+.about-philosophy::before{
+  content:"\201C";
+  position:absolute;
+  top:-4px; left:10px;
+  font-size:3rem;
+  color:rgba(99,102,241,0.18);
+  font-family:Georgia, serif;
+  line-height:1;
 }
 .about-philosophy strong{color:#4f46e5;}
 
@@ -429,20 +493,23 @@ redirect_from:
       <span class="about-pill">Open to research-oriented collaborations in AI for Healthcare, and other areas of computer vision.</span>
     </div>
 
-    <div class="about-right">
-      <h3>Current Focus</h3>
-      <ul>
-        <li>Structure-aware Medical Imaging</li>
-        <li>Medical Image Reconstruction & Enhancement</li>
-        <li>Generative Modeling</li>
-        <li>Clinical Visualization & Analysis</li>
-        <li>Physics-informed Intelligence</li>
-      </ul>
+    <div class="focus-section">
+      <h3 class="focus-header">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        Current Focus
+      </h3>
+      <div class="focus-chips">
+        <span class="focus-chip chip-indigo"><span class="chip-icon">🧬</span> Structure-aware Medical Imaging</span>
+        <span class="focus-chip chip-blue"><span class="chip-icon">🔬</span> Medical Image Reconstruction & Enhancement</span>
+        <span class="focus-chip chip-violet"><span class="chip-icon">✨</span> Generative Modeling</span>
+        <span class="focus-chip chip-teal"><span class="chip-icon">📊</span> Clinical Visualization & Analysis</span>
+        <span class="focus-chip chip-rose"><span class="chip-icon">⚛️</span> Physics-informed Intelligence</span>
+      </div>
     </div>
   </div>
 
   <div class="about-philosophy">
-    "As a result of this honesty, we are forced to doubt." — Richard Feynman
+    As a result of this honesty, we are forced to doubt. — Richard Feynman
   </div>
 </div>
 
