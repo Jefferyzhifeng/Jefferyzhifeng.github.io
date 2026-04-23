@@ -441,44 +441,44 @@ redirect_from:
     </div>
   </div>
 
-  <div class=”about-philosophy”>
-    “As a result of this honesty, we are forced to doubt.” — Richard Feynman
+  <div class="about-philosophy">
+    "As a result of this honesty, we are forced to doubt." — Richard Feynman
   </div>
 </div>
 
 <!-- ===============================
      Tools & Projects
      =============================== -->
-<h2 class=”section-title”>🛠 Tools & Projects</h2>
-<div class=”tools-grid”>
-  <a href=”https://papers4ai.github.io/Paperscope-hub/” target=”_blank” class=”tool-card”>
-    <div class=”tool-icon”>
-      <svg width=”32” height=”32” viewBox=”0 0 24 24” fill=”none” stroke=”currentColor” stroke-width=”2”>
-        <path d=”M4 19.5A2.5 2.5 0 0 1 6.5 17H20”></path>
-        <path d=”M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z”></path>
-        <path d=”M8 7h8M8 11h8M8 15h4”></path>
+<h2 class="section-title">🛠 Tools & Projects</h2>
+<div class="tools-grid">
+  <a href="https://papers4ai.github.io/Paperscope-hub/" target="_blank" class="tool-card">
+    <div class="tool-icon">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+        <path d="M8 7h8M8 11h8M8 15h4"></path>
       </svg>
     </div>
-    <div class=”tool-content”>
+    <div class="tool-content">
       <h3>Paperscope-hub</h3>
       <p>A comprehensive platform for AI research papers. Browse, search, and explore cutting-edge research in computer vision and medical imaging.</p>
-      <span class=”tool-tag”>Research Platform</span>
+      <span class="tool-tag">Research Platform</span>
     </div>
   </a>
 
-  <a href=”https://motong-ai-studio.github.io/” target=”_blank” class=”tool-card”>
-    <div class=”tool-icon”>
-      <svg width=”32” height=”32” viewBox=”0 0 24 24” fill=”none” stroke=”currentColor” stroke-width=”2”>
-        <circle cx=”12” cy=”12” r=”10”></circle>
-        <path d=”M8 14s1.5 2 4 2 4-2 4-2”></path>
-        <line x1=”9” y1=”9” x2=”9.01” y2=”9”></line>
-        <line x1=”15” y1=”9” x2=”15.01” y2=”9”></line>
+  <a href="https://motong-ai-studio.github.io/" target="_blank" class="tool-card">
+    <div class="tool-icon">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"></circle>
+        <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+        <line x1="9" y1="9" x2="9.01" y2="9"></line>
+        <line x1="15" y1="9" x2="15.01" y2="9"></line>
       </svg>
     </div>
-    <div class=”tool-content”>
+    <div class="tool-content">
       <h3>Mt-aistudio</h3>
       <p>A research group focusing on computer vision, initiated as a core member. Collaborate with peers on cutting-edge CV projects.</p>
-      <span class=”tool-tag”>Research Group</span>
+      <span class="tool-tag">Research Group</span>
     </div>
   </a>
 </div>
@@ -550,14 +550,14 @@ redirect_from:
 <!-- ===============================
      News
      =============================== -->
-<h2 class=”section-title”>🔥 News</h2>
+<h2 class="section-title">🔥 News</h2>
 <div class="news-card">
   <ul style="margin:0; padding-left:1.1rem; line-height:1.65;">
     <li><em>2026.01</em>: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">ICASSP 2026</a>,Congratulations to Lubing.</li>
     <li><em>2025.11</em>: 🎉 Awarded the <a href="https://jefferyzhifeng.github.io">China National Scholarship</a> (Ranking 3/183).</li>
     <li><em>2025.05</em>: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">TVC Journal</a>.</li>
-    <li><em>2025.04</em>: 🎉 Won 1st place in the <a href="https://codalab.lisn.upsaclay.fr/competitions/21562#learn_the_details">CVPR2025W</a> “Mobile AI 2025 Real-Time Rendering Realistic Bokeh Challenge”,Congratulations to Kang.</li>
-    <li><em>2025.04</em>: 🎉 Won 6th place in the <a href="https://codalab.lisn.upsaclay.fr/competitions/21564">CVPR2025W</a> “Mobile AI Challenge: RGB Photo Enhancement on Mobile GPUs”,Congratulations to Runhua.</li>
+    <li><em>2025.04</em>: 🎉 Won 1st place in the <a href="https://codalab.lisn.upsaclay.fr/competitions/21562#learn_the_details">CVPR2025W</a> "Mobile AI 2025 Real-Time Rendering Realistic Bokeh Challenge",Congratulations to Kang.</li>
+    <li><em>2025.04</em>: 🎉 Won 6th place in the <a href="https://codalab.lisn.upsaclay.fr/competitions/21564">CVPR2025W</a> "Mobile AI Challenge: RGB Photo Enhancement on Mobile GPUs",Congratulations to Runhua.</li>
     <li><em>2025.02</em>: 🎉 One paper is accepted by <a href="https://cvpr.thecvf.com/Conferences/2025/">CVPR 2025</a> (CCF-A).</li>
   </ul>
 
@@ -801,107 +801,7 @@ redirect_from:
   <li><em>2022.10 – 2023.07</em>, Algorithm Engineer Intern @ <a href="https://www.speedbot.com/en/home">SpeedBot Robotics Co., Ltd.</a>, Changsha, China.</li>
 </ul>
 
-<!-- ===============================
-     Education
-     =============================== -->
-<h2 class="section-title">🎓 Education</h2>
-<div class="education-timeline">
-  <div class="edu-item">
-    <div class="edu-dot"></div>
-    <div class="edu-content">
-      <div class="edu-header">
-        <h3>Master of Computer Science</h3>
-        <span class="edu-period">2023 – Present</span>
-      </div>
-      <p class="edu-school">National University of Defense Technology, Changsha</p>
-      <p class="edu-detail">Advisor: <a href="https://kevinkaixu.net/">Prof. Kai Xu</a> & <a href="https://renjiaoyi.github.io/">Assoc. Prof. Renjiao Yi</a></p>
-    </div>
-  </div>
 
-  <div class="edu-item">
-    <div class="edu-dot"></div>
-    <div class="edu-content">
-      <div class="edu-header">
-        <h3>Bachelor of Computer Science</h3>
-        <span class="edu-period">2019 – 2023</span>
-      </div>
-      <p class="edu-school">National University of Defense Technology, Changsha</p>
-      <p class="edu-detail">GPA: 3.8/4.0 (Rank: 3/183) · First-class Academic Scholarship</p>
-    </div>
-  </div>
-</div>
-
-<style>
-.education-timeline {
-  margin-top: 0.6rem;
-  padding-left: 1.5rem;
-  border-left: 3px solid rgba(99,102,241,0.2);
-}
-.edu-item {
-  position: relative;
-  padding-bottom: 1.5rem;
-}
-.edu-item:last-child {
-  padding-bottom: 0;
-}
-.edu-dot {
-  position: absolute;
-  left: -1.72rem;
-  top: 0.3rem;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #4f46e5;
-  box-shadow: 0 0 0 4px rgba(99,102,241,0.15);
-}
-.edu-content {
-  padding: 1rem 1.2rem;
-  border-radius: 12px;
-  border: 1px solid rgba(99,102,241,0.12);
-  background: linear-gradient(135deg, rgba(99,102,241,0.06) 0%, rgba(255,255,255,0.95) 100%);
-}
-.edu-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 0.3rem;
-}
-.edu-header h3 {
-  margin: 0;
-  font-size: 1.08rem;
-  font-weight: 750;
-  color: #1e293b;
-}
-.edu-period {
-  font-size: 0.88rem;
-  font-weight: 700;
-  color: #4f46e5;
-  background: rgba(99,102,241,0.12);
-  padding: 0.2rem 0.6rem;
-  border-radius: 999px;
-}
-.edu-school {
-  margin: 0 0 0.25rem 0;
-  font-size: 1rem;
-  color: #334155;
-  font-weight: 600;
-}
-.edu-detail {
-  margin: 0;
-  font-size: 0.92rem;
-  color: #64748b;
-  line-height: 1.5;
-}
-.edu-detail a {
-  color: #1d4ed8;
-  text-decoration: none;
-}
-.edu-detail a:hover {
-  text-decoration: underline;
-}
-</style>
 
 <hr>
 
