@@ -642,7 +642,8 @@ redirect_from:
 <h2 class="section-title">🔥 News</h2>
 <div class="news-card">
   <ul style="margin:0; padding-left:1.1rem; line-height:1.65;">
-    <li><em>2026.01</em>: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">ICASSP 2026</a>,Congratulations to Lubing.</li>
+    <li><em>2026.04</em>: 🎉 One paper is accepted by ICML 2026, Congratulations to Xingyue.</li>
+    <li><em>2026.01</em>: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">ICASSP 2026</a>, Congratulations to Lubing.</li>
     <li><em>2025.11</em>: 🎉 Awarded the <a href="https://jefferyzhifeng.github.io">China National Scholarship</a> (Ranking 3/183).</li>
     <li><em>2025.05</em>: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">TVC Journal</a>.</li>
     <li><em>2025.04</em>: 🎉 Won 1st place in the <a href="https://codalab.lisn.upsaclay.fr/competitions/21562#learn_the_details">CVPR2025W</a> "Mobile AI 2025 Real-Time Rendering Realistic Bokeh Challenge",Congratulations to Kang.</li>
