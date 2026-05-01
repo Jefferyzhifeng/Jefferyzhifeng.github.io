@@ -17,7 +17,7 @@ redirect_from:
 
 <style>
 /* ===============================
-   About Card (polished)
+   About Card (polished & enhanced)
    =============================== */
 /* ===============================
    Current Focus Animation
@@ -104,6 +104,10 @@ redirect_from:
 
 .section-title {
   animation: fadeInUp 0.5s ease forwards;
+  background: linear-gradient(90deg, #4f46e5, #1d4ed8, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .about-card,
@@ -136,10 +140,16 @@ redirect_from:
   border:1px solid rgba(99,102,241,0.12);
   border-radius:20px;
   background:linear-gradient(170deg, rgba(99,102,241,0.07) 0%, rgba(255,255,255,1) 40%);
-  box-shadow:0 14px 40px rgba(17,24,39,0.09);
+  box-shadow:0 14px 40px rgba(17,24,39,0.09), 0 0 0 1px rgba(99,102,241,0.03);
   padding:2rem 2.1rem;
   position:relative;
   overflow:hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-4px);
+  box-shadow:0 20px 50px rgba(17,24,39,0.15), 0 0 0 1px rgba(99,102,241,0.1);
 }
 .about-card::before{
   content:"";
@@ -306,7 +316,14 @@ redirect_from:
   position:relative;
   border:1px solid rgba(0,0,0,0.08);
   box-shadow:0 8px 22px rgba(17,24,39,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.paper-box:hover .paper-box-image {
+  transform: scale(1.02);
+  box-shadow:0 12px 30px rgba(17,24,39,0.12);
+}
+
 .paper-box-image img{
   width:100%;
   height:100%;
@@ -314,6 +331,11 @@ redirect_from:
   object-position:center;
   display:block;
   cursor:zoom-in;
+  transition: transform 0.3s ease;
+}
+
+.paper-box-image img:hover {
+  transform: scale(1.05);
 }
 
 /* Badge: smaller + closer top-left */

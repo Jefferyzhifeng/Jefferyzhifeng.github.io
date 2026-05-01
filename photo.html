@@ -9,106 +9,142 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Helvetica Neue', sans-serif;
+      font-family: 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     }
 
     body {
-      background-color: #f5f5f5;
+      background: linear-gradient(135deg, #f5f7fa 0%, #e8eaf6 100%);
+      min-height: 100vh;
     }
 
     /* 导航栏样式 */
     .navbar {
-      background-color: #f2e6ff; /* 浅紫背景色 */
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      padding: 10px 20px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
+      padding: 15px 30px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
     .navbar h1 {
-      font-size: 24px;
-      color: #6c2e85;
+      font-size: 26px;
+      color: #fff;
       margin: 0;
+      font-weight: 700;
+      letter-spacing: -0.5px;
     }
     .nav-links {
       list-style: none;
       display: flex;
-      gap: 20px;
+      gap: 25px;
     }
     .nav-links li a {
       text-decoration: none;
-      color: #333;
+      color: rgba(255, 255, 255, 0.9);
       font-weight: 600;
-      transition: color 0.3s ease;
+      font-size: 15px;
+      transition: all 0.3s ease;
+      padding: 8px 16px;
+      border-radius: 20px;
     }
     .nav-links li a:hover {
-      color: #6c2e85;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.2);
+      transform: translateY(-2px);
     }
 
     /* 头部简介区域 */
     .header-intro {
       text-align: center;
-      padding: 30px 20px;
-      background-color: #fafafa;
+      padding: 40px 20px;
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(102, 126, 234, 0.1);
     }
     .header-intro h2 {
-      font-size: 18px;
-      color: #555;
-      margin-bottom: 15px;
+      font-size: 17px;
+      color: #5a67d8;
+      margin-bottom: 12px;
+      font-weight: 600;
     }
     .header-intro p {
-      color: #666;
-      line-height: 1.6;
+      color: #555;
+      line-height: 1.7;
+      font-size: 15px;
     }
     .header-intro p.links a {
-      color: #6c2e85;
+      color: #667eea;
       text-decoration: none;
-      margin: 0 5px;
+      margin: 0 8px;
+      font-weight: 600;
+      transition: color 0.3s ease;
     }
     .header-intro p.links a:hover {
+      color: #764ba2;
       text-decoration: underline;
     }
 
     /* 页面主体容器 */
     .container {
-      max-width: 1200px;
+      max-width: 1280px;
       margin: 0 auto;
-      padding: 20px;
+      padding: 30px 20px;
     }
 
     /* Contact区域居中 */
     #contact {
       text-align: center;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 16px;
+      margin-top: 20px;
+      box-shadow: 0 4px 20px rgba(102, 126, 234, 0.1);
+    }
+
+    #contact h2 {
+      color: #667eea;
+      margin-bottom: 15px;
+      font-size: 22px;
+    }
+
+    #contact p {
+      color: #555;
+      margin: 8px 0;
+      font-size: 15px;
     }
 
     /* 图片网格布局 */
     .gallery {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
+      gap: 25px;
     }
     .gallery-item {
       position: relative;
       overflow: hidden;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
       cursor: pointer;
+      background: #fff;
     }
     .gallery-item:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(102, 126, 234, 0.25);
     }
     .gallery-img {
       width: 100%;
-      height: 300px;
+      height: 320px;
       object-fit: cover;
       display: block;
-      transition: transform 0.3s ease;
+      transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     }
     /* 悬浮时略微放大图片 */
     .gallery-item:hover .gallery-img {
-      transform: scale(1.03);
+      transform: scale(1.08);
     }
 
     /* 图片说明 */
@@ -117,14 +153,27 @@
       bottom: 0;
       left: 0;
       right: 0;
-      padding: 20px;
-      background: linear-gradient(transparent, rgba(0,0,0,0.8));
+      padding: 25px 20px;
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
       color: white;
       opacity: 0;
-      transition: opacity 0.3s ease;
+      transition: all 0.4s ease;
+      transform: translateY(10px);
     }
     .gallery-item:hover .caption {
       opacity: 1;
+      transform: translateY(0);
+    }
+
+    .caption h3 {
+      font-size: 16px;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    .caption p {
+      font-size: 13px;
+      opacity: 0.9;
     }
 
     /* 灯箱样式 */
@@ -135,11 +184,12 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0,0,0,0.9);
+      background: rgba(0, 0, 0, 0.95);
       z-index: 1000;
       justify-content: center;
       align-items: center;
       opacity: 0;
+      backdrop-filter: blur(5px);
     }
     .lightbox.active {
       display: flex;
@@ -151,17 +201,18 @@
       }
     }
     .lightbox-img {
-      max-width: 90%;
-      max-height: 90%;
-      border-radius: 8px;
+      max-width: 92%;
+      max-height: 88%;
+      border-radius: 12px;
       transition: transform 0.3s ease;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
     }
     /* 点击后放大效果 */
     .lightbox.active .lightbox-img {
-      animation: zoomIn 0.3s forwards;
+      animation: zoomIn 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     }
     @keyframes zoomIn {
-      from { transform: scale(0.8); }
+      from { transform: scale(0.85); }
       to { transform: scale(1); }
     }
     /* 悬浮时略微放大灯箱中的图片 */
@@ -169,30 +220,66 @@
       transform: scale(1.02);
     }
 
+    /* 关闭按钮 */
+    .lightbox-close {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      background: rgba(255, 255, 255, 0.15);
+      border: none;
+      border-radius: 50%;
+      color: white;
+      font-size: 28px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .lightbox-close:hover {
+      background: rgba(255, 255, 255, 0.25);
+      transform: rotate(90deg);
+    }
+
     /* 尾标样式 */
     footer {
-      background-color: #fff;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       text-align: center;
-      padding: 15px 0;
-      margin-top: 40px;
-      box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+      padding: 25px 0;
+      margin-top: 50px;
+      box-shadow: 0 -4px 20px rgba(102, 126, 234, 0.3);
     }
     footer p {
-      color: #333;
+      color: rgba(255, 255, 255, 0.95);
+      font-size: 14px;
+      font-weight: 500;
     }
 
     /* 响应式设计 */
     @media (max-width: 992px) {
       .gallery {
         grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
       }
     }
     @media (max-width: 768px) {
       .gallery {
         grid-template-columns: 1fr;
+        gap: 20px;
       }
       .gallery-img {
-        height: 400px;
+        height: 380px;
+      }
+      .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+      }
+      .nav-links {
+        gap: 15px;
       }
     }
   </style>
@@ -431,10 +518,10 @@
 
   <!-- 联系区域 -->
   <div class="container" id="contact">
-    <h2>Contact Us</h2>
+    <h2>Get in Touch</h2>
     <p>If you're interested in my photography, feel free to contact me through the following ways:</p>
-    <p>Email：zhifengwang@nudt.edu.cn</p>
-    <p>Wechat：tgv25688</p>
+    <p><strong>Email：</strong>zhifengwang@nudt.edu.cn</p>
+    <p><strong>Wechat：</strong>tgv25688</p>
   </div>
 
 
@@ -444,22 +531,26 @@
   </footer>
 
   <!-- 灯箱 -->
-  <div class="lightbox" onclick="closeLightbox()">
-    <img src="images/" alt="" class="lightbox-img">
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="event.stopPropagation(); closeLightbox();">×</button>
+    <img src="" alt="" class="lightbox-img" id="lightbox-img">
   </div>
 
   <script>
     // 打开灯箱
     function openLightbox(imgSrc) {
-      const lightbox = document.querySelector('.lightbox');
-      const lightboxImg = document.querySelector('.lightbox-img');
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
       lightboxImg.src = imgSrc;
       lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden';
     }
 
     // 关闭灯箱
     function closeLightbox() {
-      document.querySelector('.lightbox').classList.remove('active');
+      const lightbox = document.getElementById('lightbox');
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
     }
 
     // 点击ESC键关闭灯箱
