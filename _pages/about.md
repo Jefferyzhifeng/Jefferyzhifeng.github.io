@@ -540,7 +540,7 @@ redirect_from:
      =============================== -->
 <h2 class="section-title">🛠 Tools & Projects</h2>
 <div class="tools-grid">
-  <a href="https://papers4ai.github.io/Paperscope-hub/" target="_blank" class="tool-card">
+  <a href="https://paperscope.top" target="_blank" class="tool-card">
     <div class="tool-icon">
       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
@@ -549,7 +549,7 @@ redirect_from:
       </svg>
     </div>
     <div class="tool-content">
-      <h3>Paperscope-hub</h3>
+      <h3>Paperscope</h3>
       <p>A comprehensive platform for AI research papers. Browse, search, and explore cutting-edge research in computer vision and medical imaging.</p>
       <span class="tool-tag">Research Platform</span>
     </div>
