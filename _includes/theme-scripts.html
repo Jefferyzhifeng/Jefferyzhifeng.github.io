@@ -1,0 +1,82 @@
+<script>
+(function () {
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    root.setAttribute('data-theme', theme);
+    try { localStorage.setItem('site-theme', theme); } catch (e) {}
+    var btn = document.querySelector('.theme-toggle');
+    if (btn) {
+      btn.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+      btn.setAttribute('title', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+    }
+  }
+
+  function setupToggle() {
+    var btn = document.querySelector('.theme-toggle');
+    if (!btn) return;
+    var current = root.getAttribute('data-theme') || 'light';
+    btn.setAttribute('aria-pressed', current === 'dark' ? 'true' : 'false');
+    btn.setAttribute('title', current === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+    btn.addEventListener('click', function () {
+      var next = (root.getAttribute('data-theme') === 'dark') ? 'light' : 'dark';
+      applyTheme(next);
+    });
+  }
+
+  function setupBackToTop() {
+    var btn = document.querySelector('.back-to-top');
+    if (!btn) return;
+    var threshold = 320;
+    var ticking = false;
+    function onScroll() {
+      if (!ticking) {
+        window.requestAnimationFrame(function () {
+          if (window.pageYOffset > threshold) {
+            btn.classList.add('is-visible');
+          } else {
+            btn.classList.remove('is-visible');
+          }
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    btn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  function onReady(fn) {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', fn);
+    } else {
+      fn();
+    }
+  }
+
+  onReady(function () {
+    setupToggle();
+    setupBackToTop();
+  });
+
+  // Follow system preference changes only when user hasn't manually chosen
+  try {
+    var mq = window.matchMedia('(prefers-color-scheme: dark)');
+    if (mq && mq.addEventListener) {
+      mq.addEventListener('change', function (e) {
+        if (!localStorage.getItem('site-theme')) {
+          applyTheme(e.matches ? 'dark' : 'light');
+        }
+      });
+    }
+  } catch (e) {}
+})();
+</script>
+
+<button class="back-to-top" aria-label="Back to top" title="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <polyline points="18 15 12 9 6 15"></polyline>
+  </svg>
+</button>

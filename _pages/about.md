@@ -868,7 +868,7 @@ redirect_from:
   </div>
 </div>
 
-<ul style="line-height:1.75; color:#334155; margin-top:0.4rem;">
+<ul style="line-height:1.75; margin-top:0.4rem;">
   <li><em>2025.11</em> China National Scholarship (3/183), 2025.</li>
   <li><em>2022.11</em> China National Scholarship (Top 0.2%), 2022.</li>
   <li><em>2022.09</em> First-class Academic Scholarship, 2022.</li>
@@ -880,16 +880,152 @@ redirect_from:
      Services / Internships
      =============================== -->
 <h2 class="section-title">📖 Services</h2>
-<ul style="line-height:1.75; color:#334155;">
+<ul style="line-height:1.75;">
   <li><strong>Reviewers:</strong> PRCV’23/24, CAD/CG, JVCIR, PG.</li>
   <li><strong>Memberships:</strong> IEEE Student Member, CSIG Student Member, CAAI Student Member, CVF Member.</li>
 </ul>
 
 <h2 class="section-title">💻 Internships</h2>
-<ul style="line-height:1.75; color:#334155;">
-  <li><em>2025.03 – 2025.08</em>, AI Research Intern (Medical LLMs) @ <a href="https://damo.alibaba.com/?language=zh">Alibaba DAMO Academy</a>, Hangzhou, China.</li>
-  <li><em>2022.10 – 2023.07</em>, Algorithm Engineer Intern @ <a href="https://www.speedbot.com/en/home">SpeedBot Robotics Co., Ltd.</a>, Changsha, China.</li>
-</ul>
+
+<div class="intern-grid">
+  <a class="intern-card" href="https://www.antgroup.com/" target="_blank" rel="noopener">
+    <div class="intern-logo">
+      <img src="images/logos/ant.png" alt="Ant Group logo"
+           onerror="this.style.display='none'; this.parentNode.querySelector('.intern-logo-fallback').style.display='flex';">
+      <div class="intern-logo-fallback" aria-hidden="true">蚂</div>
+    </div>
+    <div class="intern-content">
+      <h4 class="intern-company">Ant Group <span class="intern-badge intern-badge-ant">2026</span></h4>
+      <div class="intern-role">医疗大模型算法 · Medical LLMs Algorithm</div>
+      <div class="intern-location">Hangzhou, China</div>
+    </div>
+  </a>
+
+  <a class="intern-card" href="https://damo.alibaba.com/?language=zh" target="_blank" rel="noopener">
+    <div class="intern-logo">
+      <img src="images/logos/damo.png" alt="Alibaba DAMO Academy logo"
+           onerror="this.style.display='none'; this.parentNode.querySelector('.intern-logo-fallback').style.display='flex';">
+      <div class="intern-logo-fallback" aria-hidden="true">达</div>
+    </div>
+    <div class="intern-content">
+      <h4 class="intern-company">Alibaba DAMO Academy <span class="intern-badge intern-badge-damo">2025</span></h4>
+      <div class="intern-role">研究型算法研究员 · Research Algorithm Scientist</div>
+      <div class="intern-location">Hangzhou, China</div>
+    </div>
+  </a>
+
+  <a class="intern-card" href="https://www.speedbot.com/en/home" target="_blank" rel="noopener">
+    <div class="intern-logo">
+      <img src="images/logos/speedbot.png" alt="SpeedBot Robotics logo"
+           onerror="this.style.display='none'; this.parentNode.querySelector('.intern-logo-fallback').style.display='flex';">
+      <div class="intern-logo-fallback" aria-hidden="true">S</div>
+    </div>
+    <div class="intern-content">
+      <h4 class="intern-company">SpeedBot Robotics <span class="intern-badge intern-badge-speedbot">2022–2023</span></h4>
+      <div class="intern-role">Algorithm Engineer Intern</div>
+      <div class="intern-location">Changsha, China</div>
+    </div>
+  </a>
+</div>
+
+<style>
+.intern-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+  margin-top: 0.6rem;
+}
+.intern-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  border-radius: 14px;
+  border: 1px solid rgba(99,102,241,0.15);
+  background: linear-gradient(135deg, rgba(99,102,241,0.08) 0%, rgba(255,255,255,0.95) 100%);
+  text-decoration: none !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  box-shadow: 0 4px 16px rgba(17,24,39,0.06);
+  color: inherit;
+}
+.intern-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(99,102,241,0.35);
+  box-shadow: 0 12px 28px rgba(99,102,241,0.18);
+}
+.intern-logo {
+  position: relative;
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: #ffffff;
+  border: 1px solid rgba(99,102,241,0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(17,24,39,0.06);
+}
+.intern-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 6px;
+  display: block;
+}
+.intern-logo-fallback {
+  display: none;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-weight: 850;
+  font-size: 1.4rem;
+  color: #4f46e5;
+  background: linear-gradient(135deg, rgba(99,102,241,0.18), rgba(37,99,235,0.10));
+}
+.intern-content { flex: 1; min-width: 0; }
+.intern-company {
+  margin: 0 0 0.28rem 0;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #1d4ed8;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+}
+.intern-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.12rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.02em;
+}
+.intern-badge-ant      { color:#0e7490; background:rgba(6,182,212,0.14);  border:1px solid rgba(6,182,212,0.30); }
+.intern-badge-damo     { color:#9a3412; background:rgba(249,115,22,0.14); border:1px solid rgba(249,115,22,0.30); }
+.intern-badge-speedbot { color:#374151; background:rgba(100,116,139,0.14); border:1px solid rgba(100,116,139,0.30); }
+.intern-role {
+  font-size: 0.95rem;
+  color: #334155;
+  font-weight: 600;
+  margin-bottom: 0.18rem;
+}
+.intern-location {
+  font-size: 0.82rem;
+  color: #64748b;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.32rem;
+}
+.intern-location::before {
+  content: "📍";
+  font-size: 0.85rem;
+}
+</style>
 
 
 
