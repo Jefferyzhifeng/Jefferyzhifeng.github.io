@@ -350,15 +350,15 @@ html, body {
 }
 .greedy-nav .visible-links li a:hover {
   color: var(--accent-2) !important;
-  background: rgba(99,102,241,0.10);
+  background: transparent !important;
   transform: translateY(-1px);
 }
-/* Hide the old underline animation; we use background pills + bottom bar instead */
+/* Hide the old underline animation; we render our own bottom bar on active */
 .greedy-nav .visible-links li a:before { display: none !important; }
 .greedy-nav .visible-links li a.is-active {
   color: var(--accent-2) !important;
-  background: linear-gradient(135deg, rgba(99,102,241,0.16), rgba(37,99,235,0.10));
-  box-shadow: inset 0 0 0 1px rgba(99,102,241,0.22);
+  background: transparent !important;
+  box-shadow: none !important;
 }
 .greedy-nav .visible-links li a.is-active::after {
   content: "";
@@ -385,11 +385,11 @@ html, body {
 html { scroll-padding-top: 80px; }
 
 [data-theme="dark"] .greedy-nav .visible-links li a:hover {
-  background: rgba(129,140,248,0.18);
+  background: transparent !important;
 }
 [data-theme="dark"] .greedy-nav .visible-links li a.is-active {
-  background: linear-gradient(135deg, rgba(129,140,248,0.24), rgba(96,165,250,0.16));
-  box-shadow: inset 0 0 0 1px rgba(129,140,248,0.40);
+  background: transparent !important;
+  box-shadow: none !important;
 }
 
 /* Highlights card (dark mode) */
