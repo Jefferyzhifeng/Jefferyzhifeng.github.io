@@ -199,30 +199,30 @@ redirect_from:
   box-shadow:0 2px 8px rgba(99,102,241,0.06);
 }
 .focus-section{
-  margin-top:1.2rem;
-  padding:1.2rem;
-  border-radius:16px;
+  margin-top:0;
+  padding:1rem 1.1rem;
+  border-radius:14px;
   border:1px solid rgba(99,102,241,0.12);
   background:linear-gradient(145deg, rgba(238,242,255,0.6), rgba(255,255,255,0.9));
   box-shadow:0 2px 12px rgba(99,102,241,0.05);
 }
 .focus-header{
-  display:flex; align-items:center; gap:0.55rem;
-  margin:0 0 0.9rem 0;
-  font-size:1.1rem; font-weight:850; color:#0f172a;
+  display:flex; align-items:center; gap:0.5rem;
+  margin:0 0 0.7rem 0;
+  font-size:1.02rem; font-weight:850; color:#0f172a;
 }
 .focus-header svg{flex-shrink:0;}
 .focus-chips{
   display:flex;
   flex-direction:column;
-  gap:0.5rem;
+  gap:0.38rem;
 }
 .focus-chip{
   position:relative;
-  display:flex; align-items:center; gap:0.55rem;
-  padding:0.5rem 0.85rem 0.5rem 0.75rem;
-  border-radius:12px;
-  font-weight:700; font-size:0.92rem;
+  display:flex; align-items:center; gap:0.5rem;
+  padding:0.4rem 0.7rem 0.4rem 0.6rem;
+  border-radius:10px;
+  font-weight:700; font-size:0.85rem;
   letter-spacing:0.01em;
   transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, border-color 0.25s ease;
   cursor:default;
@@ -240,13 +240,13 @@ redirect_from:
   transition: opacity 0.25s ease, transform 0.25s ease;
 }
 .focus-chip .chip-icon{
-  font-size:1.1rem;
+  font-size:0.95rem;
   line-height:1;
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  width:24px; height:24px;
-  border-radius:8px;
+  width:20px; height:20px;
+  border-radius:6px;
   background:rgba(255,255,255,0.55);
   border:1px solid rgba(0,0,0,0.04);
   transition: transform 0.35s cubic-bezier(0.4, 0.0, 0.2, 1);
@@ -305,22 +305,22 @@ redirect_from:
   50%{opacity:0.6; transform:scale(0.85);}
 }
 .about-philosophy{
-  margin-top:1.25rem;
-  padding:1.1rem 1.3rem;
-  border-radius:14px;
+  margin-top:1rem;
+  padding:0.85rem 1.15rem 0.85rem 1.85rem;
+  border-radius:12px;
   border:1px solid rgba(99,102,241,0.15);
   background:linear-gradient(135deg, rgba(99,102,241,0.06), rgba(139,92,246,0.06));
-  line-height:1.75;
+  line-height:1.6;
   color:#0f172a;
-  font-size:0.98rem;
+  font-size:0.92rem;
   font-style:italic;
   position:relative;
 }
 .about-philosophy::before{
   content:"\201C";
   position:absolute;
-  top:-4px; left:10px;
-  font-size:3rem;
+  top:-2px; left:6px;
+  font-size:2.2rem;
   color:rgba(99,102,241,0.18);
   font-family:Georgia, serif;
   line-height:1;
@@ -510,18 +510,40 @@ redirect_from:
   justify-content:space-between;
   flex-wrap:wrap;
   gap:1rem;
-  margin-bottom:1.3rem;
+  margin-bottom:0.85rem;
 }
 .about-card-title-wrap{display:flex; flex-direction:column;}
 
-.about-grid{
+/* legacy — no longer used after layout flatten */
+.about-grid{display:block;}
+
+/* full-width text strip + 2-col card row */
+.about-card{ padding:1.55rem 1.7rem !important; }
+.about-card .about-intro{ margin:0.2rem 0 0.85rem 0 !important; font-size:1rem !important; line-height:1.7 !important; }
+.about-card .research-scope{ padding:0.85rem 1.05rem !important; }
+.about-card .research-scope p{ font-size:0.97rem !important; line-height:1.7 !important; }
+
+.about-action-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:0.85rem;
+  margin:0.9rem 0 0.4rem 0;
+}
+.about-action-row .about-contact-row{ margin:0; }
+.about-action-row .about-pill{ margin:0; }
+
+.about-cards-row{
   display:grid;
-  grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
-  gap:1.75rem;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap:1rem;
+  margin-top:1.1rem;
   align-items:start;
 }
-@media (max-width: 920px){
-  .about-grid{grid-template-columns:1fr;}
+@media (max-width: 860px){
+  .about-cards-row{grid-template-columns:1fr;}
+  .about-action-row{justify-content:flex-start;}
 }
 
 .about-status-badge{
@@ -683,8 +705,8 @@ redirect_from:
    =============================== */
 .about-highlights{
   position:relative;
-  padding:1.2rem 1.25rem;
-  border-radius:16px;
+  padding:1rem 1.1rem;
+  border-radius:14px;
   border:1px solid rgba(99,102,241,0.14);
   background:
     radial-gradient(at top right, rgba(139,92,246,0.10), transparent 60%),
@@ -710,9 +732,9 @@ redirect_from:
 }
 .highlights-header{
   position:relative;
-  display:flex; align-items:center; gap:0.55rem;
-  margin:0 0 0.9rem 0;
-  font-size:1.08rem;
+  display:flex; align-items:center; gap:0.5rem;
+  margin:0 0 0.7rem 0;
+  font-size:1.02rem;
   font-weight:850;
   color:#0f172a;
 }
@@ -753,9 +775,9 @@ redirect_from:
 .hl-item{
   display:flex;
   align-items:center;
-  gap:0.6rem;
-  padding:0.6rem 0.7rem;
-  border-radius:12px;
+  gap:0.55rem;
+  padding:0.5rem 0.65rem;
+  border-radius:11px;
   background:linear-gradient(135deg, rgba(99,102,241,0.07), rgba(255,255,255,0.85));
   border:1px solid rgba(99,102,241,0.12);
   opacity:0;
@@ -774,17 +796,17 @@ redirect_from:
 }
 .hl-icon{
   flex-shrink:0;
-  width:34px; height:34px;
+  width:30px; height:30px;
   display:flex; align-items:center; justify-content:center;
-  border-radius:10px;
-  font-size:1.05rem;
+  border-radius:9px;
+  font-size:0.95rem;
   background:linear-gradient(135deg, rgba(99,102,241,0.20), rgba(37,99,235,0.10));
   border:1px solid rgba(99,102,241,0.20);
   box-shadow:0 2px 8px rgba(99,102,241,0.10);
 }
 .hl-content{ flex:1; min-width:0; }
 .hl-number{
-  font-size:0.88rem;
+  font-size:0.84rem;
   font-weight:800;
   color:#1d4ed8;
   line-height:1.25;
@@ -792,11 +814,11 @@ redirect_from:
   overflow:hidden;
   text-overflow:ellipsis;
 }
-.hl-number .hl-unit{font-weight:700; color:#475569; font-size:0.82rem;}
+.hl-number .hl-unit{font-weight:700; color:#475569; font-size:0.78rem;}
 .hl-label{
-  font-size:0.72rem;
+  font-size:0.7rem;
   color:#64748b;
-  margin-top:0.12rem;
+  margin-top:0.1rem;
   letter-spacing:0.01em;
   line-height:1.3;
 }
@@ -939,15 +961,13 @@ redirect_from:
     </span>
   </div>
 
-  <div class="about-grid">
-    <div class="about-left">
-      <p class="about-intro">
-        Hi, I am <strong>Zhifeng Wang (汪智峰)</strong>, a third-year master's student at the College of Computer Science and Technology,
-        National University of Defense Technology, advised by Prof. <a href="https://kevinkaixu.net/">Kai Xu</a> and Assoc. Prof.
-        <a href="https://renjiaoyi.github.io/">Renjiao Yi</a>.
-      </p>
+  <p class="about-intro">
+    Hi, I am <strong>Zhifeng Wang (汪智峰)</strong>, a third-year master's student at the College of Computer Science and Technology,
+    National University of Defense Technology, advised by Prof. <a href="https://kevinkaixu.net/">Kai Xu</a> and Assoc. Prof.
+    <a href="https://renjiaoyi.github.io/">Renjiao Yi</a>.
+  </p>
 
-      <div class="research-scope">
+  <div class="research-scope">
 <p style="
   margin: 0;
   line-height: 1.85;
@@ -984,76 +1004,76 @@ redirect_from:
     physical and imaging principles
   </span>.
 </p>
-      </div>
-      <div class="about-contact-row">
-        <a class="contact-btn" href="mailto:zhifengwang@nudt.edu.cn" target="_self" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          NUDT Mail
-        </a>
-        <a class="contact-btn" href="mailto:zhifengwang686@gmail.com" target="_self" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          Gmail
-        </a>
-      </div>
+  </div>
 
-      <span class="about-pill">Open to research-oriented collaborations in AI for Healthcare, and other areas of computer vision.</span>
+  <div class="about-action-row">
+    <div class="about-contact-row">
+      <a class="contact-btn" href="mailto:zhifengwang@nudt.edu.cn" target="_self" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        NUDT Mail
+      </a>
+      <a class="contact-btn" href="mailto:zhifengwang686@gmail.com" target="_self" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Gmail
+      </a>
+    </div>
+    <span class="about-pill">Open to research-oriented collaborations in AI for Healthcare, and other areas of computer vision.</span>
+  </div>
+
+  <div class="about-cards-row">
+    <div class="focus-section">
+      <h3 class="focus-header">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        Current Focus
+      </h3>
+      <div class="focus-chips">
+        <span class="focus-chip chip-indigo"><span class="chip-icon">🧬</span> Structure-aware Medical Imaging</span>
+        <span class="focus-chip chip-blue"><span class="chip-icon">🔬</span> Medical Image Reconstruction & Enhancement</span>
+        <span class="focus-chip chip-violet"><span class="chip-icon">✨</span> Generative Modeling</span>
+        <span class="focus-chip chip-teal"><span class="chip-icon">📊</span> Clinical Visualization & Analysis</span>
+        <span class="focus-chip chip-rose"><span class="chip-icon">⚛️</span> Physics-informed Intelligence</span>
+      </div>
     </div>
 
-    <div class="about-right">
-      <div class="focus-section">
-        <h3 class="focus-header">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-          Current Focus
-        </h3>
-        <div class="focus-chips">
-          <span class="focus-chip chip-indigo"><span class="chip-icon">🧬</span> Structure-aware Medical Imaging</span>
-          <span class="focus-chip chip-blue"><span class="chip-icon">🔬</span> Medical Image Reconstruction & Enhancement</span>
-          <span class="focus-chip chip-violet"><span class="chip-icon">✨</span> Generative Modeling</span>
-          <span class="focus-chip chip-teal"><span class="chip-icon">📊</span> Clinical Visualization & Analysis</span>
-          <span class="focus-chip chip-rose"><span class="chip-icon">⚛️</span> Physics-informed Intelligence</span>
-        </div>
-      </div>
-
-      <div class="about-highlights">
-        <h3 class="highlights-header">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          Highlights
-          <span class="highlights-orbit" aria-hidden="true">
-            <span class="orbit-ring"></span>
-            <span class="orbit-dot"></span>
-          </span>
-        </h3>
-        <ul class="highlights-list">
-          <li class="hl-item">
-            <div class="hl-icon"><span>📄</span></div>
-            <div class="hl-content">
-              <div class="hl-number">8+ <span class="hl-unit">Papers</span></div>
-              <div class="hl-label">Published / Under review</div>
-            </div>
-          </li>
-          <li class="hl-item">
-            <div class="hl-icon"><span>🏆</span></div>
-            <div class="hl-content">
-              <div class="hl-number">CVPR 2025</div>
-              <div class="hl-label">Top-tier CV conference (CCF-A)</div>
-            </div>
-          </li>
-          <li class="hl-item">
-            <div class="hl-icon"><span>🥇</span></div>
-            <div class="hl-content">
-              <div class="hl-number">1st Place</div>
-              <div class="hl-label">CVPR&#39;25W · MAI Bokeh Challenge</div>
-            </div>
-          </li>
-          <li class="hl-item">
-            <div class="hl-icon"><span>🎓</span></div>
-            <div class="hl-content">
-              <div class="hl-number">2× National Scholar.</div>
-              <div class="hl-label">Top 0.2% · Rank 3 / 183</div>
-            </div>
-          </li>
-        </ul>
-      </div>
+    <div class="about-highlights">
+      <h3 class="highlights-header">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        Highlights
+        <span class="highlights-orbit" aria-hidden="true">
+          <span class="orbit-ring"></span>
+          <span class="orbit-dot"></span>
+        </span>
+      </h3>
+      <ul class="highlights-list">
+        <li class="hl-item">
+          <div class="hl-icon"><span>📄</span></div>
+          <div class="hl-content">
+            <div class="hl-number">8+ <span class="hl-unit">Papers</span></div>
+            <div class="hl-label">Published / Under review</div>
+          </div>
+        </li>
+        <li class="hl-item">
+          <div class="hl-icon"><span>🏆</span></div>
+          <div class="hl-content">
+            <div class="hl-number">CVPR 2025</div>
+            <div class="hl-label">Top-tier CV conference (CCF-A)</div>
+          </div>
+        </li>
+        <li class="hl-item">
+          <div class="hl-icon"><span>🥇</span></div>
+          <div class="hl-content">
+            <div class="hl-number">1st Place</div>
+            <div class="hl-label">CVPR&#39;25W · MAI Bokeh Challenge</div>
+          </div>
+        </li>
+        <li class="hl-item">
+          <div class="hl-icon"><span>🎓</span></div>
+          <div class="hl-content">
+            <div class="hl-number">2× National Scholar.</div>
+            <div class="hl-label">Top 0.2% · Rank 3 / 183</div>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 
