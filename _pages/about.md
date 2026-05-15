@@ -625,6 +625,184 @@ redirect_from:
   border-radius:0 0 14px 14px;
   pointer-events:none;
 }
+
+/* ===============================
+   About-right column (focus + highlights stacked)
+   =============================== */
+.about-right{
+  display:flex;
+  flex-direction:column;
+  gap:1.2rem;
+  position:relative;
+}
+
+/* ===============================
+   Highlights card
+   =============================== */
+.about-highlights{
+  position:relative;
+  padding:1.2rem 1.25rem;
+  border-radius:16px;
+  border:1px solid rgba(99,102,241,0.14);
+  background:
+    radial-gradient(at top right, rgba(139,92,246,0.10), transparent 60%),
+    linear-gradient(145deg, rgba(255,255,255,0.95), rgba(238,242,255,0.7));
+  box-shadow:0 4px 16px rgba(99,102,241,0.07);
+  overflow:hidden;
+  opacity:0;
+  animation:fadeInUp 0.6s ease 0.3s forwards;
+}
+.about-highlights::before{
+  content:"";
+  position:absolute;
+  inset:-1px;
+  border-radius:16px;
+  padding:1px;
+  background:linear-gradient(135deg, rgba(99,102,241,0.45), rgba(6,182,212,0.10) 40%, transparent 75%);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+          mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  pointer-events:none;
+  opacity:0.6;
+}
+.highlights-header{
+  position:relative;
+  display:flex; align-items:center; gap:0.55rem;
+  margin:0 0 0.9rem 0;
+  font-size:1.08rem;
+  font-weight:850;
+  color:#0f172a;
+}
+.highlights-header > svg{ color:#f59e0b; width:20px; height:20px; flex-shrink:0; }
+.highlights-orbit{
+  position:relative;
+  width:22px; height:22px;
+  margin-left:auto;
+  display:inline-block;
+}
+.highlights-orbit .orbit-ring{
+  position:absolute; inset:0;
+  border:1px dashed rgba(99,102,241,0.45);
+  border-radius:50%;
+  animation:spin-orbit 6s linear infinite;
+}
+.highlights-orbit .orbit-dot{
+  position:absolute;
+  top:-3px; left:50%;
+  width:6px; height:6px;
+  background:#4f46e5;
+  border-radius:50%;
+  transform:translateX(-50%);
+  box-shadow:0 0 8px rgba(79,70,229,0.6);
+  animation:spin-orbit 6s linear infinite;
+  transform-origin:50% 14px;
+}
+
+.highlights-list{
+  margin:0;
+  padding:0;
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:0.6rem;
+  position:relative;
+}
+.hl-item{
+  display:flex;
+  align-items:center;
+  gap:0.85rem;
+  padding:0.65rem 0.85rem;
+  border-radius:12px;
+  background:linear-gradient(135deg, rgba(99,102,241,0.07), rgba(255,255,255,0.85));
+  border:1px solid rgba(99,102,241,0.12);
+  opacity:0;
+  animation:fadeInUp 0.5s ease forwards;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.hl-item:nth-child(1){animation-delay:0.42s;}
+.hl-item:nth-child(2){animation-delay:0.54s;}
+.hl-item:nth-child(3){animation-delay:0.66s;}
+.hl-item:nth-child(4){animation-delay:0.78s;}
+.hl-item:hover{
+  transform:translateX(4px);
+  border-color:rgba(99,102,241,0.32);
+  box-shadow:0 6px 18px rgba(99,102,241,0.18);
+}
+.hl-icon{
+  flex-shrink:0;
+  width:36px; height:36px;
+  display:flex; align-items:center; justify-content:center;
+  border-radius:11px;
+  font-size:1.15rem;
+  background:linear-gradient(135deg, rgba(99,102,241,0.20), rgba(37,99,235,0.10));
+  border:1px solid rgba(99,102,241,0.20);
+  box-shadow:0 2px 8px rgba(99,102,241,0.10);
+}
+.hl-content{ flex:1; min-width:0; }
+.hl-number{
+  font-size:0.98rem;
+  font-weight:800;
+  color:#1d4ed8;
+  line-height:1.25;
+}
+.hl-number .hl-unit{font-weight:700; color:#475569; font-size:0.9rem;}
+.hl-label{
+  font-size:0.78rem;
+  color:#64748b;
+  margin-top:0.12rem;
+  letter-spacing:0.01em;
+}
+
+/* ===============================
+   Stagger entrance for new components
+   =============================== */
+.about-contact-row .contact-btn{
+  opacity:0;
+  animation:fadeInUp 0.5s ease forwards;
+}
+.about-contact-row .contact-btn:nth-child(1){animation-delay:0.20s;}
+.about-contact-row .contact-btn:nth-child(2){animation-delay:0.28s;}
+.about-contact-row .contact-btn:nth-child(3){animation-delay:0.36s;}
+.about-contact-row .contact-btn:nth-child(4){animation-delay:0.44s;}
+
+/* Shimmer sweep across contact buttons on hover */
+.contact-btn{position:relative; overflow:hidden;}
+.contact-btn::after{
+  content:"";
+  position:absolute;
+  top:0; left:-120%;
+  width:60%; height:100%;
+  background:linear-gradient(120deg, transparent, rgba(255,255,255,0.55), transparent);
+  transition:left 0.6s ease;
+}
+.contact-btn:hover::after{ left:120%; }
+
+/* Subtle floating dots in about-card background */
+.about-card{position:relative;}
+.about-card .float-orbs{
+  position:absolute; inset:0;
+  pointer-events:none;
+  overflow:hidden;
+  border-radius:20px;
+  z-index:0;
+}
+.about-card .float-orbs span{
+  position:absolute;
+  display:block;
+  border-radius:50%;
+  background:radial-gradient(circle, rgba(99,102,241,0.30), rgba(99,102,241,0));
+  filter:blur(2px);
+  animation:float-orb 14s ease-in-out infinite;
+}
+.about-card .float-orbs span:nth-child(1){width:140px;height:140px;top:5%; left:65%;animation-delay:0s;}
+.about-card .float-orbs span:nth-child(2){width:90px; height:90px; top:55%;left:8%; background:radial-gradient(circle, rgba(6,182,212,0.30), rgba(6,182,212,0));animation-delay:-4s;}
+.about-card .float-orbs span:nth-child(3){width:120px;height:120px;top:78%;left:78%;background:radial-gradient(circle, rgba(139,92,246,0.26), rgba(139,92,246,0));animation-delay:-8s;}
+@keyframes float-orb{
+  0%, 100% { transform: translate(0,0) scale(1); opacity:0.7; }
+  50%      { transform: translate(20px,-30px) scale(1.15); opacity:1; }
+}
+.about-card > *{ position:relative; z-index:1; }
 </style>
 
 <!-- ===============================
@@ -632,6 +810,9 @@ redirect_from:
      =============================== -->
 <span class="anchor" id="about-me"></span>
 <div class="about-card">
+  <div class="float-orbs" aria-hidden="true">
+    <span></span><span></span><span></span>
+  </div>
   <div class="about-card-header">
     <div class="about-card-title-wrap">
       <h2 class="about-card-title">About Me</h2>
@@ -650,21 +831,6 @@ redirect_from:
         National University of Defense Technology, advised by Prof. <a href="https://kevinkaixu.net/">Kai Xu</a> and Assoc. Prof.
         <a href="https://renjiaoyi.github.io/">Renjiao Yi</a>.
       </p>
-
-      <div class="about-meta-chips">
-        <span class="meta-chip">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-          Master's @ NUDT
-        </span>
-        <span class="meta-chip">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          Hangzhou, China
-        </span>
-        <span class="meta-chip">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h1M9 13h1M9 17h1M14 9h1M14 13h1M14 17h1"/></svg>
-          College of CS & Tech
-        </span>
-      </div>
 
       <div class="research-scope">
 <p style="
@@ -726,17 +892,60 @@ redirect_from:
       <span class="about-pill">Open to research-oriented collaborations in AI for Healthcare, and other areas of computer vision.</span>
     </div>
 
-    <div class="focus-section">
-      <h3 class="focus-header">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-        Current Focus
-      </h3>
-      <div class="focus-chips">
-        <span class="focus-chip chip-indigo"><span class="chip-icon">🧬</span> Structure-aware Medical Imaging</span>
-        <span class="focus-chip chip-blue"><span class="chip-icon">🔬</span> Medical Image Reconstruction & Enhancement</span>
-        <span class="focus-chip chip-violet"><span class="chip-icon">✨</span> Generative Modeling</span>
-        <span class="focus-chip chip-teal"><span class="chip-icon">📊</span> Clinical Visualization & Analysis</span>
-        <span class="focus-chip chip-rose"><span class="chip-icon">⚛️</span> Physics-informed Intelligence</span>
+    <div class="about-right">
+      <div class="focus-section">
+        <h3 class="focus-header">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          Current Focus
+        </h3>
+        <div class="focus-chips">
+          <span class="focus-chip chip-indigo"><span class="chip-icon">🧬</span> Structure-aware Medical Imaging</span>
+          <span class="focus-chip chip-blue"><span class="chip-icon">🔬</span> Medical Image Reconstruction & Enhancement</span>
+          <span class="focus-chip chip-violet"><span class="chip-icon">✨</span> Generative Modeling</span>
+          <span class="focus-chip chip-teal"><span class="chip-icon">📊</span> Clinical Visualization & Analysis</span>
+          <span class="focus-chip chip-rose"><span class="chip-icon">⚛️</span> Physics-informed Intelligence</span>
+        </div>
+      </div>
+
+      <div class="about-highlights">
+        <h3 class="highlights-header">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          Highlights
+          <span class="highlights-orbit" aria-hidden="true">
+            <span class="orbit-ring"></span>
+            <span class="orbit-dot"></span>
+          </span>
+        </h3>
+        <ul class="highlights-list">
+          <li class="hl-item">
+            <div class="hl-icon"><span>📄</span></div>
+            <div class="hl-content">
+              <div class="hl-number">8+ <span class="hl-unit">Papers</span></div>
+              <div class="hl-label">Published / Under review</div>
+            </div>
+          </li>
+          <li class="hl-item">
+            <div class="hl-icon"><span>🏆</span></div>
+            <div class="hl-content">
+              <div class="hl-number">CVPR 2025</div>
+              <div class="hl-label">Top-tier CV conference (CCF-A)</div>
+            </div>
+          </li>
+          <li class="hl-item">
+            <div class="hl-icon"><span>🥇</span></div>
+            <div class="hl-content">
+              <div class="hl-number">1st Place</div>
+              <div class="hl-label">CVPR&#39;25W · MAI Bokeh Challenge</div>
+            </div>
+          </li>
+          <li class="hl-item">
+            <div class="hl-icon"><span>🎓</span></div>
+            <div class="hl-content">
+              <div class="hl-number">2× National Scholarship</div>
+              <div class="hl-label">Top 0.2% · Rank 3 / 183</div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
