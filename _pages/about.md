@@ -985,23 +985,22 @@ redirect_from:
   color: #374151;
 ">
   My research focuses on
-  <span style="font-weight:700; color:#1f3a8a;">AI for healthcare</span>,
-  emphasizing
-  <span style="font-weight:700; color:#4f46e5;">structure-aware methods</span>
-  for image
-  <span style="font-weight:600; color:#4338ca;">
-    generation, reconstruction, and enhancement
-  </span>.
+  <span style="font-weight:700; color:#1f3a8a;">computer vision</span>,
+  building
+  <span style="font-weight:700; color:#4f46e5;">world models</span>
+  and
+  <span style="font-weight:600; color:#4338ca;">large multimodal models</span>
+  that perceive, reason about, and generate the visual world.
   By integrating
-  <span style="font-weight:600; color:#0f766e;">anatomical priors</span>
+  <span style="font-weight:600; color:#0f766e;">structural priors</span>
   and
-  <span style="font-weight:600; color:#0f766e;">explicit structural constraints</span>,
+  <span style="font-weight:600; color:#0f766e;">explicit physical constraints</span>,
   I aim to improve the
-  <span style="font-weight:600; color:#7c2d12;">reliability</span>
+  <span style="font-weight:600; color:#7c2d12;">robustness</span>
   and
-  <span style="font-weight:600; color:#7c2d12;">clinical relevance</span>
+  <span style="font-weight:600; color:#7c2d12;">generalization</span>
   of learned representations for
-  <span style="font-weight:600; color:#374151; text-decoration:underline;">real-world clinical workflows</span>.
+  <span style="font-weight:600; color:#374151; text-decoration:underline;">real-world deployment</span>.
   In parallel, I explore
   <span style="font-weight:700; color:#5b21b6;">
     physics-informed intelligence
@@ -1015,16 +1014,16 @@ redirect_from:
 
   <div class="about-action-row">
     <div class="about-contact-row">
-      <a class="contact-btn" href="mailto:zhifengwang@nudt.edu.cn" target="_self" rel="noopener">
+      <a class="contact-btn" href="https://mail.nudt.edu.cn/" target="_blank" rel="noopener" title="zhifengwang@nudt.edu.cn">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         NUDT Mail
       </a>
-      <a class="contact-btn" href="mailto:zhifengwang686@gmail.com" target="_self" rel="noopener">
+      <a class="contact-btn" href="https://mail.google.com/" target="_blank" rel="noopener" title="zhifengwang686@gmail.com">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         Gmail
       </a>
     </div>
-    <span class="about-pill">Open to research-oriented collaborations in AI for Healthcare, and other areas of computer vision.</span>
+    <span class="about-pill">Open to research-oriented collaborations in computer vision, world models, and large multimodal models.</span>
   </div>
 
   <div class="about-cards-row">
@@ -1034,10 +1033,10 @@ redirect_from:
         Current Focus
       </h3>
       <div class="focus-chips">
-        <span class="focus-chip chip-indigo"><span class="chip-icon">🧬</span> Structure-aware Medical Imaging</span>
-        <span class="focus-chip chip-blue"><span class="chip-icon">🔬</span> Medical Image Reconstruction & Enhancement</span>
-        <span class="focus-chip chip-violet"><span class="chip-icon">✨</span> Generative Modeling</span>
-        <span class="focus-chip chip-teal"><span class="chip-icon">📊</span> Clinical Visualization & Analysis</span>
+        <span class="focus-chip chip-indigo"><span class="chip-icon">🌍</span> World Models &amp; Simulation</span>
+        <span class="focus-chip chip-blue"><span class="chip-icon">👁️</span> Computer Vision &amp; 3D</span>
+        <span class="focus-chip chip-violet"><span class="chip-icon">🧠</span> Large Multimodal Models</span>
+        <span class="focus-chip chip-teal"><span class="chip-icon">✨</span> Generative Modeling</span>
         <span class="focus-chip chip-rose"><span class="chip-icon">⚛️</span> Physics-informed Intelligence</span>
       </div>
     </div>
