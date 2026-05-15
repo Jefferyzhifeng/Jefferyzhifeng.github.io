@@ -526,6 +526,11 @@ redirect_from:
 .about-card .research-scope p{ font-size:0.97rem !important; line-height:1.7 !important; }
 
 .about-pill{ margin:0.85rem 0 0.4rem 0; }
+.about-pill--bottom{
+  display:flex;
+  margin:1.1rem 0 0.2rem 0;
+  width:fit-content;
+}
 
 /* Header right cluster: compact mail buttons + status badge */
 .about-header-meta{
@@ -1018,7 +1023,7 @@ redirect_from:
   building
   <span style="font-weight:700; color:#4f46e5;">world models</span>
   and
-  <span style="font-weight:600; color:#4338ca;">large multimodal models</span>
+  <span style="font-weight:600; color:#4338ca;">large language models</span>
   that perceive, reason about, and generate the visual world.
   By integrating
   <span style="font-weight:600; color:#0f766e;">structural priors</span>
@@ -1041,8 +1046,6 @@ redirect_from:
 </p>
   </div>
 
-  <span class="about-pill">Open to research-oriented collaborations in computer vision, medical AI, world models, and large multimodal models.</span>
-
   <div class="about-cards-row">
     <div class="focus-section">
       <h3 class="focus-header">
@@ -1052,7 +1055,7 @@ redirect_from:
       <div class="focus-chips">
         <span class="focus-chip chip-indigo"><span class="chip-icon">🌍</span> World Models &amp; Simulation</span>
         <span class="focus-chip chip-blue"><span class="chip-icon">👁️</span> Computer Vision &amp; 3D</span>
-        <span class="focus-chip chip-violet"><span class="chip-icon">🧠</span> Large Multimodal Models</span>
+        <span class="focus-chip chip-violet"><span class="chip-icon">🧠</span> Large Language Models</span>
         <span class="focus-chip chip-emerald"><span class="chip-icon">🏥</span> Medical AI &amp; Imaging</span>
         <span class="focus-chip chip-teal"><span class="chip-icon">✨</span> Generative Modeling</span>
         <span class="focus-chip chip-rose"><span class="chip-icon">⚛️</span> Physics-informed Intelligence</span>
@@ -1101,6 +1104,8 @@ redirect_from:
     </div>
   </div>
 
+  <span class="about-pill about-pill--bottom">Open to research-oriented collaborations in computer vision, medical AI, world models, and large language models.</span>
+
   <div class="about-philosophy">
     As a result of this honesty, we are forced to doubt. — Richard Feynman
   </div>
@@ -1111,99 +1116,259 @@ redirect_from:
      =============================== -->
 <h2 class="section-title"><span class="section-emoji">🛠</span> Tools & Projects</h2>
 <div class="tools-grid">
-  <a href="https://paperscope.top" target="_blank" class="tool-card">
-    <div class="tool-icon">
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-        <path d="M8 7h8M8 11h8M8 15h4"></path>
-      </svg>
+  <a href="https://paperscope.top" target="_blank" rel="noopener" class="tool-card tool-card--paperscope">
+    <div class="tool-card-cover" aria-hidden="true">
+      <div class="cover-grid"></div>
+      <div class="cover-glow"></div>
     </div>
-    <div class="tool-content">
-      <h3>Paperscope</h3>
-      <p>A comprehensive platform for AI research papers. Browse, search, and explore cutting-edge research in computer vision and medical imaging.</p>
-      <span class="tool-tag">Research Platform</span>
+    <div class="tool-card-body">
+      <div class="tool-icon" aria-hidden="true">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="7" y="3" width="13" height="16" rx="1.5"/>
+          <path d="M3 7v14h14"/>
+          <line x1="11" y1="9" x2="17" y2="9"/>
+          <line x1="11" y1="13" x2="17" y2="13"/>
+          <line x1="11" y1="17" x2="14" y2="17"/>
+        </svg>
+      </div>
+      <div class="tool-card-text">
+        <div class="tool-title-row">
+          <h3>Paperscope</h3>
+          <span class="tool-status"><span class="status-dot status-dot--live" aria-hidden="true"></span>Live</span>
+          <svg class="tool-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="7" y1="17" x2="17" y2="7"/>
+            <polyline points="9 7 17 7 17 15"/>
+          </svg>
+        </div>
+        <p class="tool-tagline">Discover · Browse · Explore AI papers</p>
+        <p class="tool-desc">A comprehensive platform for AI research papers. Search and explore cutting-edge work in computer vision and medical imaging.</p>
+        <div class="tool-footer">
+          <span class="tool-tag">Research Platform</span>
+          <span class="tool-domain">paperscope.top</span>
+        </div>
+      </div>
     </div>
   </a>
 
-  <a href="https://motong-ai-studio.github.io/" target="_blank" class="tool-card">
-    <div class="tool-icon">
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <circle cx="12" cy="12" r="10"></circle>
-        <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
-        <line x1="9" y1="9" x2="9.01" y2="9"></line>
-        <line x1="15" y1="9" x2="15.01" y2="9"></line>
-      </svg>
+  <a href="https://motong-ai-studio.github.io/" target="_blank" rel="noopener" class="tool-card tool-card--mtaistudio">
+    <div class="tool-card-cover" aria-hidden="true">
+      <div class="cover-grid"></div>
+      <div class="cover-glow"></div>
     </div>
-    <div class="tool-content">
-      <h3>Mt-aistudio</h3>
-      <p>A research group focusing on computer vision, initiated as a core member. Collaborate with peers on cutting-edge CV projects.</p>
-      <span class="tool-tag">Research Group</span>
+    <div class="tool-card-body">
+      <div class="tool-icon" aria-hidden="true">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="4" y="4" width="16" height="16" rx="2"/>
+          <rect x="9" y="9" width="6" height="6"/>
+          <line x1="9" y1="2" x2="9" y2="4"/>
+          <line x1="15" y1="2" x2="15" y2="4"/>
+          <line x1="9" y1="20" x2="9" y2="22"/>
+          <line x1="15" y1="20" x2="15" y2="22"/>
+          <line x1="20" y1="9" x2="22" y2="9"/>
+          <line x1="20" y1="14" x2="22" y2="14"/>
+          <line x1="2" y1="9" x2="4" y2="9"/>
+          <line x1="2" y1="14" x2="4" y2="14"/>
+        </svg>
+      </div>
+      <div class="tool-card-text">
+        <div class="tool-title-row">
+          <h3>Mt-aistudio</h3>
+          <span class="tool-status tool-status--member"><span class="status-dot status-dot--member" aria-hidden="true"></span>Core Member</span>
+          <svg class="tool-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="7" y1="17" x2="17" y2="7"/>
+            <polyline points="9 7 17 7 17 15"/>
+          </svg>
+        </div>
+        <p class="tool-tagline">CV Research Group · Collaborative</p>
+        <p class="tool-desc">A research group focusing on computer vision and generative modeling. Collaborate with peers on cutting-edge CV projects.</p>
+        <div class="tool-footer">
+          <span class="tool-tag">Research Group</span>
+          <span class="tool-domain">motong-ai-studio.github.io</span>
+        </div>
+      </div>
     </div>
   </a>
 </div>
 
 <style>
-.tools-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 1.25rem;
-  margin-top: 0.6rem;
+.tools-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap:1.25rem;
+  margin-top:0.8rem;
 }
-.tool-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  padding: 1.25rem;
-  border-radius: 14px;
-  border: 1px solid rgba(99,102,241,0.15);
-  background: linear-gradient(135deg, rgba(99,102,241,0.08) 0%, rgba(255,255,255,0.95) 100%);
-  text-decoration: none;
-  transition: all 0.25s ease;
-  box-shadow: 0 4px 16px rgba(17,24,39,0.06);
+.tool-card{
+  position:relative;
+  display:block;
+  border-radius:18px;
+  overflow:hidden;
+  text-decoration:none !important;
+  color:inherit !important;
+  background:#ffffff;
+  border:1px solid rgba(99,102,241,0.16);
+  box-shadow:0 6px 20px rgba(17,24,39,0.06);
+  transition: transform 0.32s ease, box-shadow 0.32s ease, border-color 0.32s ease;
+  isolation:isolate;
 }
-.tool-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(99,102,241,0.18);
-  border-color: rgba(99,102,241,0.35);
+.tool-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 22px 46px rgba(99,102,241,0.18);
+  border-color:rgba(99,102,241,0.45);
 }
-.tool-icon {
-  flex-shrink: 0;
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 12px;
-  background: rgba(99,102,241,0.12);
-  color: #4f46e5;
+
+/* Top cover banner */
+.tool-card-cover{
+  position:relative;
+  height:66px;
+  overflow:hidden;
 }
-.tool-content {
-  flex: 1;
-  min-width: 0;
+.tool-card--paperscope .tool-card-cover{
+  background:linear-gradient(135deg, #4f46e5 0%, #2563eb 55%, #06b6d4 100%);
 }
-.tool-content h3 {
-  margin: 0 0 0.4rem 0;
-  font-size: 1.12rem;
-  font-weight: 750;
-  color: #1d4ed8;
+.tool-card--mtaistudio .tool-card-cover{
+  background:linear-gradient(135deg, #7c3aed 0%, #a855f7 50%, #ec4899 100%);
 }
-.tool-content p {
-  margin: 0 0 0.6rem 0;
-  font-size: 0.92rem;
-  line-height: 1.55;
-  color: #475569;
+.cover-grid{
+  position:absolute; inset:0;
+  background-image: radial-gradient(rgba(255,255,255,0.20) 1px, transparent 1px);
+  background-size:14px 14px;
+  opacity:0.55;
 }
-.tool-tag {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.2rem 0.55rem;
-  border-radius: 999px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: #4f46e5;
-  background: rgba(99,102,241,0.12);
-  border: 1px solid rgba(99,102,241,0.2);
+.cover-glow{
+  position:absolute;
+  top:-50%; right:-15%;
+  width:170px; height:170px;
+  background:radial-gradient(circle, rgba(255,255,255,0.55), transparent 70%);
+  filter:blur(8px);
+  transition: transform 0.7s ease;
+  pointer-events:none;
+}
+.tool-card:hover .cover-glow{
+  transform: translate(-40px, 30px) scale(1.25);
+}
+
+/* Body */
+.tool-card-body{
+  position:relative;
+  padding:1rem 1.2rem 1.15rem 1.2rem;
+}
+.tool-icon{
+  position:absolute;
+  top:-26px; left:1.2rem;
+  width:52px; height:52px;
+  border-radius:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#ffffff;
+  color:#4f46e5;
+  border:1px solid rgba(99,102,241,0.20);
+  box-shadow:0 8px 20px rgba(17,24,39,0.14);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s ease;
+}
+.tool-card--mtaistudio .tool-icon{ color:#7c3aed; border-color:rgba(139,92,246,0.20); }
+.tool-card:hover .tool-icon{
+  transform:scale(1.08) rotate(-6deg);
+  box-shadow:0 12px 26px rgba(17,24,39,0.18);
+}
+
+.tool-card-text{ margin-top:1.55rem; }
+.tool-title-row{
+  display:flex; align-items:center; gap:0.55rem;
+  margin-bottom:0.18rem;
+}
+.tool-title-row h3{
+  margin:0;
+  font-size:1.18rem;
+  font-weight:850;
+  color:#1d4ed8;
+  letter-spacing:-0.005em;
+}
+.tool-card--mtaistudio .tool-title-row h3{ color:#7c3aed; }
+
+.tool-status{
+  display:inline-flex;
+  align-items:center;
+  gap:0.35rem;
+  padding:0.18rem 0.55rem;
+  border-radius:999px;
+  font-size:0.7rem;
+  font-weight:800;
+  letter-spacing:0.02em;
+  color:#047857;
+  background:rgba(16,185,129,0.10);
+  border:1px solid rgba(16,185,129,0.28);
+}
+.tool-status .status-dot{
+  width:6px; height:6px;
+}
+.tool-status--member{
+  color:#7c3aed;
+  background:rgba(139,92,246,0.12);
+  border-color:rgba(139,92,246,0.30);
+}
+.tool-status--member .status-dot{ background:#a855f7; box-shadow:none; animation:none; }
+
+.tool-arrow{
+  width:16px; height:16px;
+  color:#94a3b8;
+  margin-left:auto;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.tool-card:hover .tool-arrow{
+  color:#4f46e5;
+  transform: translate(3px, -3px);
+}
+.tool-card--mtaistudio:hover .tool-arrow{ color:#7c3aed; }
+
+.tool-tagline{
+  margin:0.2rem 0 0.65rem 0 !important;
+  font-size:0.74rem !important;
+  font-weight:800;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  color:#6366f1;
+  line-height:1.4 !important;
+}
+.tool-card--mtaistudio .tool-tagline{ color:#8b5cf6; }
+
+.tool-desc{
+  margin:0 0 0.85rem 0 !important;
+  font-size:0.88rem !important;
+  line-height:1.6 !important;
+  color:#475569;
+}
+
+.tool-footer{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:0.6rem;
+  flex-wrap:wrap;
+}
+.tool-tag{
+  display:inline-flex;
+  align-items:center;
+  padding:0.22rem 0.65rem;
+  border-radius:999px;
+  font-size:0.72rem;
+  font-weight:750;
+  color:#4f46e5;
+  background:rgba(99,102,241,0.10);
+  border:1px solid rgba(99,102,241,0.22);
+  letter-spacing:0.01em;
+}
+.tool-card--mtaistudio .tool-tag{
+  color:#7c3aed;
+  background:rgba(139,92,246,0.10);
+  border-color:rgba(139,92,246,0.28);
+}
+.tool-domain{
+  font-size:0.72rem;
+  font-weight:650;
+  color:#94a3b8;
+  font-family: Menlo, Monaco, "Lucida Console", monospace;
+  letter-spacing:0.01em;
 }
 </style>
 

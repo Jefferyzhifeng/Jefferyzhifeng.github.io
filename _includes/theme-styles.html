@@ -206,21 +206,50 @@ html, body {
   color: var(--text-strong) !important;
 }
 
-/* Tools grid */
+/* Tools grid — redesigned cards (banner + floating icon) */
 [data-theme="dark"] .tool-card {
-  background: linear-gradient(135deg, rgba(99,102,241,0.18) 0%, rgba(17,24,39,0.85) 100%) !important;
+  background: var(--bg-elevated) !important;
   border-color: var(--border) !important;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.40) !important;
 }
-[data-theme="dark"] .tool-card h3 { color: var(--link) !important; }
-[data-theme="dark"] .tool-card p  { color: var(--text-muted) !important; }
-[data-theme="dark"] .tool-tag {
-  color: var(--chip-indigo-fg) !important;
-  background: var(--chip-indigo-bg) !important;
-  border-color: rgba(99,102,241,0.35) !important;
+[data-theme="dark"] .tool-card:hover {
+  border-color: rgba(129,140,248,0.55) !important;
+  box-shadow: 0 22px 46px rgba(0,0,0,0.55) !important;
 }
 [data-theme="dark"] .tool-icon {
+  background: var(--bg-elevated) !important;
+  border-color: var(--border) !important;
+}
+[data-theme="dark"] .tool-card--paperscope .tool-icon { color: #93c5fd !important; }
+[data-theme="dark"] .tool-card--mtaistudio .tool-icon { color: #c4b5fd !important; border-color: rgba(167,139,250,0.30) !important; }
+[data-theme="dark"] .tool-title-row h3 { color: var(--link) !important; }
+[data-theme="dark"] .tool-card--mtaistudio .tool-title-row h3 { color: #c4b5fd !important; }
+[data-theme="dark"] .tool-tagline { color: #a5b4fc !important; }
+[data-theme="dark"] .tool-card--mtaistudio .tool-tagline { color: #c4b5fd !important; }
+[data-theme="dark"] .tool-desc { color: var(--text-secondary) !important; }
+[data-theme="dark"] .tool-tag {
+  color: #c7d2fe !important;
   background: rgba(99,102,241,0.22) !important;
-  color: var(--accent) !important;
+  border-color: rgba(129,140,248,0.40) !important;
+}
+[data-theme="dark"] .tool-card--mtaistudio .tool-tag {
+  color: #ddd6fe !important;
+  background: rgba(139,92,246,0.24) !important;
+  border-color: rgba(167,139,250,0.42) !important;
+}
+[data-theme="dark"] .tool-domain { color: var(--text-muted) !important; }
+[data-theme="dark"] .tool-arrow { color: var(--text-muted) !important; }
+[data-theme="dark"] .tool-card--paperscope:hover .tool-arrow { color: #93c5fd !important; }
+[data-theme="dark"] .tool-card--mtaistudio:hover .tool-arrow { color: #c4b5fd !important; }
+[data-theme="dark"] .tool-status {
+  color: #86efac !important;
+  background: rgba(16,185,129,0.20) !important;
+  border-color: rgba(16,185,129,0.45) !important;
+}
+[data-theme="dark"] .tool-status--member {
+  color: #ddd6fe !important;
+  background: rgba(139,92,246,0.24) !important;
+  border-color: rgba(167,139,250,0.45) !important;
 }
 
 /* Paper boxes */
