@@ -525,16 +525,31 @@ redirect_from:
 .about-card .research-scope{ padding:0.85rem 1.05rem !important; }
 .about-card .research-scope p{ font-size:0.97rem !important; line-height:1.7 !important; }
 
-.about-action-row{
+.about-pill{ margin:0.85rem 0 0.4rem 0; }
+
+/* Header right cluster: compact mail buttons + status badge */
+.about-header-meta{
   display:flex;
   align-items:center;
-  justify-content:space-between;
+  gap:0.55rem;
   flex-wrap:wrap;
-  gap:0.85rem;
-  margin:0.9rem 0 0.4rem 0;
+  justify-content:flex-end;
 }
-.about-action-row .about-contact-row{ margin:0; }
-.about-action-row .about-pill{ margin:0; }
+.about-contact-row--compact{
+  display:inline-flex;
+  gap:0.4rem;
+  margin:0;
+}
+.about-contact-row--compact .contact-btn{
+  padding:0.3rem 0.65rem;
+  font-size:0.78rem;
+  font-weight:750;
+  border-radius:8px;
+  box-shadow:0 2px 6px rgba(99,102,241,0.06);
+}
+.about-contact-row--compact .contact-btn svg{
+  width:13px; height:13px;
+}
 
 .about-cards-row{
   display:grid;
@@ -967,10 +982,22 @@ redirect_from:
       <h2 class="about-card-title">About Me</h2>
       <div class="about-card-line"></div>
     </div>
-    <span class="about-status-badge" title="Currently open to research collaborations">
-      <span class="status-dot" aria-hidden="true"></span>
-      <span>Available for collaborations</span>
-    </span>
+    <div class="about-header-meta">
+      <div class="about-contact-row about-contact-row--compact">
+        <a class="contact-btn" href="https://mail.nudt.edu.cn/" target="_blank" rel="noopener" title="zhifengwang@nudt.edu.cn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          NUDT
+        </a>
+        <a class="contact-btn" href="https://mail.google.com/" target="_blank" rel="noopener" title="zhifengwang686@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Gmail
+        </a>
+      </div>
+      <span class="about-status-badge" title="Currently open to research collaborations">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span>Available for collaborations</span>
+      </span>
+    </div>
   </div>
 
   <p class="about-intro">
@@ -1014,19 +1041,7 @@ redirect_from:
 </p>
   </div>
 
-  <div class="about-action-row">
-    <div class="about-contact-row">
-      <a class="contact-btn" href="https://mail.nudt.edu.cn/" target="_blank" rel="noopener" title="zhifengwang@nudt.edu.cn">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        NUDT Mail
-      </a>
-      <a class="contact-btn" href="https://mail.google.com/" target="_blank" rel="noopener" title="zhifengwang686@gmail.com">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        Gmail
-      </a>
-    </div>
-    <span class="about-pill">Open to research-oriented collaborations in computer vision, medical AI, world models, and large multimodal models.</span>
-  </div>
+  <span class="about-pill">Open to research-oriented collaborations in computer vision, medical AI, world models, and large multimodal models.</span>
 
   <div class="about-cards-row">
     <div class="focus-section">
