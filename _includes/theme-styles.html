@@ -265,29 +265,33 @@ html, body {
 /* ===============================
    Theme toggle button (in masthead)
    =============================== */
-/* override .greedy-nav button base styles */
-.greedy-nav .theme-toggle,
+/* Flex layout for masthead so toggle sits at the right end, outside greedy-nav */
+.masthead__menu {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.masthead__menu > .greedy-nav { flex: 1 1 auto; min-width: 0; }
+.masthead__menu > .theme-toggle { flex: 0 0 auto; }
+
 .theme-toggle {
-  position: relative !important;
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 38px;
   height: 38px;
-  margin-left: 0.5rem;
-  padding: 0 !important;
-  border-radius: 999px !important;
-  border: 1px solid var(--border) !important;
-  background: var(--bg-elevated) !important;
-  background-color: var(--bg-elevated) !important;
-  color: var(--text) !important;
+  padding: 0;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  color: var(--text);
   cursor: pointer;
   overflow: hidden;
-  right: auto !important;
   transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
-[data-theme="dark"] .theme-toggle { color: var(--text) !important; background: var(--bg-elevated) !important; }
+[data-theme="dark"] .theme-toggle { color: var(--text); background: var(--bg-elevated); }
 .theme-toggle:hover { transform: translateY(-2px) rotate(-8deg); box-shadow: 0 6px 18px rgba(99,102,241,0.22); }
 .theme-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .theme-toggle svg { width: 18px; height: 18px; transition: transform 0.4s ease, opacity 0.3s ease; }
@@ -295,11 +299,6 @@ html, body {
 .theme-toggle .icon-moon   { display: block; }
 [data-theme="dark"] .theme-toggle .icon-sun  { display: block; color: #fbbf24; }
 [data-theme="dark"] .theme-toggle .icon-moon { display: none; }
-
-/* Place the toggle inside the .visible-links list nicely */
-.masthead__menu-item--toggle {
-  padding-right: 0 !important;
-}
 
 /* ===============================
    Back-to-top button
