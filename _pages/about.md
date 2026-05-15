@@ -990,11 +990,8 @@ redirect_from:
   <span style="font-weight:600; color:#7c2d12;">reliability</span>
   and
   <span style="font-weight:600; color:#7c2d12;">clinical relevance</span>
-  of learned representations.
-  I am particularly interested in approaches translatable to
-  <span style="font-weight:600; color:#374151; text-decoration:underline;">
-    real-world clinical workflows.
-  </span>
+  of learned representations for
+  <span style="font-weight:600; color:#374151; text-decoration:underline;">real-world clinical workflows</span>.
   In parallel, I explore
   <span style="font-weight:700; color:#5b21b6;">
     physics-informed intelligence
