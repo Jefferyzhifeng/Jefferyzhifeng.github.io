@@ -539,7 +539,17 @@ redirect_from:
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap:1rem;
   margin-top:1.1rem;
-  align-items:start;
+  align-items:stretch;
+}
+.about-cards-row > .focus-section,
+.about-cards-row > .about-highlights{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+}
+.about-cards-row > .focus-section .focus-chips,
+.about-cards-row > .about-highlights .highlights-list{
+  flex:1;
 }
 @media (max-width: 860px){
   .about-cards-row{grid-template-columns:1fr;}
