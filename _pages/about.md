@@ -213,20 +213,62 @@ redirect_from:
 }
 .focus-header svg{flex-shrink:0;}
 .focus-chips{
-  display:flex; flex-wrap:wrap; gap:0.55rem;
+  display:flex;
+  flex-direction:column;
+  gap:0.5rem;
 }
 .focus-chip{
-  display:inline-flex; align-items:center; gap:0.4rem;
-  padding:0.42rem 0.85rem;
-  border-radius:999px;
-  font-weight:650; font-size:0.92rem;
+  position:relative;
+  display:flex; align-items:center; gap:0.55rem;
+  padding:0.5rem 0.85rem 0.5rem 0.75rem;
+  border-radius:12px;
+  font-weight:700; font-size:0.92rem;
   letter-spacing:0.01em;
-  transition:all 0.22s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, border-color 0.25s ease;
   cursor:default;
   border:1px solid;
+  overflow:hidden;
 }
-.focus-chip .chip-icon{font-size:1rem; line-height:1;}
-.focus-chip:hover{transform:translateY(-2px); box-shadow:0 4px 14px rgba(0,0,0,0.10);}
+.focus-chip::before{
+  content:"";
+  position:absolute;
+  left:0; top:14%; bottom:14%;
+  width:3px;
+  border-radius:2px;
+  background:currentColor;
+  opacity:0.65;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.focus-chip .chip-icon{
+  font-size:1.1rem;
+  line-height:1;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:24px; height:24px;
+  border-radius:8px;
+  background:rgba(255,255,255,0.55);
+  border:1px solid rgba(0,0,0,0.04);
+  transition: transform 0.35s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+.focus-chip:hover{
+  transform:translateX(4px);
+  box-shadow:0 6px 16px rgba(0,0,0,0.10);
+}
+.focus-chip:hover::before{ opacity:1; transform:scaleY(1.08); }
+.focus-chip:hover .chip-icon{
+  transform:scale(1.18) rotate(-8deg);
+}
+.focus-chip::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(120deg, transparent, rgba(255,255,255,0.55), transparent);
+  transform:translateX(-110%);
+  transition: transform 0.7s ease;
+  pointer-events:none;
+}
+.focus-chip:hover::after{ transform:translateX(110%); }
 .chip-indigo{color:#4338ca; background:rgba(99,102,241,0.10); border-color:rgba(99,102,241,0.22);}
 .chip-indigo:hover{background:rgba(99,102,241,0.18);}
 .chip-blue{color:#1d4ed8; background:rgba(37,99,235,0.10); border-color:rgba(37,99,235,0.22);}
@@ -703,55 +745,63 @@ redirect_from:
   margin:0;
   padding:0;
   list-style:none;
-  display:flex;
-  flex-direction:column;
-  gap:0.6rem;
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap:0.55rem;
   position:relative;
 }
 .hl-item{
   display:flex;
   align-items:center;
-  gap:0.85rem;
-  padding:0.65rem 0.85rem;
+  gap:0.6rem;
+  padding:0.6rem 0.7rem;
   border-radius:12px;
   background:linear-gradient(135deg, rgba(99,102,241,0.07), rgba(255,255,255,0.85));
   border:1px solid rgba(99,102,241,0.12);
   opacity:0;
   animation:fadeInUp 0.5s ease forwards;
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  min-width:0;
 }
 .hl-item:nth-child(1){animation-delay:0.42s;}
 .hl-item:nth-child(2){animation-delay:0.54s;}
 .hl-item:nth-child(3){animation-delay:0.66s;}
 .hl-item:nth-child(4){animation-delay:0.78s;}
 .hl-item:hover{
-  transform:translateX(4px);
+  transform:translateY(-2px);
   border-color:rgba(99,102,241,0.32);
   box-shadow:0 6px 18px rgba(99,102,241,0.18);
 }
 .hl-icon{
   flex-shrink:0;
-  width:36px; height:36px;
+  width:34px; height:34px;
   display:flex; align-items:center; justify-content:center;
-  border-radius:11px;
-  font-size:1.15rem;
+  border-radius:10px;
+  font-size:1.05rem;
   background:linear-gradient(135deg, rgba(99,102,241,0.20), rgba(37,99,235,0.10));
   border:1px solid rgba(99,102,241,0.20);
   box-shadow:0 2px 8px rgba(99,102,241,0.10);
 }
 .hl-content{ flex:1; min-width:0; }
 .hl-number{
-  font-size:0.98rem;
+  font-size:0.88rem;
   font-weight:800;
   color:#1d4ed8;
   line-height:1.25;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
 }
-.hl-number .hl-unit{font-weight:700; color:#475569; font-size:0.9rem;}
+.hl-number .hl-unit{font-weight:700; color:#475569; font-size:0.82rem;}
 .hl-label{
-  font-size:0.78rem;
+  font-size:0.72rem;
   color:#64748b;
   margin-top:0.12rem;
   letter-spacing:0.01em;
+  line-height:1.3;
+}
+@media (max-width: 1080px){
+  .highlights-list{grid-template-columns:1fr;}
 }
 
 /* ===============================
@@ -803,6 +853,71 @@ redirect_from:
   50%      { transform: translate(20px,-30px) scale(1.15); opacity:1; }
 }
 .about-card > *{ position:relative; z-index:1; }
+
+/* ===============================
+   Research Group card (Mt-aistudio)
+   =============================== */
+.research-group-card{
+  position:relative;
+  display:flex;
+  align-items:center;
+  gap:0.85rem;
+  padding:0.85rem 1rem;
+  border-radius:14px;
+  border:1px solid rgba(99,102,241,0.18);
+  background:linear-gradient(135deg, rgba(99,102,241,0.10), rgba(6,182,212,0.05));
+  text-decoration:none !important;
+  color:#1d4ed8 !important;
+  font-weight:700;
+  overflow:hidden;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+  opacity:0;
+  animation:fadeInUp 0.55s ease 0.85s forwards;
+  box-shadow:0 3px 12px rgba(99,102,241,0.10);
+}
+.research-group-card:hover{
+  transform:translateY(-3px);
+  border-color:rgba(99,102,241,0.42);
+  box-shadow:0 12px 28px rgba(99,102,241,0.22);
+}
+.rgc-glow{
+  position:absolute;
+  inset:-40% -40% auto auto;
+  width:140px; height:140px;
+  background:radial-gradient(circle, rgba(139,92,246,0.30), transparent 70%);
+  filter:blur(8px);
+  animation:float-orb 9s ease-in-out infinite;
+  pointer-events:none;
+}
+.rgc-icon{
+  flex-shrink:0;
+  width:38px; height:38px;
+  display:flex; align-items:center; justify-content:center;
+  border-radius:12px;
+  font-size:1.2rem;
+  background:linear-gradient(135deg, rgba(99,102,241,0.22), rgba(6,182,212,0.12));
+  border:1px solid rgba(99,102,241,0.20);
+}
+.rgc-content{ flex:1; min-width:0; }
+.rgc-title{
+  font-size:0.98rem;
+  font-weight:850;
+  color:#1d4ed8;
+  letter-spacing:0.01em;
+}
+.rgc-sub{
+  font-size:0.75rem;
+  font-weight:600;
+  color:#64748b;
+  margin-top:0.1rem;
+}
+.rgc-arrow{
+  width:18px; height:18px;
+  color:#4f46e5;
+  transition:transform 0.28s ease;
+  flex-shrink:0;
+}
+.research-group-card:hover .rgc-arrow{ transform:translateX(3px); }
 </style>
 
 <!-- ===============================
@@ -871,21 +986,13 @@ redirect_from:
 </p>
       </div>
       <div class="about-contact-row">
-        <a class="contact-btn" href="mailto:zhifengwang@nudt.edu.cn">
+        <a class="contact-btn" href="mailto:zhifengwang@nudt.edu.cn" target="_self" rel="noopener">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           NUDT Mail
         </a>
-        <a class="contact-btn" href="mailto:zhifengwang686@gmail.com">
+        <a class="contact-btn" href="mailto:zhifengwang686@gmail.com" target="_self" rel="noopener">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           Gmail
-        </a>
-        <a class="contact-btn" href="https://scholar.google.com/citations?user=HoLbB_UAAAAJ&hl=en">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-          Scholar
-        </a>
-        <a class="contact-btn" href="https://github.com/zfw-cv">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.72.08-.72 1.21.08 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.3 3.5 1 .11-.78.42-1.3.76-1.6-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23.96-.27 1.98-.4 3-.4s2.04.13 3 .4c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.25 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.83.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
-          GitHub
         </a>
       </div>
 
@@ -941,12 +1048,22 @@ redirect_from:
           <li class="hl-item">
             <div class="hl-icon"><span>🎓</span></div>
             <div class="hl-content">
-              <div class="hl-number">2× National Scholarship</div>
+              <div class="hl-number">2× National Scholar.</div>
               <div class="hl-label">Top 0.2% · Rank 3 / 183</div>
             </div>
           </li>
         </ul>
       </div>
+
+      <a class="research-group-card" href="https://motong-ai-studio.github.io/" target="_blank" rel="noopener">
+        <div class="rgc-glow" aria-hidden="true"></div>
+        <span class="rgc-icon">🧪</span>
+        <div class="rgc-content">
+          <div class="rgc-title">Mt-aistudio</div>
+          <div class="rgc-sub">Research Group · Computer Vision</div>
+        </div>
+        <svg class="rgc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
     </div>
   </div>
 

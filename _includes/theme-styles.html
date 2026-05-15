@@ -423,6 +423,37 @@ html { scroll-padding-top: 80px; }
 [data-theme="dark"] .hl-number .hl-unit { color: var(--text-secondary) !important; }
 [data-theme="dark"] .hl-label { color: var(--text-muted) !important; }
 
+/* Polished focus-chip — dark mode */
+[data-theme="dark"] .focus-chip .chip-icon {
+  background: rgba(15,23,42,0.55) !important;
+  border-color: rgba(255,255,255,0.06) !important;
+}
+[data-theme="dark"] .focus-chip::after {
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.10), transparent) !important;
+}
+
+/* Research Group card — dark mode */
+[data-theme="dark"] .research-group-card {
+  background: linear-gradient(135deg, rgba(99,102,241,0.20), rgba(6,182,212,0.10)) !important;
+  border-color: var(--border) !important;
+  color: var(--link) !important;
+  box-shadow: var(--shadow-md) !important;
+}
+[data-theme="dark"] .research-group-card:hover {
+  border-color: rgba(129,140,248,0.55) !important;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.55) !important;
+}
+[data-theme="dark"] .rgc-icon {
+  background: linear-gradient(135deg, rgba(99,102,241,0.32), rgba(6,182,212,0.18)) !important;
+  border-color: rgba(129,140,248,0.35) !important;
+}
+[data-theme="dark"] .rgc-title { color: var(--link) !important; }
+[data-theme="dark"] .rgc-sub { color: var(--text-muted) !important; }
+[data-theme="dark"] .rgc-arrow { color: var(--accent) !important; }
+[data-theme="dark"] .rgc-glow {
+  background: radial-gradient(circle, rgba(167,139,250,0.45), transparent 70%) !important;
+}
+
 /* Floating orbs visible in dark mode too */
 [data-theme="dark"] .about-card .float-orbs span:nth-child(1) {
   background: radial-gradient(circle, rgba(129,140,248,0.45), rgba(129,140,248,0)) !important;
