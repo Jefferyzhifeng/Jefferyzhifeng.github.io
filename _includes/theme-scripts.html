@@ -24,6 +24,70 @@
     });
   }
 
+  function setupMastheadScroll() {
+    var mast = document.querySelector('.masthead');
+    if (!mast) return;
+    var threshold = 8;
+    function update() {
+      if (window.pageYOffset > threshold) mast.classList.add('is-scrolled');
+      else mast.classList.remove('is-scrolled');
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+  }
+
+  function setupScrollSpy() {
+    var navLinks = Array.prototype.slice.call(
+      document.querySelectorAll('.greedy-nav .visible-links a[href*="#"]')
+    );
+    if (!navLinks.length) return;
+
+    var sections = navLinks
+      .map(function (a) {
+        var href = a.getAttribute('href') || '';
+        var hash = href.indexOf('#') >= 0 ? href.slice(href.indexOf('#') + 1) : '';
+        if (!hash) return null;
+        var el = document.getElementById(hash);
+        return el ? { id: hash, el: el, link: a } : null;
+      })
+      .filter(Boolean);
+
+    if (!sections.length) return;
+
+    function setActive(id) {
+      navLinks.forEach(function (a) {
+        var href = a.getAttribute('href') || '';
+        if (href.indexOf('#' + id) >= 0) a.classList.add('is-active');
+        else a.classList.remove('is-active');
+      });
+    }
+
+    if ('IntersectionObserver' in window) {
+      var visible = new Map();
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) visible.set(e.target.id, e.intersectionRatio);
+          else visible.delete(e.target.id);
+        });
+        var best = null;
+        var bestRatio = -1;
+        visible.forEach(function (ratio, id) {
+          if (ratio > bestRatio) { bestRatio = ratio; best = id; }
+        });
+        if (best) setActive(best);
+      }, { rootMargin: '-90px 0px -55% 0px', threshold: [0, 0.25, 0.5, 1] });
+      sections.forEach(function (s) { io.observe(s.el); });
+    }
+
+    // Initial state based on URL hash
+    if (window.location.hash) {
+      var initial = window.location.hash.slice(1);
+      setActive(initial);
+    } else if (sections[0]) {
+      setActive(sections[0].id);
+    }
+  }
+
   function setupBackToTop() {
     var btn = document.querySelector('.back-to-top');
     if (!btn) return;
@@ -59,6 +123,8 @@
   onReady(function () {
     setupToggle();
     setupBackToTop();
+    setupMastheadScroll();
+    setupScrollSpy();
   });
 
   // Follow system preference changes only when user hasn't manually chosen

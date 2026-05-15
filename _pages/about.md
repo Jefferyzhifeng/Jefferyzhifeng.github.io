@@ -109,6 +109,16 @@ redirect_from:
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+/* keep leading emoji rendered in native color (not clipped by gradient) */
+.section-emoji {
+  -webkit-text-fill-color: initial !important;
+  background: none !important;
+  -webkit-background-clip: initial !important;
+          background-clip: initial !important;
+  margin-right: 0.4rem;
+  font-size: 0.95em;
+  vertical-align: -0.05em;
+}
 
 .about-card,
 .news-card,
@@ -448,6 +458,173 @@ redirect_from:
   background:rgba(15,23,42,0.45);
   border-top:1px solid rgba(255,255,255,0.10);
 }
+
+/* ===============================
+   About Me — beautification additions
+   =============================== */
+.about-card-header{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:1rem;
+  margin-bottom:1.3rem;
+}
+.about-card-title-wrap{display:flex; flex-direction:column;}
+
+.about-grid{
+  display:grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
+  gap:1.75rem;
+  align-items:start;
+}
+@media (max-width: 920px){
+  .about-grid{grid-template-columns:1fr;}
+}
+
+.about-status-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:0.5rem;
+  padding:0.4rem 0.9rem;
+  border-radius:999px;
+  font-size:0.85rem;
+  font-weight:750;
+  color:#047857;
+  background:rgba(16,185,129,0.10);
+  border:1px solid rgba(16,185,129,0.30);
+  white-space:nowrap;
+}
+.status-dot{
+  width:9px; height:9px;
+  border-radius:50%;
+  background:#10b981;
+  box-shadow:0 0 0 0 rgba(16,185,129,0.55);
+  animation:pulse-status 2s infinite;
+  flex-shrink:0;
+}
+@keyframes pulse-status{
+  0%{box-shadow:0 0 0 0 rgba(16,185,129,0.55);}
+  70%{box-shadow:0 0 0 9px rgba(16,185,129,0);}
+  100%{box-shadow:0 0 0 0 rgba(16,185,129,0);}
+}
+
+.about-intro{
+  font-size:1.05rem !important;
+  line-height:1.85 !important;
+}
+
+.about-meta-chips{
+  display:flex;
+  flex-wrap:wrap;
+  gap:0.5rem;
+  margin:0.4rem 0 1rem 0;
+}
+.meta-chip{
+  display:inline-flex;
+  align-items:center;
+  gap:0.4rem;
+  padding:0.32rem 0.72rem;
+  border-radius:999px;
+  font-size:0.83rem;
+  font-weight:650;
+  color:#334155;
+  background:rgba(99,102,241,0.07);
+  border:1px solid rgba(99,102,241,0.20);
+  transition:all 0.2s ease;
+}
+.meta-chip:hover{
+  transform:translateY(-1px);
+  background:rgba(99,102,241,0.12);
+  border-color:rgba(99,102,241,0.35);
+}
+.meta-chip svg{width:14px; height:14px; color:#4f46e5; flex-shrink:0;}
+
+.about-contact-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:0.5rem;
+  margin:0.85rem 0;
+}
+.contact-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:0.45rem;
+  padding:0.45rem 0.85rem;
+  border-radius:10px;
+  border:1px solid rgba(99,102,241,0.22);
+  background:linear-gradient(135deg, rgba(99,102,241,0.08), rgba(255,255,255,0.95));
+  color:#1d4ed8 !important;
+  font-weight:700;
+  font-size:0.88rem;
+  text-decoration:none !important;
+  transition:transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease, background 0.22s ease;
+  box-shadow:0 2px 8px rgba(99,102,241,0.08);
+}
+.contact-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 22px rgba(99,102,241,0.22);
+  border-color:rgba(99,102,241,0.45);
+  background:linear-gradient(135deg, rgba(99,102,241,0.16), rgba(255,255,255,1));
+}
+.contact-btn svg{width:15px; height:15px; flex-shrink:0;}
+
+/* ===============================
+   News — scrollable container
+   =============================== */
+.news-scroll{
+  max-height:300px;
+  overflow-y:auto;
+  scroll-behavior:smooth;
+  padding-right:0.55rem;
+  -webkit-overflow-scrolling:touch;
+}
+.news-list{
+  margin:0;
+  padding-left:1.1rem;
+  line-height:1.75;
+}
+.news-list li{
+  margin:0.25rem 0;
+  padding-left:0.15rem;
+}
+.news-list li em{
+  display:inline-block;
+  min-width:4.2em;
+  color:#6b7280;
+  font-style:normal;
+  font-weight:700;
+  margin-right:0.45rem;
+  letter-spacing:0.01em;
+}
+.news-scroll{
+  scrollbar-width:thin;
+  scrollbar-color: rgba(99,102,241,0.45) rgba(99,102,241,0.05);
+}
+.news-scroll::-webkit-scrollbar{width:8px;}
+.news-scroll::-webkit-scrollbar-track{
+  background:rgba(99,102,241,0.05);
+  border-radius:8px;
+}
+.news-scroll::-webkit-scrollbar-thumb{
+  background:linear-gradient(180deg, rgba(99,102,241,0.45), rgba(99,102,241,0.30));
+  border-radius:8px;
+}
+.news-scroll::-webkit-scrollbar-thumb:hover{
+  background:linear-gradient(180deg, rgba(99,102,241,0.65), rgba(99,102,241,0.50));
+}
+.news-fade{
+  position:relative;
+}
+.news-fade::after{
+  content:"";
+  position:absolute;
+  left:0; right:0; bottom:0;
+  height:32px;
+  background:linear-gradient(180deg, rgba(255,255,255,0), rgba(255,255,255,0.92));
+  border-radius:0 0 14px 14px;
+  pointer-events:none;
+}
 </style>
 
 <!-- ===============================
@@ -456,18 +633,38 @@ redirect_from:
 <span class="anchor" id="about-me"></span>
 <div class="about-card">
   <div class="about-card-header">
-    <h2 class="about-card-title">About Me</h2>
-    <div class="about-card-line"></div>
+    <div class="about-card-title-wrap">
+      <h2 class="about-card-title">About Me</h2>
+      <div class="about-card-line"></div>
+    </div>
+    <span class="about-status-badge" title="Currently open to research collaborations">
+      <span class="status-dot" aria-hidden="true"></span>
+      <span>Available for collaborations</span>
+    </span>
   </div>
 
   <div class="about-grid">
     <div class="about-left">
-      <p>
+      <p class="about-intro">
         Hi, I am <strong>Zhifeng Wang (汪智峰)</strong>, a third-year master's student at the College of Computer Science and Technology,
         National University of Defense Technology, advised by Prof. <a href="https://kevinkaixu.net/">Kai Xu</a> and Assoc. Prof.
         <a href="https://renjiaoyi.github.io/">Renjiao Yi</a>.
-        <!-- I am a core initiator of <a href="https://motong-ai-studio.github.io/">Mt-aistudio</a>, a research group focusing on computer vision. -->
       </p>
+
+      <div class="about-meta-chips">
+        <span class="meta-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          Master's @ NUDT
+        </span>
+        <span class="meta-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Hangzhou, China
+        </span>
+        <span class="meta-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h1M9 13h1M9 17h1M14 9h1M14 13h1M14 17h1"/></svg>
+          College of CS & Tech
+        </span>
+      </div>
 
       <div class="research-scope">
 <p style="
@@ -507,11 +704,25 @@ redirect_from:
   </span>.
 </p>
       </div>
-      <p style="margin-top:0.9rem;">
-        <strong>Email:</strong>
-        <a href="mailto:zhifengwang@nudt.edu.cn">zhifengwang@nudt.edu.cn</a> /
-        <a href="mailto:zhifengwang686@gmail.com">zhifengwang686@gmail.com</a>
-      </p>
+      <div class="about-contact-row">
+        <a class="contact-btn" href="mailto:zhifengwang@nudt.edu.cn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          NUDT Mail
+        </a>
+        <a class="contact-btn" href="mailto:zhifengwang686@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Gmail
+        </a>
+        <a class="contact-btn" href="https://scholar.google.com/citations?user=HoLbB_UAAAAJ&hl=en">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          Scholar
+        </a>
+        <a class="contact-btn" href="https://github.com/zfw-cv">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.72.08-.72 1.21.08 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.3 3.5 1 .11-.78.42-1.3.76-1.6-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23.96-.27 1.98-.4 3-.4s2.04.13 3 .4c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.25 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.83.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </div>
+
       <span class="about-pill">Open to research-oriented collaborations in AI for Healthcare, and other areas of computer vision.</span>
     </div>
 
@@ -538,7 +749,7 @@ redirect_from:
 <!-- ===============================
      Tools & Projects
      =============================== -->
-<h2 class="section-title">🛠 Tools & Projects</h2>
+<h2 class="section-title"><span class="section-emoji">🛠</span> Tools & Projects</h2>
 <div class="tools-grid">
   <a href="https://paperscope.top" target="_blank" class="tool-card">
     <div class="tool-icon">
@@ -639,75 +850,33 @@ redirect_from:
 <!-- ===============================
      News
      =============================== -->
-<h2 class="section-title">🔥 News</h2>
-<div class="news-card">
-  <ul style="margin:0; padding-left:1.1rem; line-height:1.65;">
-    <li><em>2026.04</em>: 🎉 One paper is accepted by ICML 2026, Congratulations to Xingyue.</li>
-    <li><em>2026.01</em>: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">ICASSP 2026</a>, Congratulations to Lubing.</li>
-    <li><em>2025.11</em>: 🎉 Awarded the <a href="https://jefferyzhifeng.github.io">China National Scholarship</a> (Ranking 3/183).</li>
-    <li><em>2025.05</em>: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">TVC Journal</a>.</li>
-    <li><em>2025.04</em>: 🎉 Won 1st place in the <a href="https://codalab.lisn.upsaclay.fr/competitions/21562#learn_the_details">CVPR2025W</a> "Mobile AI 2025 Real-Time Rendering Realistic Bokeh Challenge",Congratulations to Kang.</li>
-    <li><em>2025.04</em>: 🎉 Won 6th place in the <a href="https://codalab.lisn.upsaclay.fr/competitions/21564">CVPR2025W</a> "Mobile AI Challenge: RGB Photo Enhancement on Mobile GPUs",Congratulations to Runhua.</li>
-    <li><em>2025.02</em>: 🎉 One paper is accepted by <a href="https://cvpr.thecvf.com/Conferences/2025/">CVPR 2025</a> (CCF-A).</li>
-  </ul>
-
-  <details style="margin-top:0.75rem;">
-    <summary style="
-      list-style:none;
-      cursor:pointer;
-      user-select:none;
-      display:inline-flex;
-      align-items:center;
-      gap:0.5rem;
-      padding:0.45rem 0.8rem;
-      border-radius:999px;
-      border:1px solid rgba(99,102,241,0.35);
-      background:rgba(99,102,241,0.10);
-      color:#1F2A5A;
-      font-weight:800;
-      transition:all 0.18s ease;
-      box-shadow:0 2px 10px rgba(99,102,241,0.12);
-    "
-    onmouseover="this.style.transform='translateY(-1px)'; this.style.background='rgba(99,102,241,0.16)';"
-    onmouseout="this.style.transform='translateY(0px)'; this.style.background='rgba(99,102,241,0.10)';"
-    >
-      <span style="
-        display:inline-flex; align-items:center; justify-content:center;
-        width:22px; height:22px; border-radius:999px;
-        background:rgba(99,102,241,0.18);
-        font-size:14px; line-height:1;
-      ">+</span>
-      <span>More</span>
-    </summary>
-
-    <style>summary::-webkit-details-marker { display:none; }</style>
-
-    <div style="
-      margin-top:0.65rem;
-      border:1px solid rgba(0,0,0,0.10);
-      border-radius:12px;
-      padding:0.75rem 0.85rem;
-      background:rgba(255,255,255,0.70);
-      max-height:220px;
-      overflow-y:auto;
-      box-shadow:inset 0 0 0 1px rgba(255,255,255,0.45);
-    ">
-      <ul style="margin:0; padding-left:1.1rem; line-height:1.65;">
-        <li><em>2024.09</em>: 🎉 One paper is accepted by <a href="https://www.sciencedirect.com/science/article/pii/S2950162824000560">Meta-Radiology</a>.</li>
-        <li><em>2024.07</em>: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">FCS Journal</a>. (CCF-T1).</li>
-        <li><em>2024.05</em>: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">ICIP 2024</a>.</li>
-        <li><em>2022.12</em>: 🎉 Awarded the <a href="https://jefferyzhifeng.github.io">China National Scholarship</a> (Top 0.2%).</li>
-        <li><em>2022.10</em>: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">PRCV</a>.</li>
-        <li><em>2022.06</em>: 🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">JVCIR Journal</a>.</li>
-      </ul>
-    </div>
-  </details>
+<span class="anchor" id="news"></span>
+<h2 class="section-title"><span class="section-emoji">🔥</span> News</h2>
+<div class="news-card news-fade">
+  <div class="news-scroll">
+    <ul class="news-list">
+      <li><em>2026.04</em>🎉 One paper is accepted by ICML 2026, Congratulations to Xingyue.</li>
+      <li><em>2026.01</em>🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">ICASSP 2026</a>, Congratulations to Lubing.</li>
+      <li><em>2025.11</em>🎉 Awarded the <a href="https://jefferyzhifeng.github.io">China National Scholarship</a> (Ranking 3/183).</li>
+      <li><em>2025.05</em>🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">TVC Journal</a>.</li>
+      <li><em>2025.04</em>🎉 Won 1st place in the <a href="https://codalab.lisn.upsaclay.fr/competitions/21562#learn_the_details">CVPR2025W</a> "Mobile AI 2025 Real-Time Rendering Realistic Bokeh Challenge", Congratulations to Kang.</li>
+      <li><em>2025.04</em>🎉 Won 6th place in the <a href="https://codalab.lisn.upsaclay.fr/competitions/21564">CVPR2025W</a> "Mobile AI Challenge: RGB Photo Enhancement on Mobile GPUs", Congratulations to Runhua.</li>
+      <li><em>2025.02</em>🎉 One paper is accepted by <a href="https://cvpr.thecvf.com/Conferences/2025/">CVPR 2025</a> (CCF-A).</li>
+      <li><em>2024.09</em>🎉 One paper is accepted by <a href="https://www.sciencedirect.com/science/article/pii/S2950162824000560">Meta-Radiology</a>.</li>
+      <li><em>2024.07</em>🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">FCS Journal</a> (CCF-T1).</li>
+      <li><em>2024.05</em>🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">ICIP 2024</a>.</li>
+      <li><em>2022.12</em>🎉 Awarded the <a href="https://jefferyzhifeng.github.io">China National Scholarship</a> (Top 0.2%).</li>
+      <li><em>2022.10</em>🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">PRCV</a>.</li>
+      <li><em>2022.06</em>🎉 One paper is accepted by <a href="https://jefferyzhifeng.github.io">JVCIR Journal</a>.</li>
+    </ul>
+  </div>
 </div>
 
 <!-- ===============================
      Publications
      =============================== -->
-<h2 class="section-title">📝 Publications</h2>
+<span class="anchor" id="publications"></span>
+<h2 class="section-title"><span class="section-emoji">📝</span> Publications</h2>
 
 <div class="paper-box">
   <div class="paper-box-image">
@@ -848,7 +1017,8 @@ redirect_from:
 <!-- ===============================
      Honors and Awards (with the missing card restored)
      =============================== -->
-<h2 class="section-title">🎖 Honors and Awards</h2>
+<span class="anchor" id="honors"></span>
+<h2 class="section-title"><span class="section-emoji">🎖</span> Honors and Awards</h2>
 
 <div class="paper-box">
   <div class="paper-box-image">
@@ -879,13 +1049,15 @@ redirect_from:
 <!-- ===============================
      Services / Internships
      =============================== -->
-<h2 class="section-title">📖 Services</h2>
+<span class="anchor" id="services"></span>
+<h2 class="section-title"><span class="section-emoji">📖</span> Services</h2>
 <ul style="line-height:1.75;">
   <li><strong>Reviewers:</strong> PRCV’23/24, CAD/CG, JVCIR, PG.</li>
   <li><strong>Memberships:</strong> IEEE Student Member, CSIG Student Member, CAAI Student Member, CVF Member.</li>
 </ul>
 
-<h2 class="section-title">💻 Internships</h2>
+<span class="anchor" id="internships"></span>
+<h2 class="section-title"><span class="section-emoji">💻</span> Internships</h2>
 
 <div class="intern-grid">
   <a class="intern-card" href="https://www.antgroup.com/" target="_blank" rel="noopener">

@@ -238,6 +238,57 @@ html, body {
 [data-theme="dark"] .sidebar { color: var(--text-secondary); }
 [data-theme="dark"] .author__avatar img { border-color: var(--border) !important; }
 
+/* About-Me beautification additions (status badge / meta chips / contact row) */
+[data-theme="dark"] .about-status-badge {
+  color:#86efac !important;
+  background:rgba(16,185,129,0.16) !important;
+  border-color:rgba(16,185,129,0.40) !important;
+}
+[data-theme="dark"] .meta-chip {
+  color:var(--text-secondary) !important;
+  background:rgba(99,102,241,0.16) !important;
+  border-color:rgba(99,102,241,0.35) !important;
+}
+[data-theme="dark"] .meta-chip svg { color: var(--accent) !important; }
+[data-theme="dark"] .meta-chip:hover {
+  background:rgba(99,102,241,0.24) !important;
+  border-color:rgba(99,102,241,0.50) !important;
+}
+[data-theme="dark"] .contact-btn {
+  color: var(--link) !important;
+  background: linear-gradient(135deg, rgba(99,102,241,0.20), rgba(17,24,39,0.85)) !important;
+  border-color: var(--border) !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.35) !important;
+}
+[data-theme="dark"] .contact-btn:hover {
+  background: linear-gradient(135deg, rgba(99,102,241,0.32), rgba(17,24,39,0.95)) !important;
+  border-color: rgba(99,102,241,0.55) !important;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.5) !important;
+}
+
+/* Section emoji preserves native color in dark mode too */
+[data-theme="dark"] .section-emoji {
+  -webkit-text-fill-color: initial !important;
+  background: none !important;
+  -webkit-background-clip: initial !important;
+          background-clip: initial !important;
+}
+
+/* News scrollable container */
+[data-theme="dark"] .news-list li em { color: var(--text-muted) !important; }
+[data-theme="dark"] .news-scroll {
+  scrollbar-color: rgba(129,140,248,0.55) rgba(99,102,241,0.10);
+}
+[data-theme="dark"] .news-scroll::-webkit-scrollbar-track {
+  background: rgba(99,102,241,0.10) !important;
+}
+[data-theme="dark"] .news-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(129,140,248,0.55), rgba(129,140,248,0.40)) !important;
+}
+[data-theme="dark"] .news-fade::after {
+  background: linear-gradient(180deg, rgba(15,23,42,0), rgba(15,23,42,0.95)) !important;
+}
+
 /* Internship cards */
 [data-theme="dark"] .intern-card {
   background: linear-gradient(135deg, rgba(99,102,241,0.18) 0%, rgba(17,24,39,0.85) 100%) !important;
@@ -273,6 +324,73 @@ html, body {
 }
 .masthead__menu > .greedy-nav { flex: 1 1 auto; min-width: 0; }
 .masthead__menu > .theme-toggle { flex: 0 0 auto; }
+
+/* ===============================
+   Top masthead — beautification
+   =============================== */
+.masthead {
+  background-color: var(--masthead-bg) !important;
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+          backdrop-filter: saturate(180%) blur(14px);
+  border-bottom: 1px solid var(--masthead-border) !important;
+  transition: box-shadow 0.25s ease, background-color 0.35s ease, border-color 0.35s ease;
+}
+.masthead.is-scrolled {
+  box-shadow: 0 6px 24px rgba(15,23,42,0.08);
+}
+.greedy-nav { background: transparent !important; }
+.greedy-nav .visible-links li a {
+  position: relative;
+  margin: 0 0.35rem !important;
+  padding: 0.5rem 0.85rem !important;
+  border-radius: 10px;
+  font-weight: 700;
+  color: var(--text-secondary) !important;
+  transition: color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+.greedy-nav .visible-links li a:hover {
+  color: var(--accent-2) !important;
+  background: rgba(99,102,241,0.10);
+  transform: translateY(-1px);
+}
+/* Hide the old underline animation; we use background pills + bottom bar instead */
+.greedy-nav .visible-links li a:before { display: none !important; }
+.greedy-nav .visible-links li a.is-active {
+  color: var(--accent-2) !important;
+  background: linear-gradient(135deg, rgba(99,102,241,0.16), rgba(37,99,235,0.10));
+  box-shadow: inset 0 0 0 1px rgba(99,102,241,0.22);
+}
+.greedy-nav .visible-links li a.is-active::after {
+  content: "";
+  position: absolute;
+  left: 18%; right: 18%;
+  bottom: 2px;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #6366f1, #2563eb, #06b6d4);
+  box-shadow: 0 0 12px rgba(99,102,241,0.5);
+}
+.masthead__menu-home-item a {
+  font-weight: 850 !important;
+  letter-spacing: 0.01em;
+  background: linear-gradient(90deg, #4f46e5, #1d4ed8, #06b6d4);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 0.8rem !important;
+}
+
+/* Universal scroll-margin for section anchors so they don't hide under the sticky masthead */
+.anchor[id] { scroll-margin-top: 80px; }
+html { scroll-padding-top: 80px; }
+
+[data-theme="dark"] .greedy-nav .visible-links li a:hover {
+  background: rgba(129,140,248,0.18);
+}
+[data-theme="dark"] .greedy-nav .visible-links li a.is-active {
+  background: linear-gradient(135deg, rgba(129,140,248,0.24), rgba(96,165,250,0.16));
+  box-shadow: inset 0 0 0 1px rgba(129,140,248,0.40);
+}
 
 .theme-toggle {
   position: relative;
