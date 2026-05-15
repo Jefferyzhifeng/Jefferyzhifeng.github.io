@@ -1054,16 +1054,6 @@ redirect_from:
           </li>
         </ul>
       </div>
-
-      <a class="research-group-card" href="https://motong-ai-studio.github.io/" target="_blank" rel="noopener">
-        <div class="rgc-glow" aria-hidden="true"></div>
-        <span class="rgc-icon">🧪</span>
-        <div class="rgc-content">
-          <div class="rgc-title">Mt-aistudio</div>
-          <div class="rgc-sub">Research Group · Computer Vision</div>
-        </div>
-        <svg class="rgc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-      </a>
     </div>
   </div>
 
