@@ -279,6 +279,8 @@ redirect_from:
 .chip-teal:hover{background:rgba(20,184,166,0.18);}
 .chip-rose{color:#9f1239; background:rgba(244,63,94,0.10); border-color:rgba(244,63,94,0.22);}
 .chip-rose:hover{background:rgba(244,63,94,0.18);}
+.chip-emerald{color:#047857; background:rgba(16,185,129,0.10); border-color:rgba(16,185,129,0.22);}
+.chip-emerald:hover{background:rgba(16,185,129,0.18);}
 .about-pill{
   margin-top:1rem;
   display:inline-flex; align-items:center; gap:0.5rem;
@@ -985,7 +987,7 @@ redirect_from:
   color: #374151;
 ">
   My research focuses on
-  <span style="font-weight:700; color:#1f3a8a;">computer vision</span>,
+  <span style="font-weight:700; color:#1f3a8a;">computer vision and medical AI</span>,
   building
   <span style="font-weight:700; color:#4f46e5;">world models</span>
   and
@@ -1023,7 +1025,7 @@ redirect_from:
         Gmail
       </a>
     </div>
-    <span class="about-pill">Open to research-oriented collaborations in computer vision, world models, and large multimodal models.</span>
+    <span class="about-pill">Open to research-oriented collaborations in computer vision, medical AI, world models, and large multimodal models.</span>
   </div>
 
   <div class="about-cards-row">
@@ -1036,6 +1038,7 @@ redirect_from:
         <span class="focus-chip chip-indigo"><span class="chip-icon">🌍</span> World Models &amp; Simulation</span>
         <span class="focus-chip chip-blue"><span class="chip-icon">👁️</span> Computer Vision &amp; 3D</span>
         <span class="focus-chip chip-violet"><span class="chip-icon">🧠</span> Large Multimodal Models</span>
+        <span class="focus-chip chip-emerald"><span class="chip-icon">🏥</span> Medical AI &amp; Imaging</span>
         <span class="focus-chip chip-teal"><span class="chip-icon">✨</span> Generative Modeling</span>
         <span class="focus-chip chip-rose"><span class="chip-icon">⚛️</span> Physics-informed Intelligence</span>
       </div>
