@@ -92,12 +92,18 @@
   }
 
   img {
-    max-width: 175px;
-    min-width: 75px;
+    width: 175px;
+    height: 175px;
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center top;
     border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 
     @include breakpoint($large) {
-      padding: 5px;
+      padding: 4px;
       border: 1px solid $border-color;
     }
   }
