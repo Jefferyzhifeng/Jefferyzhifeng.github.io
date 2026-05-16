@@ -120,29 +120,7 @@ redirect_from:
   vertical-align: -0.05em;
 }
 
-.about-card,
-.news-card,
-.tools-grid,
-.education-timeline,
-.paper-box {
-  opacity: 0;
-  animation: fadeInUp 0.6s ease forwards;
-}
-
-.paper-box:nth-child(1) { animation-delay: 0.1s; }
-.paper-box:nth-child(2) { animation-delay: 0.15s; }
-.paper-box:nth-child(3) { animation-delay: 0.2s; }
-.paper-box:nth-child(4) { animation-delay: 0.25s; }
-.paper-box:nth-child(5) { animation-delay: 0.3s; }
-.paper-box:nth-child(6) { animation-delay: 0.35s; }
-.paper-box:nth-child(7) { animation-delay: 0.4s; }
-.paper-box:nth-child(8) { animation-delay: 0.45s; }
-
-.tool-card:nth-child(1) { animation-delay: 0.1s; }
-.tool-card:nth-child(2) { animation-delay: 0.2s; }
-
-.edu-item:nth-child(1) { animation-delay: 0.1s; }
-.edu-item:nth-child(2) { animation-delay: 0.2s; }
+/* 入场动画已移除：内容首屏立即可见，避免一打开网页出现空白渐入的等待感 */
 
   
 .about-card{
@@ -745,8 +723,6 @@ redirect_from:
     linear-gradient(145deg, rgba(255,255,255,0.95), rgba(238,242,255,0.7));
   box-shadow:0 4px 16px rgba(99,102,241,0.07);
   overflow:hidden;
-  opacity:0;
-  animation:fadeInUp 0.6s ease 0.3s forwards;
 }
 .about-highlights::before{
   content:"";
@@ -812,15 +788,9 @@ redirect_from:
   border-radius:11px;
   background:linear-gradient(135deg, rgba(99,102,241,0.07), rgba(255,255,255,0.85));
   border:1px solid rgba(99,102,241,0.12);
-  opacity:0;
-  animation:fadeInUp 0.5s ease forwards;
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
   min-width:0;
 }
-.hl-item:nth-child(1){animation-delay:0.42s;}
-.hl-item:nth-child(2){animation-delay:0.54s;}
-.hl-item:nth-child(3){animation-delay:0.66s;}
-.hl-item:nth-child(4){animation-delay:0.78s;}
 .hl-item:hover{
   transform:translateY(-2px);
   border-color:rgba(99,102,241,0.32);
@@ -861,14 +831,7 @@ redirect_from:
 /* ===============================
    Stagger entrance for new components
    =============================== */
-.about-contact-row .contact-btn{
-  opacity:0;
-  animation:fadeInUp 0.5s ease forwards;
-}
-.about-contact-row .contact-btn:nth-child(1){animation-delay:0.20s;}
-.about-contact-row .contact-btn:nth-child(2){animation-delay:0.28s;}
-.about-contact-row .contact-btn:nth-child(3){animation-delay:0.36s;}
-.about-contact-row .contact-btn:nth-child(4){animation-delay:0.44s;}
+/* contact-btn 入场动画已移除：首屏立刻可见 */
 
 /* Shimmer sweep across contact buttons on hover */
 .contact-btn{position:relative; overflow:hidden;}
@@ -925,8 +888,6 @@ redirect_from:
   font-weight:700;
   overflow:hidden;
   transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
-  opacity:0;
-  animation:fadeInUp 0.55s ease 0.85s forwards;
   box-shadow:0 3px 12px rgba(99,102,241,0.10);
 }
 .research-group-card:hover{
