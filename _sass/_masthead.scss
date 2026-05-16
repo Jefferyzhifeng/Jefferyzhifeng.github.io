@@ -48,6 +48,16 @@
     display: block !important;
   }
   display: none !important;
+
+  /* 单独取消 "Homepage" 链接的 hover 效果（变色 + 底部色条），其他导航项保持原样 */
+  a:hover {
+    color: $masthead-link-color;
+  }
+  a:hover:before {
+    -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
+  }
 }
 
 .masthead__menu-item {
