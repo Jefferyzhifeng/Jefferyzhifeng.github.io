@@ -1172,10 +1172,10 @@ redirect_from:
             <polyline points="9 7 17 7 17 15"/>
           </svg>
         </div>
-        <p class="tool-tagline">Manage · Monitor · Control</p>
-        <p class="tool-desc">A web-based console for managing and monitoring services in one place. My latest software, built for a clean and efficient workflow.</p>
+        <p class="tool-tagline">Manage · Monitor · Claude Code</p>
+        <p class="tool-desc">A web console for Claude Code — launch and track agent sessions, monitor token usage and cost, and control your workflows from a single dashboard. My latest software.</p>
         <div class="tool-footer">
-          <span class="tool-tag">Web Console</span>
+          <span class="tool-tag">Claude Code Console</span>
           <span class="tool-domain">cc.cchub.cloud</span>
         </div>
       </div>
