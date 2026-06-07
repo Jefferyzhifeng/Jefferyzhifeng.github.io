@@ -1149,6 +1149,38 @@ redirect_from:
       </div>
     </div>
   </a>
+
+  <a href="https://cc.cchub.cloud/" target="_blank" rel="noopener" class="tool-card tool-card--ccconsole">
+    <div class="tool-card-cover" aria-hidden="true">
+      <div class="cover-grid"></div>
+      <div class="cover-glow"></div>
+    </div>
+    <div class="tool-card-body">
+      <div class="tool-icon" aria-hidden="true">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <polyline points="6 9 9 12 6 15"/>
+          <line x1="12" y1="15" x2="17" y2="15"/>
+        </svg>
+      </div>
+      <div class="tool-card-text">
+        <div class="tool-title-row">
+          <h3>CC-Console</h3>
+          <span class="tool-status"><span class="status-dot status-dot--live" aria-hidden="true"></span>Live</span>
+          <svg class="tool-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="7" y1="17" x2="17" y2="7"/>
+            <polyline points="9 7 17 7 17 15"/>
+          </svg>
+        </div>
+        <p class="tool-tagline">Manage · Monitor · Control</p>
+        <p class="tool-desc">A web-based console for managing and monitoring services in one place. My latest software, built for a clean and efficient workflow.</p>
+        <div class="tool-footer">
+          <span class="tool-tag">Web Console</span>
+          <span class="tool-domain">cc.cchub.cloud</span>
+        </div>
+      </div>
+    </div>
+  </a>
 </div>
 
 <style>
@@ -1189,6 +1221,9 @@ redirect_from:
 .tool-card--mtaistudio .tool-card-cover{
   background:linear-gradient(135deg, #7c3aed 0%, #a855f7 50%, #ec4899 100%);
 }
+.tool-card--ccconsole .tool-card-cover{
+  background:linear-gradient(135deg, #0f766e 0%, #10b981 55%, #34d399 100%);
+}
 .cover-grid{
   position:absolute; inset:0;
   background-image: radial-gradient(rgba(255,255,255,0.20) 1px, transparent 1px);
@@ -1228,6 +1263,7 @@ redirect_from:
   transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s ease;
 }
 .tool-card--mtaistudio .tool-icon{ color:#7c3aed; border-color:rgba(139,92,246,0.20); }
+.tool-card--ccconsole .tool-icon{ color:#0d9488; border-color:rgba(16,185,129,0.22); }
 .tool-card:hover .tool-icon{
   transform:scale(1.08) rotate(-6deg);
   box-shadow:0 12px 26px rgba(17,24,39,0.18);
@@ -1246,6 +1282,7 @@ redirect_from:
   letter-spacing:-0.005em;
 }
 .tool-card--mtaistudio .tool-title-row h3{ color:#7c3aed; }
+.tool-card--ccconsole .tool-title-row h3{ color:#0d9488; }
 
 .tool-status{
   display:inline-flex;
@@ -1281,6 +1318,7 @@ redirect_from:
   transform: translate(3px, -3px);
 }
 .tool-card--mtaistudio:hover .tool-arrow{ color:#7c3aed; }
+.tool-card--ccconsole:hover .tool-arrow{ color:#0d9488; }
 
 .tool-tagline{
   margin:0.2rem 0 0.65rem 0 !important;
@@ -1292,6 +1330,7 @@ redirect_from:
   line-height:1.4 !important;
 }
 .tool-card--mtaistudio .tool-tagline{ color:#8b5cf6; }
+.tool-card--ccconsole .tool-tagline{ color:#10b981; }
 
 .tool-desc{
   margin:0 0 0.85rem 0 !important;
@@ -1323,6 +1362,11 @@ redirect_from:
   color:#7c3aed;
   background:rgba(139,92,246,0.10);
   border-color:rgba(139,92,246,0.28);
+}
+.tool-card--ccconsole .tool-tag{
+  color:#0d9488;
+  background:rgba(16,185,129,0.10);
+  border-color:rgba(16,185,129,0.28);
 }
 .tool-domain{
   font-size:0.72rem;
