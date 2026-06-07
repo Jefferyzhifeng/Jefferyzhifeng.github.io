@@ -1076,7 +1076,7 @@ redirect_from:
      Tools & Projects
      =============================== -->
 <h2 class="section-title"><span class="section-emoji">🛠</span> Tools & Projects</h2>
-<div class="tools-grid">
+{% capture tools_cards %}
   <a href="https://paperscope.top" target="_blank" rel="noopener" class="tool-card tool-card--paperscope">
     <div class="tool-card-cover" aria-hidden="true">
       <div class="cover-grid"></div>
@@ -1106,6 +1106,38 @@ redirect_from:
         <div class="tool-footer">
           <span class="tool-tag">Research Platform</span>
           <span class="tool-domain">paperscope.top</span>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <a href="https://cc.cchub.cloud/" target="_blank" rel="noopener" class="tool-card tool-card--ccconsole">
+    <div class="tool-card-cover" aria-hidden="true">
+      <div class="cover-grid"></div>
+      <div class="cover-glow"></div>
+    </div>
+    <div class="tool-card-body">
+      <div class="tool-icon" aria-hidden="true">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <polyline points="6 9 9 12 6 15"/>
+          <line x1="12" y1="15" x2="17" y2="15"/>
+        </svg>
+      </div>
+      <div class="tool-card-text">
+        <div class="tool-title-row">
+          <h3>CC-Console</h3>
+          <span class="tool-status"><span class="status-dot status-dot--live" aria-hidden="true"></span>Live</span>
+          <svg class="tool-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="7" y1="17" x2="17" y2="7"/>
+            <polyline points="9 7 17 7 17 15"/>
+          </svg>
+        </div>
+        <p class="tool-tagline">Manage · Monitor · Claude Code</p>
+        <p class="tool-desc">A web console for Claude Code — launch and track agent sessions, monitor token usage and cost, and control your workflows from a single dashboard. My latest software.</p>
+        <div class="tool-footer">
+          <span class="tool-tag">Claude Code Console</span>
+          <span class="tool-domain">cc.cchub.cloud</span>
         </div>
       </div>
     </div>
@@ -1149,50 +1181,78 @@ redirect_from:
       </div>
     </div>
   </a>
+{% endcapture %}
 
-  <a href="https://cc.cchub.cloud/" target="_blank" rel="noopener" class="tool-card tool-card--ccconsole">
-    <div class="tool-card-cover" aria-hidden="true">
-      <div class="cover-grid"></div>
-      <div class="cover-glow"></div>
+<div class="tools-marquee">
+  <div class="tools-viewport">
+    <div class="tools-track">
+      {{ tools_cards }}
+      <span class="tools-dup" aria-hidden="true">{{ tools_cards }}</span>
     </div>
-    <div class="tool-card-body">
-      <div class="tool-icon" aria-hidden="true">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="2" y="4" width="20" height="16" rx="2"/>
-          <polyline points="6 9 9 12 6 15"/>
-          <line x1="12" y1="15" x2="17" y2="15"/>
-        </svg>
-      </div>
-      <div class="tool-card-text">
-        <div class="tool-title-row">
-          <h3>CC-Console</h3>
-          <span class="tool-status"><span class="status-dot status-dot--live" aria-hidden="true"></span>Live</span>
-          <svg class="tool-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <line x1="7" y1="17" x2="17" y2="7"/>
-            <polyline points="9 7 17 7 17 15"/>
-          </svg>
-        </div>
-        <p class="tool-tagline">Manage · Monitor · Claude Code</p>
-        <p class="tool-desc">A web console for Claude Code — launch and track agent sessions, monitor token usage and cost, and control your workflows from a single dashboard. My latest software.</p>
-        <div class="tool-footer">
-          <span class="tool-tag">Claude Code Console</span>
-          <span class="tool-domain">cc.cchub.cloud</span>
-        </div>
-      </div>
-    </div>
-  </a>
+  </div>
 </div>
 
 <style>
-.tools-grid{
-  display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  gap:1.25rem;
-  margin-top:0.8rem;
+/* ---- Auto-scrolling carousel inside an animated gradient frame ---- */
+.tools-marquee{
+  position:relative;
+  margin-top:0.9rem;
+  padding:1.15rem;
+  border-radius:22px;
+  background:linear-gradient(135deg, rgba(99,102,241,0.05), rgba(16,185,129,0.045) 60%, rgba(168,85,247,0.05));
+  overflow:hidden;
+  isolation:isolate;
 }
+/* animated gradient border ("dynamic frame") */
+.tools-marquee::before{
+  content:"";
+  position:absolute; inset:0;
+  border-radius:22px;
+  padding:1.6px;
+  background:linear-gradient(120deg,#6366f1,#06b6d4,#10b981,#a855f7,#6366f1);
+  background-size:300% 300%;
+  animation: toolsFrame 9s ease infinite;
+  -webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+          mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor; mask-composite:exclude;
+  pointer-events:none;
+  z-index:2;
+}
+@keyframes toolsFrame{
+  0%{ background-position:0% 50%; }
+  50%{ background-position:100% 50%; }
+  100%{ background-position:0% 50%; }
+}
+/* viewport clips the track and fades both edges */
+.tools-viewport{
+  overflow:hidden;
+  -webkit-mask-image:linear-gradient(to right, transparent, #000 5%, #000 95%, transparent);
+          mask-image:linear-gradient(to right, transparent, #000 5%, #000 95%, transparent);
+}
+.tools-track{
+  display:flex;
+  width:max-content;
+  align-items:stretch;
+  animation: toolsMarquee 32s linear infinite;
+}
+.tools-marquee:hover .tools-track{ animation-play-state:paused; }
+.tools-dup{ display:contents; }
+@keyframes toolsMarquee{
+  from{ transform:translateX(0); }
+  to{ transform:translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce){
+  .tools-track{ animation:none; }
+  .tools-marquee::before{ animation:none; }
+}
+
 .tool-card{
   position:relative;
-  display:block;
+  display:flex;
+  flex-direction:column;
+  flex:0 0 360px;
+  width:360px;
+  margin-right:1.25rem;
   border-radius:18px;
   overflow:hidden;
   text-decoration:none !important;
@@ -1246,6 +1306,9 @@ redirect_from:
 /* Body */
 .tool-card-body{
   position:relative;
+  flex:1 1 auto;
+  display:flex;
+  flex-direction:column;
   padding:1rem 1.2rem 1.15rem 1.2rem;
 }
 .tool-icon{
@@ -1269,7 +1332,7 @@ redirect_from:
   box-shadow:0 12px 26px rgba(17,24,39,0.18);
 }
 
-.tool-card-text{ margin-top:1.55rem; }
+.tool-card-text{ margin-top:1.55rem; flex:1 1 auto; display:flex; flex-direction:column; }
 .tool-title-row{
   display:flex; align-items:center; gap:0.55rem;
   margin-bottom:0.18rem;
@@ -1345,6 +1408,7 @@ redirect_from:
   justify-content:space-between;
   gap:0.6rem;
   flex-wrap:wrap;
+  margin-top:auto;
 }
 .tool-tag{
   display:inline-flex;
